@@ -1,0 +1,3 @@
+model_checkpoint_path: "C:/Users/felip/OneDrive/Documentos/Universidad/Memoria/Complementos/Indoor-ML/CNN\\logs/fully_connected_feed\\model.ckpt-1999"
+all_model_checkpoint_paths: "C:/Users/felip/OneDrive/Documentos/Universidad/Memoria/Complementos/Indoor-ML/CNN\\logs/fully_connected_feed\\model.ckpt-999"
+all_model_checkpoint_paths: "C:/Users/felip/OneDrive/Documentos/Universidad/Memoria/Complementos/Indoor-ML/CNN\\logs/fully_connected_feed\\model.ckpt-1999"
