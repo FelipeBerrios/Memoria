@@ -1,0 +1,272 @@
+\begin{thebibliography}{}
+
+\bibitem[Abadi et~al., 2015]{tensorflow2015-whitepaper}
+Abadi, Mart\'{\i}n; Agarwal, Ashish; Barham, Paul; Brevdo, Eugene; Chen,
+  Zhifeng; Citro, Craig; Corrado, Greg~S.; Davis, Andy; Dean, Jeffrey; Devin,
+  Matthieu; Ghemawat, Sanjay; Goodfellow, Ian; Harp, Andrew; Irving, Geoffrey;
+  Isard, Michael; Jia, Yangqing; Jozefowicz, Rafal; Kaiser, Lukasz; Kudlur,
+  Manjunath; Levenberg, Josh; Man\'{e}, Dan; Monga, Rajat; Moore, Sherry;
+  Murray, Derek; Olah, Chris; Schuster, Mike; Shlens, Jonathon; Steiner,
+  Benoit; Sutskever, Ilya; Talwar, Kunal; Tucker, Paul; Vanhoucke, Vincent;
+  Vasudevan, Vijay; Vi\'{e}gas, Fernanda; Vinyals, Oriol; Warden, Pete;
+  Wattenberg, Martin; Wicke, Martin; Yu, Yuan; y Zheng, Xiaoqiang (2015).
+\newblock {TensorFlow}: Large-scale machine learning on heterogeneous systems.
+\newblock Software available from tensorflow.org.
+
+\bibitem[{Agnieszka Gasiorek}, 2014]{interval}
+{Agnieszka Gasiorek} (2014).
+\newblock
+  \url{https://kontakt.io/blog/beacon-configuration-strategy-guide-interval/}.
+\newblock [Acceso Enero 2018].
+
+\bibitem[Bahl y Padmanabhan, 2000a]{Bahl00radar:an}
+Bahl, Paramvir y Padmanabhan, Venkata~N. (2000a).
+\newblock Radar: an in-building rf-based user location and tracking system.
+\newblock In {\em RADAR: an in-building RF-based user location and tracking
+  system}  (pp.\ 775--784).
+
+\bibitem[Bahl y Padmanabhan, 2000b]{832252}
+Bahl, P. y Padmanabhan, V.~N. (2000b).
+\newblock Radar: an in-building rf-based user location and tracking system.
+\newblock In {\em Proceedings IEEE INFOCOM 2000. Conference on Computer
+  Communications. Nineteenth Annual Joint Conference of the IEEE Computer and
+  Communications Societies (Cat. No.00CH37064)}, volume~2  (pp.\ 775--784
+  vol.2).
+
+\bibitem[c.~Zufferey et~al., 2006]{4058367}
+c.~Zufferey, J.; Klaptocz, A.; Beyeler, A.; d.~Nicoud, J.; y Floreano, D.
+  (2006).
+\newblock A 10-gram microflyer for vision-based indoor navigation.
+\newblock In {\em 2006 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}  (pp.\ 6--6).
+
+\bibitem[Chan et~al., 2006]{Chan2006}
+Chan, Li-wei; Chiang, Ji-rung; Chen, Yi-chao; Ke, Chia-nan; Hsu, Jane; y Chu,
+  Hao-hua (2006).
+\newblock {\em Collaborative Localization: Enhancing WiFi-Based Position
+  Estimation with Neighborhood Links in Clusters}, (pp.\ 50--66).
+\newblock Springer Berlin Heidelberg: Berlin, Heidelberg.
+
+\bibitem[Chen et~al., 2014]{6834746}
+Chen, L.~H.; Wu, E. H.~K.; Jin, M.~H.; y Chen, G.~H. (2014).
+\newblock Intelligent fusion of wi-fi and inertial sensor-based positioning
+  systems for indoor pedestrian navigation.
+\newblock {\em IEEE Sensors Journal}, 14(11), 4034--4042.
+
+\bibitem[{Estimote}, 2017]{estimote}
+{Estimote} (2017).
+\newblock \url{https://estimote.com/}.
+\newblock [Acceso Noviembre 2017].
+
+\bibitem[Fang, 1990]{102710}
+Fang, B.~T. (1990).
+\newblock Simple solutions for hyperbolic and related position fixes.
+\newblock {\em IEEE Transactions on Aerospace and Electronic Systems}, 26(5),
+  748--753.
+
+\bibitem[Fang et~al., 2012]{6156509}
+Fang, S.~H.; Wang, C.~H.; Huang, T.~Y.; Yang, C.~H.; y Chen, Y.~S. (2012).
+\newblock An enhanced zigbee indoor positioning system with an ensemble
+  approach.
+\newblock {\em IEEE Communications Letters}, 16(4), 564--567.
+
+\bibitem[Farshad et~al., 2013]{6817920}
+Farshad, A.; Li, Jiwei; Marina, M.~K.; y Garcia, F.~J. (2013).
+\newblock A microscopic look at wifi fingerprinting for indoor mobile phone
+  localization in diverse environments.
+\newblock In {\em International Conference on Indoor Positioning and Indoor
+  Navigation}  (pp.\ 1--10).
+
+\bibitem[{Florian Trautmann}, 2015]{comparativaKontakt}
+{Florian Trautmann} (2015).
+\newblock
+  \url{https://kontakt.io/blog/estimote-vs-kontakt-io-practical-tests/}.
+\newblock [Acceso Enero 2018].
+
+\bibitem[Haeberlen et~al., 2004]{Haeberlen:2004:PRL:1023720.1023728}
+Haeberlen, Andreas; Flannery, Eliot; Ladd, Andrew~M.; Rudys, Algis; Wallach,
+  Dan~S.; y Kavraki, Lydia~E. (2004).
+\newblock Practical robust localization over large-scale 802.11 wireless
+  networks.
+\newblock In {\em Proceedings of the 10th Annual International Conference on
+  Mobile Computing and Networking}, MobiCom '04  (pp.\ 70--84).  New York, NY,
+  USA: ACM.
+
+\bibitem[Harle, 2013]{6407455}
+Harle, R. (2013).
+\newblock A survey of indoor inertial positioning systems for pedestrians.
+\newblock {\em IEEE Communications Surveys Tutorials}, 15(3), 1281--1293.
+
+\bibitem[He y Chan, 2016]{7174948}
+He, S. y Chan, S. H.~G. (2016).
+\newblock Wi-fi fingerprint-based indoor positioning: Recent advances and
+  comparisons.
+\newblock {\em IEEE Communications Surveys Tutorials}, 18(1), 466--490.
+
+\bibitem[Honkavirta et~al., 2009]{4907834}
+Honkavirta, V.; Perala, T.; Ali-Loytty, S.; y Piche, R. (2009).
+\newblock A comparative survey of wlan location fingerprinting methods.
+\newblock In {\em 2009 6th Workshop on Positioning, Navigation and
+  Communication}  (pp.\ 243--251).
+
+\bibitem[Khalajmehrabadi et~al., 2017]{7874080}
+Khalajmehrabadi, A.; Gatsis, N.; y Akopian, D. (2017).
+\newblock Modern wlan fingerprinting indoor positioning methods and deployment
+  challenges.
+\newblock {\em IEEE Communications Surveys Tutorials}, 19(3), 1974--2002.
+
+\bibitem[{Kontakt}, 2017]{kontaktio}
+{Kontakt} (2017).
+\newblock \url{https://kontakt.io/use-cases/}.
+\newblock [Acceso Noviembre 2017].
+
+\bibitem[Ladd et~al., 2002]{Ladd:2002:RLS:570645.570674}
+Ladd, Andrew~M.; Bekris, Kostas~E.; Rudys, Algis; Marceau, Guillaume; Kavraki,
+  Lydia~E.; y Wallach, Dan~S. (2002).
+\newblock Robotics-based location sensing using wireless ethernet.
+\newblock In {\em Proceedings of the 8th Annual International Conference on
+  Mobile Computing and Networking}, MobiCom '02  (pp.\ 227--238).  New York,
+  NY, USA: ACM.
+
+\bibitem[Lamport, 1994]{Lamport94}
+Lamport, Leslie (1994).
+\newblock {\em {\LaTeX} A Document Preparation System - User's Guide and
+  Reference Manual}.
+\newblock Addison-Wesley Professional, 2 edición.
+
+\bibitem[Link et~al., 2011]{6071934}
+Link, J.~B.; Smith, P.; Viol, N.; y Wehrle, K. (2011).
+\newblock Footpath: Accurate map-based indoor navigation using smartphones.
+\newblock In {\em Indoor Positioning and Indoor Navigation (IPIN), 2011
+  International Conference on}  (pp.\ 1--8).
+
+\bibitem[Liu et~al., 2007]{Liu:2007:SWI:2220431.2221077}
+Liu, Hui; Darabi, H.; Banerjee, P.; y Liu, Jing (2007).
+\newblock Survey of wireless indoor positioning techniques and systems.
+\newblock {\em Trans. Sys. Man Cyber Part C}, 37(6), 1067--1080.
+
+\bibitem[{Maribel Tirados}, 2014]{machineLearningBasic}
+{Maribel Tirados} (2014).
+\newblock
+  \url{http://www.bigdatahispano.org/noticias/una-invitacion-al-aprendizaje-automatico/}.
+\newblock [Acceso Enero 2018].
+
+\bibitem[Mautz y Tilch, 2011]{6071925}
+Mautz, R. y Tilch, S. (2011).
+\newblock Survey of optical indoor positioning systems.
+\newblock In {\em 2011 International Conference on Indoor Positioning and
+  Indoor Navigation}  (pp.\ 1--7).
+
+\bibitem[{Nashville GOB}, 2017]{BT}
+{Nashville GOB} (2017).
+\newblock Mayor, music city center unveil wayfinding app.
+\newblock
+  \url{http://www.nashville.gov/News-Media/News-Article/ID/3477/Mayor-Music-City-Center-Unveil-Wayfinding-App}.
+\newblock [Acceso Noviembre 2017].
+
+\bibitem[Ni et~al., 2003]{1192765}
+Ni, L.~M.; Liu, Yunhao; Lau, Yiu~Cho; y Patil, A.~P. (2003).
+\newblock Landmarc: indoor location sensing using active rfid.
+\newblock In {\em Pervasive Computing and Communications, 2003. (PerCom 2003).
+  Proceedings of the First IEEE International Conference on}  (pp.\ 407--415).
+
+\bibitem[Pedregosa et~al., 2011]{scikit-learn}
+Pedregosa, F.; Varoquaux, G.; Gramfort, A.; Michel, V.; Thirion, B.; Grisel,
+  O.; Blondel, M.; Prettenhofer, P.; Weiss, R.; Dubourg, V.; Vanderplas, J.;
+  Passos, A.; Cournapeau, D.; Brucher, M.; Perrot, M.; y Duchesnay, E. (2011).
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12, 2825--2830.
+
+\bibitem[{Ramananda Shetty}, 2015]{protocolosBeacon}
+{Ramananda Shetty} (2015).
+\newblock
+  \url{https://www.linkedin.com/pulse/eddystone-googles-beacon-profile-ramananda-shetty}.
+\newblock [Acceso Enero 2018].
+
+\bibitem[Rüppel et~al., 2010]{5647401}
+Rüppel, U.; Stübbe, K.~Marcus; y Zwinger, U. (2010).
+\newblock Indoor navigation integration platform for firefighting purposes.
+\newblock In {\em Indoor Positioning and Indoor Navigation (IPIN), 2010
+  International Conference on}  (pp.\ 1--6).
+
+\bibitem[Salamah et~al., 2016]{7743586}
+Salamah, A.~H.; Tamazin, M.; Sharkas, M.~A.; y Khedr, M. (2016).
+\newblock An enhanced wifi indoor localization system based on machine
+  learning.
+\newblock In {\em 2016 International Conference on Indoor Positioning and
+  Indoor Navigation (IPIN)}  (pp.\ 1--8).
+
+\bibitem[Sun et~al., 2013]{6681592}
+Sun, W.; Liu, J.; Wu, C.; Yang, Z.; Zhang, X.; y Liu, Y. (2013).
+\newblock Moloc: On distinguishing fingerprint twins.
+\newblock In {\em 2013 IEEE 33rd International Conference on Distributed
+  Computing Systems}  (pp.\ 226--235).
+
+\bibitem[{Syed Danish Ali}, 2016]{slp}
+{Syed Danish Ali} (2016).
+\newblock
+  \url{https://www.analyticsvidhya.com/blog/2016/08/evolution-core-concepts-deep-learning-neural-networks/}.
+\newblock [Acceso Enero 2018].
+
+\bibitem[Tarrío et~al., 2011]{5766963}
+Tarrío, P.; Cesana, M.; Tagliasacchi, M.; Redondi, A.; Borsani, L.; y Casar,
+  J.~R. (2011).
+\newblock An energy-efficient strategy for combined rss-pdr indoor
+  localization.
+\newblock In {\em Pervasive Computing and Communications Workshops (PERCOM
+  Workshops), 2011 IEEE International Conference on}  (pp.\ 619--624).
+
+\bibitem[Tarzia et~al., 2011]{Tarzia:2011:ILW:1999995.2000011}
+Tarzia, Stephen~P.; Dinda, Peter~A.; Dick, Robert~P.; y Memik, Gokhan (2011).
+\newblock Indoor localization without infrastructure using the acoustic
+  background spectrum.
+\newblock In {\em Proceedings of the 9th International Conference on Mobile
+  Systems, Applications, and Services}, MobiSys '11  (pp.\ 155--168).  New
+  York, NY, USA: ACM.
+
+\bibitem[Torrieri, 1984]{4103919}
+Torrieri, D.~J. (1984).
+\newblock Statistical theory of passive location systems.
+\newblock {\em IEEE Transactions on Aerospace and Electronic Systems},
+  AES-20(2), 183--198.
+
+\bibitem[{Try GitHub}, 2016]{git2016}
+{Try GitHub} (2016).
+\newblock \url{https://try.github.io/}.
+\newblock [Acceso Junio de 2016].
+
+\bibitem[Veen y Buckley, 1988]{665}
+Veen, B. D.~Van y Buckley, K.~M. (1988).
+\newblock Beamforming: a versatile approach to spatial filtering.
+\newblock {\em IEEE ASSP Magazine}, 5(2), 4--24.
+
+\bibitem[Wang et~al., 2012]{Wang:2012:NNW:2307636.2307655}
+Wang, He; Sen, Souvik; Elgohary, Ahmed; Farid, Moustafa; Youssef, Moustafa; y
+  Choudhury, Romit~Roy (2012).
+\newblock No need to war-drive: Unsupervised indoor localization.
+\newblock In {\em Proceedings of the 10th International Conference on Mobile
+  Systems, Applications, and Services}, MobiSys '12  (pp.\ 197--210).  New
+  York, NY, USA: ACM.
+
+\bibitem[Xiao et~al., 2014]{6846747}
+Xiao, Z.; Wen, H.; Markham, A.; y Trigoni, N. (2014).
+\newblock Lightweight map matching for indoor localisation using conditional
+  random fields.
+\newblock In {\em IPSN-14 Proceedings of the 13th International Symposium on
+  Information Processing in Sensor Networks}  (pp.\ 131--142).
+
+\bibitem[Yeh et~al., 2009]{5398451}
+Yeh, L.~W.; Hsu, M.~S.; Lee, Y.~F.; y Tseng, Y.~C. (2009).
+\newblock Indoor localization: Automatically constructing today's radio map by
+  irobot and rfids.
+\newblock In {\em Sensors, 2009 IEEE}  (pp.\ 1463--1466).
+
+\bibitem[Zhou et~al., 2005]{1423549}
+Zhou, Junyang; Chu, K. M.~K.; y Ng, J. K.~Y. (2005).
+\newblock Providing location services within a radio cellular network using
+  ellipse propagation model.
+\newblock In {\em 19th International Conference on Advanced Information
+  Networking and Applications (AINA'05) Volume 1 (AINA papers)}, volume~1
+  (pp.\ 559--564 vol.1).
+
+\end{thebibliography}

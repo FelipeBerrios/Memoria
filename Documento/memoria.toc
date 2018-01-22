@@ -1,0 +1,52 @@
+\select@language {spanish}
+\contentsline {paragraph}{Palabras Clave.}{\es@scroman {v}}{paragraph*.2}
+\contentsline {paragraph}{Keywords.}{\es@scroman {vii}}{paragraph*.3}
+\contentsline {chapter}{\numberline {1}Definici\IeC {\'o}n del problema}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Definici\IeC {\'o}n del problema}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objetivos}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Objetivos Espec\IeC {\'\i }ficos}{2}{subsection.1.2.1}
+\contentsline {chapter}{\numberline {2}Estado del Arte}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Tecnolog\IeC {\'\i }as para posicionamiento indoor}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Basado en Visi\IeC {\'o}n}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Infrarrojo}{4}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}T\IeC {\'e}cnicas basadas en Sonido}{5}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}\textit {Wi-Fi}}{6}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}\textit {RFID}}{6}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}\textit {Bluetooth}}{7}{subsection.2.1.6}
+\contentsline {subsection}{\numberline {2.1.7}Otras tecnolog\IeC {\'\i }as}{7}{subsection.2.1.7}
+\contentsline {subsection}{\numberline {2.1.8}Comparativa de tecnolog\IeC {\'\i }as \textit {Wireless}}{9}{subsection.2.1.8}
+\contentsline {section}{\numberline {2.2}T\IeC {\'e}cnicas matem\IeC {\'a}ticas Wireless para localizaci\IeC {\'o}n indoor}{9}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Proximidad}{9}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Triangulaci\IeC {\'o}n}{10}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Fingerprint}{12}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Formulaci\IeC {\'o}n del problema fingerprint}{13}{subsubsection.2.2.3.1}
+\contentsline {subsubsection}{\numberline {2.2.3.2}Acercamientos convencionales de fingerprint}{14}{subsubsection.2.2.3.2}
+\contentsline {subsubsection}{\numberline {2.2.3.3}Avances recientes en Fingerprint}{16}{subsubsection.2.2.3.3}
+\contentsline {chapter}{\numberline {3}Propuesta de soluci\IeC {\'o}n}{19}{chapter.3}
+\contentsline {section}{\numberline {3.1}Consideraciones Previas}{19}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Definici\IeC {\'o}n de beacons bluetooth y sus protocolos}{19}{subsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.1}\IeC {\textquestiondown }Como se comunican los Beacons?}{20}{subsubsection.3.1.1.1}
+\contentsline {subsubsection}{\numberline {3.1.1.2}\IeC {\textquestiondown }Donde comenzo la tecnologia Beacon?}{20}{subsubsection.3.1.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1.3}\IeC {\textquestiondown }En donde pueden ser utilizados los Beacons?}{21}{subsubsection.3.1.1.3}
+\contentsline {subsubsection}{\numberline {3.1.1.4}Perfiles Beacon}{21}{subsubsection.3.1.1.4}
+\contentsline {section}{\numberline {3.2}Estabilidad de la se\IeC {\~n}al Bluetooth}{22}{section.3.2}
+\contentsline {section}{\numberline {3.3}Evaluaci\IeC {\'o}n y selecci\IeC {\'o}n de Beacons Bluetooth}{23}{section.3.3}
+\contentsline {section}{\numberline {3.4}Algoritmos de \textit {Machine Learning}}{24}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}K-Nearest Neighbor}{25}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Support Vector Machines}{27}{section.3.5}
+\contentsline {section}{\numberline {3.6}Redes Neuronales y Deep learning}{29}{section.3.6}
+\contentsline {section}{\numberline {3.7}Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{31}{section.3.7}
+\contentsline {subsection}{\numberline {3.7.1}Fase Offline}{31}{subsection.3.7.1}
+\contentsline {subsection}{\numberline {3.7.2}Fase Online}{35}{subsection.3.7.2}
+\contentsline {chapter}{\numberline {4}Experimentaci\IeC {\'o}n}{37}{chapter.4}
+\contentsline {section}{\numberline {4.1}Beacons y configuraci\IeC {\'o}n}{37}{section.4.1}
+\contentsline {section}{\numberline {4.2}Lugar de experimentacion}{38}{section.4.2}
+\contentsline {section}{\numberline {4.3}Software Utilizado}{40}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Descripci\IeC {\'o}n de la aplicaci\IeC {\'o}n}{40}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}scikit-learn}{41}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4} Tensorflow}{41}{section.4.4}
+\contentsline {section}{\numberline {4.5}Recolecci\IeC {\'o}n de fingerprints}{42}{section.4.5}
+\contentsline {section}{\numberline {4.6}Visualizacion de los datos obtenidos}{44}{section.4.6}
+\contentsline {section}{\numberline {4.7}Entrenamiento de clasificadores}{45}{section.4.7}
+\contentsline {chapter}{Bibliograf\'{\i }a}{47}{chapter*.40}
+\contentsline {chapter}{\numberline {A}LICENCIA}{51}{appendix.Alph1}
