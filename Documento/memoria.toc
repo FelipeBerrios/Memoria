@@ -46,7 +46,8 @@
 \contentsline {subsection}{\numberline {4.3.2}scikit-learn}{41}{subsection.4.3.2}
 \contentsline {section}{\numberline {4.4} Tensorflow}{41}{section.4.4}
 \contentsline {section}{\numberline {4.5}Recolecci\IeC {\'o}n de fingerprints}{42}{section.4.5}
-\contentsline {section}{\numberline {4.6}Visualizacion de los datos obtenidos}{44}{section.4.6}
-\contentsline {section}{\numberline {4.7}Entrenamiento de clasificadores}{45}{section.4.7}
-\contentsline {chapter}{Bibliograf\'{\i }a}{47}{chapter*.40}
-\contentsline {chapter}{\numberline {A}LICENCIA}{51}{appendix.Alph1}
+\contentsline {section}{\numberline {4.6}Visualizaci\IeC {\'o}n de los datos obtenidos}{43}{section.4.6}
+\contentsline {section}{\numberline {4.7}Analisis PCA y LDA}{46}{section.4.7}
+\contentsline {section}{\numberline {4.8}Entrenamiento de clasificadores}{46}{section.4.8}
+\contentsline {chapter}{Bibliograf\'{\i }a}{49}{chapter*.42}
+\contentsline {chapter}{\numberline {A}LICENCIA}{53}{appendix.Alph1}
