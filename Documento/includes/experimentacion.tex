@@ -126,7 +126,7 @@ A pesar que en este caso solo se utilizara para los algoritmos de clasificación
 
 A pesar que SKlearn presenta tantas ventajas para el desarrollo agil de modelos de maquinas de aprendizaje, no es tan bueno en redes neuronales, y no implementa la mayor parte de los algoritmos modernos en este campo. Esto se debe principalmente a que todo el core de SKlearn es python, y se vuelve sumamente lento para entrenar este tipo de redes, sobre todo redes profundas. Para resolver este problema, se decide utilizar Tensorflow \cite{tensorflow2015-whitepaper}, un completo framework de desarrollo de Google, que con respecto a SKlearn es mucho menos intuitivo y de fácil uso al usuario final, ya que su programacion es de mucho mas bajo nivel y requiere conocimiento avanzado de los algoritmos que se quieren implementar.  Mucha veces se describe como las piezas fundamentales para la creacion de algoritmos de maquinas de aprendizaje, como si fueran Legos, no asi SKlearn, el cual ya esta todo listo, solo debe ser utilizados y configurar los parametros de los algoritmos.
 
-Tensorflow es una biblioteca de código abierto y su principal ventaja es que a pesar que la parte superior esta basada en python, esta se comunica internamente a código compilado en C++, lo cual lo vuelve sumamente eficiente. Ademas, por la forma en que Tensorflow representa los datos, es decir, tensores o arreglos multidimensionales, y las operaciones referentes a grafos sin estado que transforman estos tensores, lo vuelve increiblemente rapido para entrenar y desplegar, incluso presenta API para dispositivos moviles en Java, C++ y GO, en donde solo se porta el grafo construido y se puede realizar inferencia en equipos de muy pocos recursos, lo que lo vuelve una alternativa ideal para desarrollar redes neuronales profundas, utilizando  pocos recursos en el sistema operativo Android. A pesar de que presenta operaciones de bajo nivel, igualmente tiene disponible la opcion de API de alto nivel, como por ejemplo implementar redes convolucionales o redes profundas en un par de lineas de codigo Python, conocidos como estimadores de alto nivel.
+Tensorflow es una biblioteca de código abierto y su principal ventaja es que a pesar que la parte superior esta basada en python, esta se comunica internamente a código compilado en C++, lo cual lo vuelve sumamente eficiente. Ademas, por la forma en que Tensorflow representa los datos, es decir, tensores o arreglos multidimensionales, y las operaciones referentes a grafos sin estado que transforman estos tensores, lo vuelve increíblemente rapido para entrenar y desplegar, incluso presenta API para dispositivos moviles en Java, C++ y GO, en donde solo se porta el grafo construido y se puede realizar inferencia en equipos de muy pocos recursos, lo que lo vuelve una alternativa ideal para desarrollar redes neuronales profundas, utilizando  pocos recursos en el sistema operativo Android. A pesar de que presenta operaciones de bajo nivel, igualmente tiene disponible la opcion de API de alto nivel, como por ejemplo implementar redes convolucionales o redes profundas en un par de lineas de codigo Python, conocidos como estimadores de alto nivel.
 
 Finalmente tensorflow basa todo su procesamiento en el grafo computacional mencionado anteriormente, el cual consiste en una serie de operaciones de tensores dispuestos en un grafo de nodos. Luego de que se arma este grafo de operaciones, se puede entrenar mediante las operaciones incluidas en tensorflow, llamados optimizadores, como lo son gradiente descendente. El paso final es utilizar este grafo computacional para probar los modelos y utilizarlos en despliegues reales.
 
@@ -249,49 +249,117 @@ En este caso, se decide utilizar cross-validation modificado, el cual utiliza $2
 
 Un punto a considerar, es como se menciono anteriormente, las redes neuronales no siguen este procedimiento debido que sklearn no posee este tipo de técnicas, por lo que se usa Tensorflow. Tensorflow tiene sus propios método de validación y los parámetros en este caso son configurados mediante ensayo y error, debido a que esta forma presenta buenos resultados en redes neuronales profundas debido a su complejidad.
 
-Los graficos obtenidos se muestran conjuntamente
+Los gráficos obtenidos se muestran conjuntamenteen la \autoref{fig:comparativa_clasificadores}.
 
 \begin{figure}[ht!]
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{figures/pca.png}
-  \caption{PCA}
+  \includegraphics[width=.8\linewidth]{figures/NB.png}
+  \caption{Naive Bayes}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{figures/lda.png}
-  \caption{LDA}
+  \includegraphics[width=.8\linewidth]{figures/SVM-RBF.png}
+  \caption{SVM RBF}
   \label{fig:sub2}
 \end{subfigure}
 
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{figures/pca.png}
-  \caption{PCA}
+  \includegraphics[width=.8\linewidth]{figures/SVM-Lineal.png}
+  \caption{SVM Lineal}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{figures/lda.png}
-  \caption{LDA}
+  \includegraphics[width=.8\linewidth]{figures/knn-results.png}
+  \caption{K-NN}
   \label{fig:sub2}
 \end{subfigure}
 
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{figures/pca.png}
-  \caption{PCA}
+  \includegraphics[width=.8\linewidth]{figures/decision-tree.png}
+  \caption{Decision Tree}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{figures/lda.png}
-  \caption{LDA}
+  \includegraphics[width=.8\linewidth]{figures/random-forest.png}
+  \caption{Random Forest}
   \label{fig:sub2}
 \end{subfigure}
-\caption[abs]{Comparativa entre los algoritmos PCA y LDA aplicado a los datos \\
+
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/adaboost.png}
+  \caption{Adaboost}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/qda.png}
+  \caption{QDA}
+  \label{fig:sub2}
+\end{subfigure}
+\caption[abs]{Curvas de aprendizajes obtenidas por cada clasificador \\
 {\scriptsize (Fuente: Elaboración Propia)}}
-\label{fig:pca_lda}
+\label{fig:comparativa_clasificadores}
 \end{figure}
+
+Lo que muestran las curvas son los valores medios obtenidos en cada una de las divisiones o \textit{folds}, a partir de las 100 iteraciones. La parte sombreada de cada curva representa la desviacion estandar, es decir, que tanto varian los resultados obtenidos respecto a la media, lo cual sirve para determinar si las pruebas son precisasy no solo depende de la partición realizada en el train set y test set. Por otra parte, para obtener el valor del accuracy se utiliza los \textit{scoring} definidos por defecto en cada clasificador, que en su mayoria corresponde a la similaridad de Jaccard o indice de Jaccard, el compara la similaridad de dos conjuntos y esta definida como el tamaño de la interseccion de los conjuntos dividida por el tamaño de la unión.
+
+$$ J(A, B) = \frac{| \, A \cap B \, |}{| \, A \cup B \,|} =  \frac{| \, A \cap B \, |}{|\, A \,| + |\, B \,|  - | \, A \cap B \, |}$$ 
+
+Se debe notar que el gráfico de entrenamiento y validación de las redes neuronales profundas no se encuentra presente en la \autoref{fig:comparativa_clasificadores}, esto es debido a como se menciona anteriormente, los clasificadores convencionales son implementados en la librería SKlearn, mientras que la red neuronal debe ser procesada en un framework desarrollado exclusivamente para este tipo de redes, por su complejidad computacional y obtener resultados optimizados. Para ello se utiliza Tensorflow y la red utilizada es una red neuronal profunda con dos capas ocultas, la primera de ellas tiene 256 neuronas o nodos, mientras que la segunda capa posee 64 neuronas. Ademas, cabe mencionar que para realizar el entrenamiento de redes neuronales habitualmente no se utiliza cross-validation, ya que cada iteracion supone mucho tiempo, por lo que el entrenamiento total tiene un alto costo computacional, y para grandes bases de datos se utilizan conjuntamente procesadores y tarjetas gráficas para un mejor rendimiento. Por lo anterior, y en vista que cross-validation exige entrenar el modelo múltiples veces, se descarta esta opción por el alto tiempo demandado y se utiliza una separación aleatoria simple en test set y train set, utilizando igual que en los casos anteriores, $20\%$ de los datos como test set.
+
+Los demás parámetros utilizados para entrenar la red neuronal son un numero máximo de pasos o \textit{max-steps} de 20000, que corresponde a los \textbf{epoch}, es decir, las veces que la red se recorre hacia adelante y posteriormente se aplica el algoritmo de backpropagation, mientras aprende los parámetros del modelo. Todo ese proceso entonces es lo que se denomina epoch. Ademas, como optimizador de los parámetros, se utiliza gradiente descendente, con un \textit{learning rate}  igual a $\alpha = 0.3$ . Tambien se define un \textit{batch size} igual a 32, esto representa que el algoritmo aprenderá paulatinamente en subconjuntos de datos de tamaño igual a 32. Esto se conoce como mini-batch Gradient Descent y el error se calcula sobre cada batch, al igual que la actualización de parámetros. La principal ventaja es que al suministrar datos paulatinamente, la actualización de parámetros es mucho mas frecuentemente, lo que ayuda en la convergencia y asi no quedar estancado en mínimos locales. Ademas ayuda a no mantener simultáneamente todos los datos en memoria, por lo que es mucho mas eficiente en términos de memoria y procesamiento.
+
+Con respecto a la estructura de la red, esta se configura como una \textit{input layer} de tamaño del numero de atributos, en este caso corresponde a 8, debido a los 8 beacons. Posteriormente, vienen las dos capas ocultas y finalmente la \textit{output layer}, la cual tiene como objetivo principal entregar probabilidades a cada clase, es decir, por cada clase retorna un valor entre 0 a 1, y entre todas las clases suman 1, por lo que según el mayor valor se puede determinar la clase mas probable. Para entrenar la red se utilizan la \textit{loss function} denominada \textbf{cross entropy}, la que es muy utilizada en redes neuronales por que reduce el problema de aprendizaje presentado por la función de costo cuadrática, también muy utilizada en regresión.
+
+La estructura de la red puede visualizarse en la \autoref{fig:nn_estructura}.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.6\textwidth]{figures/nn_estructura.png}
+\caption[abs]{Estructura de las redes neuronales construidas. En la figura se muestran ambas, tanto X como Y \\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:nn_estructura}
+\end{figure}
+
+En la imagen se muestra la estructura de la red construida y extraída del visor \textbf{Tensorboard}, un addon de Tensorflow para la visualización de gráficos, grafos, histogramas, entre otros. Se debe notar que existen dos redes paralelas, esto se debe a que las redes neuronales para predecir la clase de X y la clase de Y se entrenan simultáneamente, por esto aparecen juntas en la imagen, pero cada una tiene su propio entrenamiento y evaluación.
+
+Con todos estos puntos definidos, se muestra los resultados obtenidos en el entrenamiento de la red neuronal profunda. La \autoref{nn_metrics} exhibe esta situación.
+
+
+\begin{figure}[ht!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/nn_plot.png}
+  \caption{Accuracy}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/nn_loss.png}
+  \caption{Loss}
+  \label{fig:sub2}
+\end{subfigure}
+\caption[abs]{Accuracy y Loss(Costo) obtenidos en el entrenamiento de la red neuronal profunda con dos capas ocultas. \\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:nn_metrics}
+\end{figure}
+
+Debe tenerse en cuenta que para la accuracy, los resultados de entrenamiento y pruebas estan en la imagen simultaneamente, pero los resultados son tan similares que se sobrepone uno por encima de otro, sin embargo la accuracy sobre el train set es siempre superior(aunque por muy poco) a la accuracy del test set. La funcion de costo o \textit{Loss function} muestra como la red va aprendiendo a medida de los epoch, ya que lo que se busca es minimizar este valor, el cual expresa el costo del modelo o que tan distante es este a los resultados esperados. Como se menciona anteriormente, esta funcion de costo corresponde a cross-entropy.
+
+Con toda la informacion presentada, es claro que los mejores resultados se presentan principalmente en 3 algoritmos, estos son KNN, SVM con kernel RBF y Redes Neuronales profundas. Lo anterior demuestra que los datos efectivamente tienen estructuras no lineales, ya que K-NN no depende especificamente de la estructura de los datos, ya que busca un radio o vecindario de clasificacion. SVM RBF define areas de clasificacion que precisamente son no lineales, por lo que puede buscar mejores representaciones en este tipo de estructuras que los clasificadores lineales. La forma en que modela estas fronteras no lineales es debido a la eleccion del kernel RBF el cual por su funcion de radio basal es flexible en torno a este tipo de regiones. Por ultimo, las redes neuronales pueden aprender de datos no lineales debido a sus funciones de activación que precisamente son no lineales, ademas de poder aprender patrones mas detallados en cada capa, por su capacidad de reducir la complejidad y dimensionalidad de los datos.
+
+Para corroborar los resultados visualizados en los gráficos, se realiza la tabla con los mejores valores de accuracy para cada algoritmo. Aunque esto puede ser suficiente, ademas se incorpora el mejor error obtenido en metros, es decir, el error cuadrático medio para cada coordenada respectivamente, ya que aunque la accuracy determina que tanto acierta el algoritmo, igualmente es necesario establecer el error medio, porque es preferible tener un valor de error mas pequeño, debido a que este representa el error presente al momento de la fase online de ubicación. Este error esta expresado en metros y se separa según coordenadas, ya sea X o Y.
+
+
+
+
+
