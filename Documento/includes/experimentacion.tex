@@ -149,9 +149,9 @@ Con respecto al punto de recolección de fingerprints, se desarrolla una aplicac
 \label{fig:deployBeacons}
 \end{figure}
 
-La aplicación consta de una sección offline, en donde se pueden incorporar nuevos Beacons a la base de datos \textit{sqlite}(base de datos por defecto en dispositivos Android), ademas de poner realizar  la captura de datos o fingerprints, definiendo la ubicación actual según algún patrón o posición exacta. Otro punto importante a considerar es el numero de fingerprints a obtener en cada punto de referencia. Considerando el intervalo de emisión de cada Beacon, es necesario establecer un tiempo alto para notar cambios en el lugar de experimentación, por lo que se define una ventana de tiempo de 5 minutos en cada punto de referencia. Sin embargo, para obtener mejores resultados y en vista y considerando que las maquinas de aprendizaje aprenden de mucho mejor manera con datos variados, se decide inspeccionar y recolectar datos a través de diferentes días, con el objetivo de que sea mas fácil para los algoritmos encontrar patrones eventualmente.
+La aplicación consta de una sección offline, en donde se pueden incorporar nuevos Beacons a la base de datos \textit{sqlite}(base de datos por defecto en dispositivos Android), ademas de poner realizar  la captura de datos o fingerprints, definiendo la ubicación actual según algún patrón o posición exacta. Otro punto importante a considerar es el numero de fingerprints a obtener en cada punto de referencia. Considerando el intervalo de emisión de cada Beacon, es necesario establecer un tiempo alto para notar cambios en el lugar de experimentación, por lo que se define una ventana de tiempo de 5 minutos en cada punto de referencia. Sin embargo, para obtener mejores resultados y en vista y considerando que las maquinas de aprendizaje aprenden de mucho mejor manera con datos variados, se decide inspeccionar y recolectar datos a través de diferentes días, con el objetivo de que sea mas fácil para los algoritmos encontrar patrones eventualmente. Finalmente se seleccionan 150 mediciones por punto de la grilla, seleccionando una medición cada dos segundos para tener menor información repetida y no sobremuestrear la base de datos.
 
-Una vez recolectados los datos, se obtiene una base de datos \textit{SQLite} con figerprints, la cual presenta 132000 registros, en donde los dos primeros campos representan la posicion de X y la posicion de Y respectivamente, y los siguientes 8 campos corresponden a los Beacons detectados con su respectiva intensidad de la señal o RSSI. Por lo anterior, las clases definidas para X son $ X \in [2, 6, 10, 14, 18, 22, 26, 30 , 34, 38, 42]$ y para $Y \in [8, 12, 16, 20]$ con  un total de 11 clases para $X$ y 4 clases para $Y$ . Recordando que estas clases representan el centro de la grilla con celdas cuadradas de 4 metros, es decir el punto medio de estas, por lo que para $ X$, la primera clase se define según el punto inicial,  el cual es cero, ademas el  punto medio de la primera celda es la mitad de la dimension total, es decir, 2 metros que representa la primera clase y asi se construyen las siguientes clases, adicionando 4 metros(cambio de celda). Para $Y$ se debe tener en consideración que la primera clase es 8, esto se debe principalmente a que los valores de $ Y$ no comienzan precisamente en cero, debido a dificultades en la posición de objetos dentro del estacionamiento, por lo que se decide iniciar en $Y = 6$, con lo que el primer punto es este valor inicial mas la mitad de la grilla(2), es decir 8.  Un punto importante a definir es que valor asignar a los beacons que no han sido detectados, en este caso y como el valor RSSI no puede ser mayor a cero, se decide asignar un valor de 100 dBm como un identificador de que no se ha detectado señal.
+Una vez recolectados los datos, se obtiene una base de datos \textit{SQLite} con figerprints, la cual presenta 6600 registros, en donde los dos primeros campos representan la posicion de X y la posicion de Y respectivamente, y los siguientes 8 campos corresponden a los Beacons detectados con su respectiva intensidad de la señal o RSSI. Por lo anterior, las clases definidas para X son $ X \in [2, 6, 10, 14, 18, 22, 26, 30 , 34, 38, 42]$ y para $Y \in [8, 12, 16, 20]$ con  un total de 11 clases para $X$ y 4 clases para $Y$ . Recordando que estas clases representan el centro de la grilla con celdas cuadradas de 4 metros, es decir el punto medio de estas, por lo que para $ X$, la primera clase se define según el punto inicial,  el cual es cero, ademas el  punto medio de la primera celda es la mitad de la dimension total, es decir, 2 metros que representa la primera clase y asi se construyen las siguientes clases, adicionando 4 metros(cambio de celda). Para $Y$ se debe tener en consideración que la primera clase es 8, esto se debe principalmente a que los valores de $ Y$ no comienzan precisamente en cero, debido a dificultades en la posición de objetos dentro del estacionamiento, por lo que se decide iniciar en $Y = 6$, con lo que el primer punto es este valor inicial mas la mitad de la grilla(2), es decir 8.  Un punto importante a definir es que valor asignar a los beacons que no han sido detectados, en este caso y como el valor RSSI no puede ser mayor a cero, se decide asignar un valor de 100 dBm como un identificador de que no se ha detectado señal.
 
 Con esta base de datos es posible construir otros tipos de archivos, que resuman todos los fingerprints detectados. Esto se realiza ya que para los algoritmos de machine learning existen muchas mas librerías dedicadas a leer datos en formatos mas convencionales como TXT o CSV. Por lo mismo, en la aplicación se define una sección de configuración para transformar y almacenar esta base de datos en formato CSV o \textit{comma-separated values}.  La \autoref{fig:configApp} muestra esta pestaña de configuracion, incluyendo el numero de mediciones y las opciones de exportar la base de datos, transformarla a CSV o eliminarla.
 
@@ -203,36 +203,95 @@ Una vez estandarizados los datos, se procede a evaluar los algoritmos en ellos. 
 \end{figure}
 
 
-Como se aprecia en la figura, la mayor parte de los algoritmos no logran determinar correctamente la estructura de los datos ni mucho menos separar las clases. Los mejores resultados obtenidos en este caso corresponden a Isomap, MDS y t-SNE. Isomap es una extension de MDS y Kernel PCA, y su objetivo es mantener las distancias geodesicas entre todos los puntos. Por su parte MDS busca una representacion en la cual las distancias son respetadas segun el espacio original. Finalmente t-SNE convierte la afinidad de los puntos en probabilidades, lo cual lo convierte en uno de los algoritmos mas utilizados, ya que es muy sensible a las estructuras locales en los datos, ademas reduce la tendencia de los datos a agruparse, revelando su estructura de multiples escalas en un solo mapa. Estos Manifolds muestran que los datos presentan una tendencia lineal, debido a los resultados obtenidos principalmente por Isomap y MDS, ya que ellos mantienen  las distancias entre los puntos, por lo que si se lleva del espacio 8-dimensional, MDS muestra una clara separación entre clases anidadas, lo cual en un espacio de mayor dimension, se puede traducir en clases ubicadas cada una en un hiperplano, lo cual demuestra la correlación lineal entre los features, sin embargo no es del todo lineal, igualmente presenta caracteristicas de no linealidad. t-SNE no logra separar las clases de manera correcta, lo cual se puede interpretar como que los datos no son completamente no lineales, es decir, son lineales con rasgos de no linealidad, por lo que PCA se puede utilizar teniendo en cuenta esta aproximación. Con lo anterior, es claro que los valores RSSI ciertamente fluctúan mucho, debido a la gran cantidad de outliers, ademas de presentar tendencias lineales como no lineales lo cual es un problema en términos de algoritmos de maquinas de aprendizaje, por situaciones que serán evaluadas posteriormente.
+Como se aprecia en la figura, la mayor parte de los algoritmos no logran determinar correctamente la estructura de los datos ni mucho menos separar las clases. Los mejores resultados obtenidos en este caso corresponden a Isomap, MDS y t-SNE. Isomap es una extension de MDS y Kernel PCA, y su objetivo es mantener las distancias geodesicas entre todos los puntos. Por su parte MDS busca una representación en la cual las distancias son respetadas segun el espacio original. Finalmente t-SNE convierte la afinidad de los puntos en probabilidades, lo cual lo convierte en uno de los algoritmos mas utilizados, ya que es muy sensible a las estructuras locales en los datos, ademas reduce la tendencia de los datos a agruparse, revelando su estructura de multiples escalas en un solo mapa. Estos Manifolds muestran que los datos presentan una estructura no lineal, debido a los resultados obtenidos principalmente por Isomap y MDS, ya que ellos mantienen  las distancias entre los puntos, por lo que si se lleva al espacio 8-dimensional, MDS muestra una clara separación entre clases anidadas, lo cual en un espacio de mayor dimension, se puede traducir en clases ubicadas cada una en la superficie de un hiperboloide o un hiperplano, lo cual muestra la no linealidad entre los features, sin embargo igualmente se muestran tendencias lineales, pero esto se debe entender como una correlacion lineal local. t-SNE no logra separar las clases de manera correcta, lo cual se puede interpretar como que los datos no son completamente no lineales, y muestran rasgos de linealidad, por lo que PCA se puede utilizar teniendo en cuenta esta aproximación, ya que la correlacion no lineal entre las variables no es fuerte. Con lo anterior, es claro que los valores RSSI ciertamente fluctúan mucho, debido a la gran cantidad de outliers, lo cual es un problema en términos de algoritmos de maquinas de aprendizaje, por situaciones que serán evaluadas posteriormente.
 
 
 \section{Analisis PCA y LDA}
 
 A pesar de que LDA ya fue descartado previamente debido a que no provee lo que se busca en este trabajo, mas precisamente, disminuir o eliminar la correlación entre puntos adyacentes en la grilla, igualmente se analiza su comportamiento en el dataset obtenido para tener una mejor comprensión de que tanta linealidad presentan los datos, ya que este es un metodo muy efectivo cuando los datos son etiquetados como en este caso. 
 
-Es necesario escalar los datos nuevamente, ya que PCA puede ser susceptible a la escala de los datos y provocar resultados arbitrarios, por lo que se centran los datos,  con media en cero y  varianza unitaria. La resta de la media es necesaria para asegurar que la primera componente principal describe la direccion de maxima varianza, por lo que una media cero es necesaria para asegurar una base en el nuevo subespacio que minimice el error cuadratico medio. Luego de estandarizar los datos, se procede a aplicar PCA y LDA en ellos, de donde la
+Es necesario escalar los datos nuevamente, ya que PCA puede ser susceptible a la escala de los datos y provocar resultados arbitrarios, por lo que se centran los datos,  con media en cero y  varianza unitaria. La resta de la media es necesaria para asegurar que la primera componente principal describe la direccion de maxima varianza, por lo que una media cero es necesaria para asegurar una base en el nuevo subespacio que minimice el error cuadratico medio. Luego de estandarizar los datos, se procede a aplicar PCA y LDA en ellos, de donde se obtiene la \autoref{fig:pca_lda}.
 
 \begin{figure}[ht!]
 \centering
-\begin{minipage}{.5\textwidth}
+\begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{figures/manifold.png}
-  \captionof{figure}{A figure}
-  \label{fig:test1}
-\end{minipage}%
-\begin{minipage}{.5\textwidth}
+  \includegraphics[width=.4\linewidth]{figures/pca.png}
+  \caption{PCA}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.4\linewidth]{figures/manifold.png}
-  \captionof{figure}{Another figure}
-  \label{fig:test2}
-\end{minipage}
-\caption[abs]{Comparación de los diferentes algoritmos manifold para la reducción de la dimensionalidad con sus respectivos tiempos de ejecución. \\
+  \includegraphics[width=.4\linewidth]{figures/lda.png}
+  \caption{LDA}
+  \label{fig:sub2}
+\end{subfigure}
+\caption[abs]{Comparativa entre los algoritmos PCA y LDA aplicado a los datos \\
 {\scriptsize (Fuente: Elaboración Propia)}}
-\label{fig:manifold}
+\label{fig:pca_lda}
 \end{figure}
+
+Como se aprecia en la figura, para PCA se proyecta en las primeras dos componentes principales, lo cual no obtiene buenos resultados, esto puede deberse a muchos factores presentes en los datos, ya que como se menciono anteriormente, los datos no son completamente lineales en el espacio multidimensional, por lo que PCA puede presentar problemas. Ademas, la correlación de los datos es lineal pero solo locamente, en la imagen global, la correlación debe ser de un orden superior(no lineal), por lo que PCA no puede obtener buenos resultados. Tambien es necesario destacar que PCA no esta optimizado para separacion de las clases, y no es precisamente lo que se busca al utilizarlo, la idea principal es reducir la dimensionalidad y evitar la correlacion espacial presente. 
+
+Con respecto a LDA, este si presente buenos resultados, logrando separación entre las clases en gran parte. Esto se debe a que el objetivo de LDA es encontrar una combinación lineal de los features que separe las clases. Ademas, funciona como un clasificador, esto explica los mejores resultados en comparación con PCA. Con lo anterior, es claro la tendencia lineal de los datos, por lo que al aplicar PCA los algoritmos de clasificación deberían presentar resultados positivos debido a que solo se omite información no relevante.
 
 \section{Entrenamiento de clasificadores}
 
+
+
 Para el entrenamiento de los clasificadores, se debe tener en cuenta como se menciona anteriormente, que para la gran mayoría de los algoritmos es necesario una normalizacion previa. Esto es particularmente importante en problemas en donde cada atributo puede diferir mucho en orden de magnitud con otras variables. En este caso, no es ciertamente un requisito, ya que los atributos poseen valores de la misma magnitud, porque todas reflejan valores en dBm en un mismo rango, sin embargo igualmente es una buena practica para algoritmos basados en distancia como KNN o SVM, sobre todo por la inclusión del valor 100dbm incorporado para denotar la ausencia de un dispositivo Beacon.
 
-Antes de comenzar con el entrenamiento en si, es bueno realizar un analisis de los datos, es decir, xddd
+Los clasificadores seleccionados en para este trabajo son Naive Bayes, SVM con Kernel de tipo Radial Basis Function(\textbf{RBF}), SVM con Kernel lineal, K-NN, Arboles de decision, Random Forest, Adaboost, Neural network y QDA. Los parámetros de cada algoritmo son configurados según una búsqueda en grilla, por lo que es necesario correr cada algoritmo múltiples veces en busca de los mejores parametros. Para realizar las pruebas, la forma clásica de realizar machine learning indica tener un training set y un test set, sin embargo en este caso no existe test set, por lo que una opción muy utilizada es separar el conjunto completo de ejemplos en entrenamiento y pruebas, seleccionando un porcentaje del total como test set. Esto funciona muy bien cuando el numero de ejemplos es suficientemente grande, lo cual no ocurre en este caso, por lo que si se quitan datos al training set, es posible que los clasificadores obtengan resultados muy por debajo de como lo harían con la totalidad de los datos.
+
+Para resolver el problema anteriormente descrito, existe una tecnica denominada cross-validation, la cual es muy utilizada y conocida en los campos de inteligencia artificial. El problema principal es que los parametros de cada modelo se ajustan a los datos de entrenamiento lo mejor que pueden, pero al tomar una muestra independiente como datos de prueba desde el mismo training set, generalmente el modelo no se ajusta igual de bien a estos datos de prueba que a los datos de entrenamiento, lo cual se conoce como sobreajuste u \textit{overfitting} y ocurre habitualmente en training set pequeños o cuando el numero de parámetros del modelo es muy grande. Entonces la técnica de cross-validation ayuda a prevenir estas situaciones, ya que a partir de un numero determinado de iteraciones, en cada una de ellas selecciona un conjunto de pruebas de tamaño determinado desde el conjunto total, y al final de todas las iteraciones realiza un promedio de los errores, con lo cual se puede estimar el mejor test score.
+
+En este caso, se decide utilizar cross-validation modificado, el cual utiliza $20\%$ de los datos totales como test set, es decir, lo que habitualmente se conoce como 5-fold cross-validation ya que son 5 iteraciones generales en donde el conjunto de entrenamiento se divide en 5 subconjuntos. La modificación es que en cada iteracion general, ademas se realizan 100 iteraciones adicionales repitiendo el test set, por lo que en total se realiza un total de 500 iteraciones. Esto se debe a que de esta forma se obtienen curvas mas suaves respecto a la media del test y train set. Para obtener el mejor valor en cada caso, se promedian las 100 iteraciones de la primera iteracion global y se obtiene un valor, esto se realiza para cada una de las 5 iteraciones y finalmente se promedian los 5 valores(uno por cada iteracion global) para obtener el mejor valor del train y test set.
+
+Un punto a considerar, es como se menciono anteriormente, las redes neuronales no siguen este procedimiento debido que sklearn no posee este tipo de técnicas, por lo que se usa Tensorflow. Tensorflow tiene sus propios método de validación y los parámetros en este caso son configurados mediante ensayo y error, debido a que esta forma presenta buenos resultados en redes neuronales profundas debido a su complejidad.
+
+Los graficos obtenidos se muestran conjuntamente
+
+\begin{figure}[ht!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{figures/pca.png}
+  \caption{PCA}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{figures/lda.png}
+  \caption{LDA}
+  \label{fig:sub2}
+\end{subfigure}
+
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{figures/pca.png}
+  \caption{PCA}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{figures/lda.png}
+  \caption{LDA}
+  \label{fig:sub2}
+\end{subfigure}
+
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{figures/pca.png}
+  \caption{PCA}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.4\linewidth]{figures/lda.png}
+  \caption{LDA}
+  \label{fig:sub2}
+\end{subfigure}
+\caption[abs]{Comparativa entre los algoritmos PCA y LDA aplicado a los datos \\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:pca_lda}
+\end{figure}
