@@ -210,7 +210,7 @@ Como se aprecia en la figura, la mayor parte de los algoritmos no logran determi
 
 A pesar de que LDA ya fue descartado previamente debido a que no provee lo que se busca en este trabajo, mas precisamente, disminuir o eliminar la correlación entre puntos adyacentes en la grilla, igualmente se analiza su comportamiento en el dataset obtenido para tener una mejor comprensión de que tanta linealidad presentan los datos, ya que este es un metodo muy efectivo cuando los datos son etiquetados como en este caso. 
 
-Es necesario escalar los datos nuevamente, ya que PCA puede ser susceptible a la escala de los datos y provocar resultados arbitrarios, por lo que se centran los datos,  con media en cero y  varianza unitaria. La resta de la media es necesaria para asegurar que la primera componente principal describe la direccion de maxima varianza, por lo que una media cero es necesaria para asegurar una base en el nuevo subespacio que minimice el error cuadratico medio. Luego de estandarizar los datos, se procede a aplicar PCA y LDA en ellos, de donde se obtiene la \autoref{fig:pca_lda}.
+Es necesario escalar los datos nuevamente, ya que PCA puede ser susceptible a la escala de los datos y provocar resultados arbitrarios, por lo que se centran los datos,  con media en cero y  varianza unitaria. La resta de la media es necesaria para asegurar que la primera componente principal describe la direccion de maxima varianza, por lo que una media cero es necesaria para asegurar una base en el nuevo subespacio que minimice el error cuadrático medio. Luego de estandarizar los datos, se procede a aplicar PCA y LDA en ellos, de donde se obtiene la \autoref{fig:pca_lda}.
 
 \begin{figure}[ht!]
 \centering
@@ -236,8 +236,6 @@ Como se aprecia en la figura, para PCA se proyecta en las primeras dos component
 Con respecto a LDA, este si presente buenos resultados, logrando separación entre las clases en gran parte. Esto se debe a que el objetivo de LDA es encontrar una combinación lineal de los features que separe las clases. Ademas, funciona como un clasificador, esto explica los mejores resultados en comparación con PCA. Con lo anterior, es claro la tendencia lineal de los datos, por lo que al aplicar PCA los algoritmos de clasificación deberían presentar resultados positivos debido a que solo se omite información no relevante.
 
 \section{Entrenamiento de clasificadores}
-
-
 
 Para el entrenamiento de los clasificadores, se debe tener en cuenta como se menciona anteriormente, que para la gran mayoría de los algoritmos es necesario una normalizacion previa. Esto es particularmente importante en problemas en donde cada atributo puede diferir mucho en orden de magnitud con otras variables. En este caso, no es ciertamente un requisito, ya que los atributos poseen valores de la misma magnitud, porque todas reflejan valores en dBm en un mismo rango, sin embargo igualmente es una buena practica para algoritmos basados en distancia como KNN o SVM, sobre todo por la inclusión del valor 100dbm incorporado para denotar la ausencia de un dispositivo Beacon.
 
@@ -309,6 +307,8 @@ Los gráficos obtenidos se muestran conjuntamenteen la \autoref{fig:comparativa_
 \label{fig:comparativa_clasificadores}
 \end{figure}
 
+Se debe señalar que los graficos son para la clasificación sobre la coordenada $X$, sin embargo para $Y$ los resultados son similares, producto de que los datos son esencialmente los mismos, lo único que cambia en el entrenamiento son las clases, así que en términos generales los resultados no deben variar mucho para los algoritmos que realicen una buena clasificación.
+
 Lo que muestran las curvas son los valores medios obtenidos en cada una de las divisiones o \textit{folds}, a partir de las 100 iteraciones. La parte sombreada de cada curva representa la desviacion estandar, es decir, que tanto varian los resultados obtenidos respecto a la media, lo cual sirve para determinar si las pruebas son precisasy no solo depende de la partición realizada en el train set y test set. Por otra parte, para obtener el valor del accuracy se utiliza los \textit{scoring} definidos por defecto en cada clasificador, que en su mayoria corresponde a la similaridad de Jaccard o indice de Jaccard, el compara la similaridad de dos conjuntos y esta definida como el tamaño de la interseccion de los conjuntos dividida por el tamaño de la unión.
 
 $$ J(A, B) = \frac{| \, A \cap B \, |}{| \, A \cup B \,|} =  \frac{| \, A \cap B \, |}{|\, A \,| + |\, B \,|  - | \, A \cap B \, |}$$ 
@@ -353,13 +353,45 @@ Con todos estos puntos definidos, se muestra los resultados obtenidos en el entr
 \label{fig:nn_metrics}
 \end{figure}
 
-Debe tenerse en cuenta que para la accuracy, los resultados de entrenamiento y pruebas estan en la imagen simultaneamente, pero los resultados son tan similares que se sobrepone uno por encima de otro, sin embargo la accuracy sobre el train set es siempre superior(aunque por muy poco) a la accuracy del test set. La funcion de costo o \textit{Loss function} muestra como la red va aprendiendo a medida de los epoch, ya que lo que se busca es minimizar este valor, el cual expresa el costo del modelo o que tan distante es este a los resultados esperados. Como se menciona anteriormente, esta funcion de costo corresponde a cross-entropy.
+Debe tenerse en cuenta que para la accuracy, los resultados de entrenamiento y pruebas están en la imagen simultaneamente, pero los resultados son tan similares que se sobrepone uno por encima de otro, sin embargo la accuracy sobre el train set es siempre superior(aunque por muy poco) a la accuracy del test set. La funcion de costo o \textit{Loss function} muestra como la red va aprendiendo a medida de los epoch, ya que lo que se busca es minimizar este valor, el cual expresa el costo del modelo o que tan distante es este a los resultados esperados. Como se menciona anteriormente, esta función de costo corresponde a cross-entropy.
 
 Con toda la informacion presentada, es claro que los mejores resultados se presentan principalmente en 3 algoritmos, estos son KNN, SVM con kernel RBF y Redes Neuronales profundas. Lo anterior demuestra que los datos efectivamente tienen estructuras no lineales, ya que K-NN no depende especificamente de la estructura de los datos, ya que busca un radio o vecindario de clasificacion. SVM RBF define areas de clasificacion que precisamente son no lineales, por lo que puede buscar mejores representaciones en este tipo de estructuras que los clasificadores lineales. La forma en que modela estas fronteras no lineales es debido a la eleccion del kernel RBF el cual por su funcion de radio basal es flexible en torno a este tipo de regiones. Por ultimo, las redes neuronales pueden aprender de datos no lineales debido a sus funciones de activación que precisamente son no lineales, ademas de poder aprender patrones mas detallados en cada capa, por su capacidad de reducir la complejidad y dimensionalidad de los datos.
 
 Para corroborar los resultados visualizados en los gráficos, se realiza la tabla con los mejores valores de accuracy para cada algoritmo. Aunque esto puede ser suficiente, ademas se incorpora el mejor error obtenido en metros, es decir, el error cuadrático medio para cada coordenada respectivamente, ya que aunque la accuracy determina que tanto acierta el algoritmo, igualmente es necesario establecer el error medio, porque es preferible tener un valor de error mas pequeño, debido a que este representa el error presente al momento de la fase online de ubicación. Este error esta expresado en metros y se separa según coordenadas, ya sea X o Y.
 
+\begin{table}[ht!]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Algoritmo                     & Accuracy & Error medio X & Error medio Y & Error Absoluto \\ \hline
+NN                            & 97.94\%  & 0.1579        & 0.0735        & 0.1741         \\ \hline
+$SVM(RBF, C=1, \gamma = 4)$   & 96.81\%  & 0.2254        & 0.1018        & 0.2473         \\ \hline
+$KNN(k = 2)$                  & 95.43\%  & 0.9842        & 0.1575        & 0.9967         \\ \hline
+QDA                           & 85.25\%  & 5.1103        & 4.7175        & 6.9548         \\ \hline
+$SVM(Lineal, C=1)$            & 78.75\%  & 9.3163        & 6.0387        & 11.1022        \\ \hline
+Random Forest                 & 77.33\%  & 11.3430       & 3.1409        & 11.7698        \\ \hline
+Naive Bayes                   & 71.73\%  & 12.2303       & 9.4836        & 15.4763        \\ \hline
+Decision Tree( max depth = 5) & 57.91\%  & 57.8012       & 5.6412        & 58.0758        \\ \hline
+Adaboost                      & 26.03\%  & 150.8848      & 6.5333        & 151.0261       \\ \hline
+\end{tabular}
+\end{table}
 
 
+Efectivamente los mejores clasificadores en términos de accuracy también lo son en error medio, ya sea absoluto o por coordenadas. Para el error absoluto se utiliza la formula de distancia punto a punto, que es lo mas natural debido a la naturaleza del problema.
 
+Con lo anterior, se decide utilizar los tres mejores algoritmos, es decir, que presentan buenos resultados ya sea en accuracy o en error de distancia, los cuales son Red neuronal profunda de dos capas escondidas, SVM con kernel RBF y K-NN. A continuación es necesario realizar el análisis de reducción de la dimension y quitar la correlación de las predictorias mediante el uso de PCA.
+
+\section{Entrenamiento utilizando PCA}
+
+Para el uso de PCA, a pesar de que ya se tiene una nocion  de que clasificadores funcionan mejor en este tipo de problemas, igualmente se analiza para los otros tipos de clasificadores, ya que de esta manera se puede evaluar el efecto de aplicarlo en estos, ademas sirven como guía para el análisis posterior.
+
+Lo primero a determinar claramente, es el numero de componentes principales que deben ser utilizadas para disminuir los tiempos de procesamiento y el numero de componentes no ortogonales, es decir, reducir la información redundante total. Para ello se debe seleccionar el mínimo numero de componentes principales, ya que mientras mas se añaden, es mucho mas probable que los datos presenten información no relevante, es decir, ruido e información duplicada. Obviamente, es esencial reducir este tipo de datos para asi mejorar el desempeño de los algoritmos de clasificación.
+
+Para la seleccion, es necesario realizar pruebas que ayuden a la toma de decisiones sobre el numero de componentes principales a utilizar, ya que hasta el momento no existe un algoritmo que lo determine automáticamente, por lo que depende netamente del experimentador y los resultados deseados en términos de accuracy y ahorro de procesamiento. Para ello se proponen tres métodos explicados a continuación. El primer método se basa en la información contextual presente en cada componente principal a través de los valores propios de la matriz de covarianzas. Estos valores propios representan que tanto se explica la varianza en una determinada dirección, en donde la dirección es la determinada por el vector propio asociado al valor propio de esa componente principal. Por lo anterior, a medida que los valores propios de una determinada componente principal incrementan su valor, esta componente principal tiende a tener mas información valiosa en términos generales para el conjunto total de datos. 
+
+Después de aplicar el algoritmo PCA, el espacio de características se mantiene constante según el numero de componentes originales, por lo que si el radiomap se proyecta directamente no hay mejoría y la complejidad computacional incluso puede aumentar. Para la seleccion, se incorpora una variable $U$, donde esta representa el numero de componentes principales seleccionadas. Como se explica anteriormente, el primer metodo es determinar los valores propios que aportan mas informacion(varianza), mientras mas alto su valor, la componente principal asociada mantiene mas información valiosa para los datos, es decir, puede interpretarse como la importancia de esa componente. Para determinar los valores propios mas relevantes, estos se grafican como muestra la figura xx.
+
+Con respecto al segundo método, este se basa en seleccionar las primeras componentes principales según los resultados obtenidos en los clasificadores, por lo que se necesita PCA ya aplicado, no solo basta con la matriz de correlación, si no que los algoritmos completos. Para realizar este método entonces se decide aplicar PCA en todos los algoritmos de clasificacion nombrados anteriormente, con ellos se pretende establecer los mejores valores de accuracy y en que puntos a nivel de componentes principales, la mayoría de los clasificadores establecen sus mejores puntuaciones en términos de accuracy, por lo que añadir mas componentes no provoca una mejoría significativa.
 

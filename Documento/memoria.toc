@@ -49,5 +49,6 @@
 \contentsline {section}{\numberline {4.6}Visualizaci\IeC {\'o}n de los datos obtenidos}{44}{section.4.6}
 \contentsline {section}{\numberline {4.7}Analisis PCA y LDA}{46}{section.4.7}
 \contentsline {section}{\numberline {4.8}Entrenamiento de clasificadores}{47}{section.4.8}
-\contentsline {chapter}{Bibliograf\'{\i }a}{51}{chapter*.45}
-\contentsline {chapter}{\numberline {A}LICENCIA}{55}{appendix.Alph1}
+\contentsline {section}{\numberline {4.9}Entrenamiento utilizando PCA}{51}{section.4.9}
+\contentsline {chapter}{Bibliograf\'{\i }a}{53}{chapter*.46}
+\contentsline {chapter}{\numberline {A}LICENCIA}{57}{appendix.Alph1}
