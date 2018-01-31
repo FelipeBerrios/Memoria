@@ -379,9 +379,9 @@ En donde $I$ representa la intensidad y $r$ es la distancia de propagación desd
 
 Como la técnica elegida es PCA, a continuación se procede a describir como funcionara específicamente para el problema de fingerprint. PCA, busca la proyección sobre la cual los datos queden mejor representados en términos de mínimos cuadrados. Esta convierte un conjunto de variables posiblemente correlacionadas en un conjunto de variables sin correlación lineal, las cuales se denominan componentes principales. PCA construye una transformacion lineal que escoge un nuevo sistema de coordenadas para el conjunto original de los datos, escogiendo la varianza mayor de los datos como primera componente en el nuevo sistema de referencia, la segunda varianza mas grande como segunda componente y asi suscesivamente. Para ello se requiere la matriz de covarianzas, mediante la cual es posible encontrar los vectores propios de la misma, que funcionan como base para las nuevas coordenadas a traves de la transformacion lineal y asi reducir la dimensionalidad.
 
-PCA resuelve el problema de la alta dimensionalidad del radiomap construido, combinando los \textit{features} mediante una transformacion lineal en un espacio no correlacionado, es decir, un espacio ortogonal de vectores( vectores propios), utilizando la matriz de covarianza de los datos de entrenamiento de tamaño $ N \, x \, N$ . Luego, este radiomap de señales RSSI es proyectado en el espacio no correlacionado en la dirección de la varianza mas alta. La seleccion respectiva de componentes principales se basa en las varianzas mas grandes, es decir, segun los valores propios mas grandes (proyeccion de la transformación). Por lo anterior, los valores propios representan la información de las componentes principales.
+PCA resuelve el problema de la alta dimensionalidad del radiomap construido, combinando los \textit{features} mediante una transformacion lineal en un espacio no correlacionado, es decir, un espacio ortogonal de vectores( vectores propios), utilizando la matriz de covarianza de los datos de entrenamiento de tamaño $ M \, x \, M$ . Luego, este radiomap de señales RSSI es proyectado en el espacio no correlacionado en la dirección de la varianza mas alta. La seleccion respectiva de componentes principales se basa en las varianzas mas grandes, es decir, segun los valores propios mas grandes (proyeccion de la transformación). Por lo anterior, los valores propios representan la información de las componentes principales.
 
-El espacio característico es generado mediante un conjunto de $M$ lecturas RSSI por posición o punto de referencia, lo cual corresponde a un vector $x_{i}$ de tamaño $ M \, x \, 1$ como vector columna, donde $ M$ es menor a $ N$, y con $ N$ el numero de ejemplos de entrenamiento.
+El espacio característico es generado mediante un conjunto de $M$ lecturas RSSI por posición o punto de referencia, lo cual corresponde a un vector $x_{i}$ de tamaño $ 1 \, x \, M$ como vector fila, donde $ M$ es menor a $ N$, y con $ N$ el numero de ejemplos de entrenamiento.
 
 Luego, el espacio característico posee una media:
 
@@ -389,24 +389,24 @@ $$ \overline{x} = \sum_{i=1}^{N} \frac{x_{i}}{N} $$
 
 Por ende, la matriz de covarianzas puede ser descrita como:
 
-$$ C_{r} = \sum_{i=1}^{N} (x_{i} - \overline{x})(x_{i} - \overline{x})^T = X_{i}X_{i}^T$$
+$$ C_{r} = \sum_{i=1}^{N} (x_{i} - \overline{x})^{T}(x_{i} - \overline{x}) = X^{T}X$$
 
-Cabe destacar que la matriz de covarianzas es simetrica y de tamaño $N \, x \, N$, por lo cual posee $N$ valores propios.
+Cabe destacar que la matriz de covarianzas es simetrica y de tamaño $M \, x \, M$, por lo cual posee $M$ valores propios.
 
-Sean los valores propios $ \{ \lambda_{1}, \lambda_{2}, ..., \lambda_{N} \} $ ordenados en orden descendiente, con sus correspondientes vectores propios normalizados $ \{ V_{1}, ... , V_{N} \} $ . Según la formula de valores y vectores propios para matrices debe cumplirse entonces:
+Sean los valores propios $ \{ \lambda_{1}, \lambda_{2}, ..., \lambda_{M} \} $ ordenados en orden descendiente, con sus correspondientes vectores propios normalizados $ \{ V_{1}, ... , V_{M} \} $ . Según la formula de valores y vectores propios para matrices debe cumplirse entonces:
 
 $$ C_{r} V_{i} =  \lambda_{i} V_{i}$$
-$$ \lambda_{1} \geq \lambda_{2} \geq ... \geq \lambda_{N}$$
+$$ \lambda_{1} \geq \lambda_{2} \geq ... \geq \lambda_{M}$$
 
-Como se menciona anteriormente, los vectores propios $ \{ V_{1}, ... , V_{N} \} $ son no correlacionados y ortonormales, por lo que forman un espacio característico.
+Como se menciona anteriormente, los vectores propios $ \{ V_{1}, ... , V_{M} \} $ son no correlacionados y ortonormales, por lo que forman un espacio característico.
 
 Con todo lo anterior, es posible proyectar el radiomap en el nuevo espacio característico. Obviamente, si se proyecta sobre todas las componentes no existe un cambio, ya que se presenta la misma información, por lo cual es necesario determinar los valores propios mas relevantes y que aportan mayor información(varianza) a los que no. Para la selección entonces de las componentes principales se toma en cuenta entonces la información contextual y el error que cada componente ha aportado. No existe manera automática de determinar el numero adecuado de componentes principales, sin embargo en la experimentación es discutida una forma de poder llevar a cabo esta tarea. 
 
-Luego, el nuevo radiomap no correlacionado $Z_{i}$ es calculado proyectando $X_{i}$ en el espacio característico reducido $W$, el cual representa una combinación lineal de los vectores propios seleccionados, asociados a los valores propios mas relevantes. Finalmente, la matriz $Z$ del nuevo radiomap, con menor numero de componentes esta dada por:
+Luego, el nuevo radiomap no correlacionado $Z$ es calculado proyectando $X$ en el espacio característico reducido $W$, el cual representa una combinación lineal de los vectores propios seleccionados, asociados a los valores propios mas relevantes. Finalmente, la matriz $Z$ del nuevo radiomap, con menor numero de componentes esta dada por:
 
-$$ W = X \, x \, V$$
+$$ W = V \, \cdot \, X$$
 
-$$ Z_{i} = W^{T} \, x \, X_{i} \quad \forall i$$
+$$ Z = X  \, \cdot \, W $$
 
 Luego, los clasificadores de maquinas de aprendizaje son entrenados mediante la utilización del radiomap $Z$, el cual tiene componentes reducidas y no dependientes, con lo cual el entrenamiento es mucho mas rápido y se elimina la mayor parte de la información redundante al extraer la información mas relevante.
 

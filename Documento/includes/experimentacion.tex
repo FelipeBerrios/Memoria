@@ -385,13 +385,56 @@ Con lo anterior, se decide utilizar los tres mejores algoritmos, es decir, que p
 
 \section{Entrenamiento utilizando PCA}
 
-Para el uso de PCA, a pesar de que ya se tiene una nocion  de que clasificadores funcionan mejor en este tipo de problemas, igualmente se analiza para los otros tipos de clasificadores, ya que de esta manera se puede evaluar el efecto de aplicarlo en estos, ademas sirven como guía para el análisis posterior.
+Para el uso de PCA, a pesar de que ya se tiene una noción  de que clasificadores funcionan mejor en este tipo de problemas, igualmente se analiza para los otros tipos de clasificadores, ya que de esta manera se puede evaluar el efecto de aplicarlo en estos, ademas sirven como guía para el análisis posterior.
 
 Lo primero a determinar claramente, es el numero de componentes principales que deben ser utilizadas para disminuir los tiempos de procesamiento y el numero de componentes no ortogonales, es decir, reducir la información redundante total. Para ello se debe seleccionar el mínimo numero de componentes principales, ya que mientras mas se añaden, es mucho mas probable que los datos presenten información no relevante, es decir, ruido e información duplicada. Obviamente, es esencial reducir este tipo de datos para asi mejorar el desempeño de los algoritmos de clasificación.
 
 Para la seleccion, es necesario realizar pruebas que ayuden a la toma de decisiones sobre el numero de componentes principales a utilizar, ya que hasta el momento no existe un algoritmo que lo determine automáticamente, por lo que depende netamente del experimentador y los resultados deseados en términos de accuracy y ahorro de procesamiento. Para ello se proponen tres métodos explicados a continuación. El primer método se basa en la información contextual presente en cada componente principal a través de los valores propios de la matriz de covarianzas. Estos valores propios representan que tanto se explica la varianza en una determinada dirección, en donde la dirección es la determinada por el vector propio asociado al valor propio de esa componente principal. Por lo anterior, a medida que los valores propios de una determinada componente principal incrementan su valor, esta componente principal tiende a tener mas información valiosa en términos generales para el conjunto total de datos. 
 
-Después de aplicar el algoritmo PCA, el espacio de características se mantiene constante según el numero de componentes originales, por lo que si el radiomap se proyecta directamente no hay mejoría y la complejidad computacional incluso puede aumentar. Para la seleccion, se incorpora una variable $U$, donde esta representa el numero de componentes principales seleccionadas. Como se explica anteriormente, el primer metodo es determinar los valores propios que aportan mas informacion(varianza), mientras mas alto su valor, la componente principal asociada mantiene mas información valiosa para los datos, es decir, puede interpretarse como la importancia de esa componente. Para determinar los valores propios mas relevantes, estos se grafican como muestra la figura xx.
+Después de aplicar el algoritmo PCA, el espacio de características se mantiene constante según el numero de componentes originales, por lo que si el radiomap se proyecta directamente no hay mejoría y la complejidad computacional incluso puede aumentar. Para la selección, se incorpora una variable $U$, donde esta representa el numero de componentes principales seleccionadas. Como se explica anteriormente, el primer metodo es determinar los valores propios que aportan mas información(varianza), mientras mas alto su valor, la componente principal asociada mantiene mas información valiosa para los datos, es decir, puede interpretarse como la importancia de esa componente. Para determinar los valores propios mas relevantes, estos se determinan segun un criterio muy conocido, el cual es seleccionar aquellos valores propios con valor cercano o mayor a 1. Para ello, se grafican los valores propios en orden descendente:
 
-Con respecto al segundo método, este se basa en seleccionar las primeras componentes principales según los resultados obtenidos en los clasificadores, por lo que se necesita PCA ya aplicado, no solo basta con la matriz de correlación, si no que los algoritmos completos. Para realizar este método entonces se decide aplicar PCA en todos los algoritmos de clasificacion nombrados anteriormente, con ellos se pretende establecer los mejores valores de accuracy y en que puntos a nivel de componentes principales, la mayoría de los clasificadores establecen sus mejores puntuaciones en términos de accuracy, por lo que añadir mas componentes no provoca una mejoría significativa.
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.6\textwidth]{figures/eigenvalues.png}
+\caption[abs]{Análisis de los valores propios obtenidos a partir de la matriz de covarianza utilizada en el algoritmo PCA  \\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:manifold}
+\end{figure}
+
+Como se observa, los primeros 4 valores propios cumplen la heuristica de selección necesaria, por lo que mantienen la mayor parte de la información del \textit{dataset}.
+
+Para el segundo método, es necesario establecer la suma acumulada porcentual de la varianza explicada, lo cual es sinónimo de el porcentaje de información relevante retenida o acumulada. Para ello, es necesario igualmente utilizar los valores propios que representan la varianza para la selección. La formula a utilizar entonces es:
+
+$$ \frac{\sum_{i=1}^{U}\lambda_{i}}{\sum_{i=1}^{M}\lambda_{i}}  > \xi $$
+
+De donde $\{ \lambda_{1}, \lambda_{2}, ..., \lambda_{M}\}$ corresponden a los valores propios y :
+
+$$\frac{\sum_{i=1}^{U}\lambda_{i}}{\sum_{i=1}^{M}\lambda_{i}}$$
+
+Representa la suma acumulada que retiene la información. Ademas, el limite requerido es $\xi$. Este limite representa la cantidad de información mínima con las cual se acepta el criterio, y habitualmente se elige un valor entre 70 a 80\%. Para esto se muestra la  \autoref{fig:varianza_ratio} la cual describe esta situación.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.6\textwidth]{figures/varianza_ratio.png}
+\caption[abs]{Proporcion de la varianza explicada respecto a la varianza total para cada componente ordenada por su valor en orden descendente  \\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:varianza_ratio}
+\end{figure}
+
+Como se aprecia en la imagen anterior, las primeras 5 componentes principales retienen la cantidad de información especificada según el limite impuesto $\xi =0.8$. Para clarificar este punto se construye una tabla resumen con los valores propios, la proporción de varianza explicada y la suma acumulada de estas proporciones.
+
+\begin{table}[]
+\centering
+\caption{My caption}
+\label{my-label}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+Indicador                     & PC1    & PC2    & PC3    & PC4     & PC5    & PC6    & PC7    & PC8    \\ \hline
+Valor Propio                  & 2.1271 & 1.3665 & 1.3154 & 0.92088 & 0.7652 & 0.7058 & 0.4637 & 0.3363 \\ \hline
+Proporcion Varianza Explicada & 0.2658 & 0.1707 & 0.1644 & 0.1150  & 0.0956 & 0.0882 & 0.0579 & 0.0420 \\ \hline
+Suma Acumulada Proporcion     & 0.2658 & 0.4366 & 0.6010 & 0.7161  & 0.8117 & 0.9000 & 0.9579 & 1.000  \\ \hline
+\end{tabular}
+\end{table}
+
+Con respecto al tercer método, este se basa en seleccionar las primeras componentes principales según los resultados obtenidos en los clasificadores, por lo que se necesita PCA ya aplicado, no solo basta con la matriz de correlación, si no que los algoritmos completos. Para realizar este método entonces se decide aplicar PCA en todos los algoritmos de clasificación nombrados anteriormente, con ellos se pretende establecer los mejores valores de accuracy y en que puntos a nivel de componentes principales, la mayoría de los clasificadores establecen sus mejores puntuaciones en términos de accuracy, por lo que añadir mas componentes no provoca una mejoría significativa.
 
