@@ -438,3 +438,97 @@ Suma Acumulada Proporcion     & 0.2658 & 0.4366 & 0.6010 & 0.7161  & 0.8117 & 0.
 
 Con respecto al tercer método, este se basa en seleccionar las primeras componentes principales según los resultados obtenidos en los clasificadores, por lo que se necesita PCA ya aplicado, no solo basta con la matriz de correlación, si no que los algoritmos completos. Para realizar este método entonces se decide aplicar PCA en todos los algoritmos de clasificación nombrados anteriormente, con ellos se pretende establecer los mejores valores de accuracy y en que puntos a nivel de componentes principales, la mayoría de los clasificadores establecen sus mejores puntuaciones en términos de accuracy, por lo que añadir mas componentes no provoca una mejoría significativa.
 
+La \autoref{fig:comparativa_pca} muestra la comparativa de los clasificadores.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.6\textwidth]{figures/comparativa_clasificadores_pca.png}
+\caption[abs]{Comparativa de resultados obtenidos por los clasificadores utilizando PCA  \\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:comparativa_pca}
+\end{figure}
+
+Según la comparativa, es claro que la mayoría de los clasificadores presentan una gran mejoría hasta la quinta componente, y posteriormente la ganancia no es significante respecto a la información aportada a los respectivos algoritmos. Esto indica al igual que los otros métodos de selección, que a partir de la quinta componente la varianza aportada no es realmente significativa, por lo que puede reducirse la dimensionalidad de los datos a 5, ya que los tres métodos utilizados presentan resultados similares y coinciden en este valor de componentes principales.
+
+Posteriormente, se procede a evaluar según el procedimiento realizado anteriormente para los clasificadores sin utilizar PCA. Los resultados obtenidos en cada clasificador se muestran en la \autoref{fig:comparativa_clasificadores_pca}. Se debe destacar que los hiperparametros de cada algoritmo no fueron cambiados respecto a sus versiones sin utilizar PCA.
+
+
+\begin{figure}[ht!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/NB_PCA.png}
+  \caption{Naive Bayes PCA}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/SVM-RBF-PCA.png}
+  \caption{SVM RBF PCA}
+  \label{fig:sub2}
+\end{subfigure}
+
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/SVM-Lineal-PCA.png}
+  \caption{SVM Lineal PCA}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/knn-results-PCA.png}
+  \caption{K-NN PCA}
+  \label{fig:sub2}
+\end{subfigure}
+
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/decision-tree-PCA.png}
+  \caption{Decision Tree PCA}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/random-forest-PCA.png}
+  \caption{Random Forest PCA}
+  \label{fig:sub2}
+\end{subfigure}
+
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/adaboost-PCA.png}
+  \caption{Adaboost PCA}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/qda-PCA.png}
+  \caption{QDA PCA}
+  \label{fig:sub2}
+\end{subfigure}
+\caption[abs]{Curvas de aprendizajes obtenidas por cada clasificador utilizando PCA con 5 componentes\\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:comparativa_clasificadores_pca}
+\end{figure}
+
+En este caso, se obtienen resultados similares a los obtenidos sin utilizar PCA, esto es un indicativo de que la eleccion de las componentes principales es correcto. Para analizar las redes neuronales utilizando PCA se procede a graficar la accuracy y la función de perdida al igual que en casos anteriores.
+
+\begin{figure}[ht!]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/nn_plot_pca.png}
+  \caption{Accuracy PCA}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/nn_loss_pca.png}
+  \caption{Loss PCA}
+  \label{fig:sub2}
+\end{subfigure}
+\caption[abs]{Accuracy y Loss(Costo) obtenidos en el entrenamiento de la red neuronal profunda con dos capas ocultas utilizando PCA con 5 componentes principales. \\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:nn_metrics_pca}
+\end{figure}
+
