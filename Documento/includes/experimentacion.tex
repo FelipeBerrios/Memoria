@@ -532,3 +532,81 @@ En este caso, se obtienen resultados similares a los obtenidos sin utilizar PCA,
 \label{fig:nn_metrics_pca}
 \end{figure}
 
+Al igual que los clasificadores convencionales, los resultados son muy similares a los obtenidos mediante clasificadores sin utilizar PCA. Esto es un indicativo de que la eleccion de las componentes principales es acertado. Para corroborar esto se construye la tabla \autoref{tabla-pca} la cual es simil a la \autoref{my-label}
+
+\begin{table}[ht!]
+\centering
+\caption{My caption}
+\label{tabla-pca}
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Algoritmo                     & Accuracy & Error medio X & Error medio Y & Error Absoluto \\ \hline
+NN                            & 93\%  & 1.8956        & 0.6589        & 2.0068         \\ \hline
+$SVM(RBF, C=1, \gamma = 4)$   & 92.39\%  & 2.4581  & 0.7830        & 2.5797         \\ \hline
+$KNN(k = 2)$                  & 90.83\%  & 2.1381 & 0.4872        & 2.1929         \\ \hline
+QDA                           & 71.25\%  & 15.9418 & 9.3042        & 18.4583         \\ \hline
+$SVM(Lineal, C=1)$            & 66.20\%  & 19.5878 & 10.4824        & 22.2162        \\ \hline
+Random Forest                 & 64.15\%  & 21.3284 & 5.4472        & 22.0130       \\ \hline
+Decision Tree( max depth = 5) & 56.96\%  & 33.5151       & 8.9163       & 34.6808        \\ \hline
+Naive Bayes                   & 50.71\%  & 31.3406 & 10.0727        & 32.9194        \\ \hline
+Adaboost                      & 32.20\%  & 73.9345 & 9.3042       & 74.5176       \\ \hline
+\end{tabular}
+\end{table}
+
+Los valores obtenidos entonces demuestran que a pesar de que la accuracy se reduce solo un poco, los valores de error medio decrementan significativamente en el contexto del problema abordado, ya que para el posicionamiento en interiores se espera un error lo mas pequeño posible, ya que esto significa una mejor localizacion. Por lo anterior, se debe tener en cuenta estos factores al momento de seleccionar las componentes principales, ya que al perder informacion, se pierde exactitud en las mediciones, lo que repercute significativamente al momento de realizar pruebas reales. 
+
+El comportamiento en términos generales sigue el mismo patrón que al no aplicar técnicas de reducción de dimensionalidad, es decir, los clasificadores mantienen el orden realtivo en cuanto a accuracy y nuevamente los clasificadores capaces de distinguir patrones no lineales en los datos son los dominantes, lo cual prueba esta características de los datos. También se debe notar que los tres primeros lugares corresponden nuevamente a redes neuronales profundas, maquina de vectores de soporte con kernel RBF y finalmente vecinos mas cercanos con $k=2$. 
+
+Por lo anterior, se decide utilizar los tres clasificadores NN, SVM y KNN para realizar la experimentación en el estacionamiento descrito anteriormente. A continuación se define el método utilizado para realizar las pruebas.
+
+
+\section{Fase Online}
+
+Para realizar las pruebas dentro del recinto es necesario establecer el marco a utilizar para determinar la exactitud y precision del sistema. En primer lugar se debe tener en cuenta que no hay forma de determinar el error absoluto, producto de que para ello se debe proporcionar la posición real, lo cual es contradictorio, ya que esto es precisamente lo que se busca. Existen métodos de buscar este error, por ejemplo \citep{Ugave} describe una forma de medir los errores mediante el uso de la creación de caminos predefinidos. Luego para medir la precision, se infiere la pocision estimada cada 10 metros siguiendo la trayectoria definida. Luego, con la posicion estimada y la posicion teórica determinada por el camino establecido, se puede obtener la distancia que representa el error, la cual esta definida mediante el vector perpendicular desde la trayectoria definida hasta el punto predicho. 
+
+Otro tipo de enfoque es utilizar el tiempo recorrido y mediante las ecuaciones de movimiento obtener una posición aproximada que puede ser comparada con la inferida por los algoritmos de maquinas de aprendizaje.
+
+El problema con estos enfoques, es que se basan en propiedades del experimentador, como por ejemplo utilizar sensores basados en detección de pasos, lo cual no es del todo preciso, o también al utilizar las ecuaciones de posición se requiere que la velocidad del experimentador sea constante y medir exactamente en un instante indicado, lo cual dificulta mucho las pruebas y también agrega factores de error externos lo que se traduce en resultados ruidosos y poco fidedignos. Entonces lo que se propone para determinar los resultados son dos formas llamadas método estático y método dinámico. En el método estático lo que se hace es permanecer quieto en un determinado punto durante un tiempo predefinido. El tiempo utilizado en este caso corresponde a 15 minutos, y el punto es especifico es $(22, 12)$. Para el caso del método dinámico, lo que se busca es abarcar la mayor cantidad de puntos posibles y establecer de ante mano el punto en el cual se realizaran las mediciones a través de una caminata. En este caso se decide hacer una caminata a través de todos los 44 puntos posibles de izquierda a derecha, arriba a abajo durante un tiempo de 30 minutos.
+
+Para realizar las pruebas se adiciona una pantalla a la aplicacion precisamente para la fase Online, la \autoref{fig:fase_online} muestra esta situación.
+
+\begin{figure}[ht!]
+\centering
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/fase_online1.png}
+  \caption{Selección algoritmo}
+  \label{fig:online1}
+\end{subfigure}%
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/fase_online2.png}
+  \caption{Elección patrón}
+  \label{fig:online2}
+\end{subfigure}
+\begin{subfigure}{.3\textwidth}
+  \centering
+  \includegraphics[width=.8\linewidth]{figures/fase_online3.png}
+  \caption{Posicionamiento real}
+  \label{fig:online3}
+\end{subfigure}
+\caption[abs]{Pantalla utilizada en la fase Online para la realizacion de las pruebas de experimentos reales \\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:fase_online}
+\end{figure}
+
+Como se observa en la imagen \autoref{fig:fase_online}, en primer lugar se debe elegir el algoritmo a utilizar en el posicionamiento, luego seleccionar el patrón para elegir el punto en donde se realizaran las pruebas y finalmente iniciar, lo cual comienza a posicionar al usuario en tiempo real. Para el método dinámico los pasos son igual, solo se debe utilizar el \textit{checkbox} al lado del botón iniciar y cambiar progresivamente el punto a utilizar mientras se sigue el camino de predicción.
+
+A pesar de que se selecciona un algoritmo para la visualizacion del posicionamiento, internamente la aplicación ejecuta todos los algoritmos mostrados, es decir NN, SVM y KNN con sus respectivas versiones utilizando PCA. El fin de esto es ahorrar tiempo, ya que de esta forma se pueden obtener los resultados para todos los algoritmos concurrentemente sin necesidad de ejecutarlos de manera secuencial. Luego la aplicación tiene la capacidad de crear archivos de \textit{log}, es decir, guardar los resultados obtenidos. El formato de estos archivos es diseñado para su posterior análisis. La primera linea contiene el tipo de método, estático o dinámico. La siguiente linea de texto muestra el punto teórico con el cual se comparan los datos. Posteriormente el nombre del algoritmo, luego una lista de valores de la posición $X$, a continuación una lista de valores $Y$ y finalmente el tiempo de ejecución del algoritmo. Para cada algoritmo se repite esta estructura, en el orden mostrado en la \autoref{fig:online1}. Claramente la lista de valores $X$ e $Y$ tienen las mismas dimensiones y forman las predicciones finales según su posición relativa, es decir, el primer elemento de la lista $X_{1}$ con el primer elemento de la lista $Y_{1}$ forman el primer punto predicho por el algoritmo $(X_{1}, Y_{1})$. 
+
+Para clarificar esto, la \autoref{online_results} muestra un extracto de un archivo obtenido luego de realizar la experimentación de la fase online. Este archivo es de tipo dinámico, con lo que contiene múltiples puntos de clasificación.
+
+\begin{figure}[ht!]
+\centering
+\includegraphics[width=.6\textwidth]{figures/online-results.png}
+\caption[abs]{Archivo obtenido en la experimentación online  \\
+{\scriptsize (Fuente: Elaboración Propia)}}
+\label{fig:online_results}
+\end{figure}
+
+

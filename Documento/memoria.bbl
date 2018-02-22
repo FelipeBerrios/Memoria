@@ -19,6 +19,12 @@ Abadi, Mart\'{\i}n; Agarwal, Ashish; Barham, Paul; Brevdo, Eugene; Chen,
   \url{https://kontakt.io/blog/beacon-configuration-strategy-guide-interval/}.
 \newblock [Acceso Enero 2018].
 
+\bibitem[Anand, 2014]{Ugave}
+Anand, U.~Viney (2014).
+\newblock Smart indoor localization using machine learning techniques.
+\newblock In {\em SMART INDOOR LOCALIZATION USING MACHINE LEARNING TECHNIQUES}
+  (pp.\ 1223--1228).
+
 \bibitem[Bahl y Padmanabhan, 2000a]{Bahl00radar:an}
 Bahl, Paramvir y Padmanabhan, Venkata~N. (2000a).
 \newblock Radar: an in-building rf-based user location and tracking system.
