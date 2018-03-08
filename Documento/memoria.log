@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  21 FEB 2018 22:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  7 MAR 2018 20:27
 entering extended mode
 **./memoria.tex
 (memoria.tex
@@ -6048,14 +6048,9 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 130.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `memoria.out' has not changed.
 (rerunfilecheck)             Checksum: D01B09C38F192F8C6CC7D95FEC542D0D;4077.
+Package rerunfilecheck Info: File `memoria.brf' has not changed.
+(rerunfilecheck)             Checksum: B44D27716C59D68355126FDD8D94579B;3175.
 
-
-Package rerunfilecheck Warning: File `memoria.brf' has changed.
-(rerunfilecheck)                Rerun to get bibliographical references right.
-
-Package rerunfilecheck Info: Checksums for `memoria.brf':
-(rerunfilecheck)             Before: DDDDB96E3A36672CF2C87921202CA359;3130
-(rerunfilecheck)             After:  B44D27716C59D68355126FDD8D94579B;3175.
 
 LaTeX Warning: There were undefined references.
 
@@ -6085,9 +6080,9 @@ pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmri8a.pfb>
-Output written on memoria.pdf (81 pages, 7839017 bytes).
+Output written on memoria.pdf (81 pages, 7839202 bytes).
 PDF statistics:
- 1287 PDF objects out of 1440 (max. 8388607)
+ 1288 PDF objects out of 1440 (max. 8388607)
  273 named destinations out of 1000 (max. 500000)
  68344 words of extra memory for PDF output out of 74296 (max. 10000000)
 
