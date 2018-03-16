@@ -25,28 +25,29 @@
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Ejemplo grilla Fingerprint}}{34}{figure.caption.29}
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Framework desarrollado para posicionamiento indoor}}{38}{figure.caption.31}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces abs}}{40}{figure.caption.32}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces abs}}{41}{figure.caption.33}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces abs}}{41}{figure.caption.34}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces abs}}{42}{figure.caption.35}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces abs}}{42}{figure.caption.36}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces abs}}{45}{figure.caption.37}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces abs}}{46}{figure.caption.38}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces abs}}{46}{figure.caption.39}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces abs}}{47}{figure.caption.40}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces abs}}{48}{figure.caption.41}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces abs}}{50}{figure.caption.42}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces abs}}{52}{figure.caption.43}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces abs}}{52}{figure.caption.44}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces abs}}{54}{figure.caption.46}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces abs}}{55}{figure.caption.47}
-\contentsline {figure}{\numberline {5.16}{\ignorespaces abs}}{55}{figure.caption.49}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces abs}}{56}{figure.caption.50}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces abs}}{57}{figure.caption.51}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces abs}}{58}{figure.caption.53}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Beacons utilizados en la experimentaci\IeC {\'o}n}}{39}{figure.caption.32}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Posicionamiento con diferentes intervalos de aviso}}{40}{figure.caption.33}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Listado de Beacons utilizados}}{41}{figure.caption.34}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Configuraci\IeC {\'o}n Beacons para TX Power e Intervalo de transmisi\IeC {\'o}n }}{41}{figure.caption.35}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Plano del estacionamiento subterr\IeC {\'a}neo}}{42}{figure.caption.36}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Lugar de experimentaci\IeC {\'o}n real}}{42}{figure.caption.37}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Disposici\IeC {\'o}n de Beacons y puntos de referencia}}{45}{figure.caption.38}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Pesta\IeC {\~n}a de configuraci\IeC {\'o}n de la aplicaci\IeC {\'o}n Android}}{46}{figure.caption.39}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Archivo CSV obtenido a partir de base de datos}}{46}{figure.caption.40}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Comparaci\IeC {\'o}n de los diferentes algoritmos Manifold Learning}}{48}{figure.caption.41}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Comparativa entre los algoritmos PCA y LDA}}{49}{figure.caption.42}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Curvas de aprendizajes obtenidas por cada clasificador}}{51}{figure.caption.43}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Estructura de las redes neuronales construidas}}{52}{figure.caption.44}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Accuracy y Loss(Costo) obtenidos en el entrenamiento de la red neuronal profunda}}{52}{figure.caption.45}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces An\IeC {\'a}lisis de los valores propios obtenidos a partir de la matriz de covarianza}}{54}{figure.caption.47}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Proporci\IeC {\'o}n de la varianza explicada PCA}}{55}{figure.caption.48}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Comparativa de resultados obtenidos por los clasificadores utilizando PCA}}{56}{figure.caption.50}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Curvas de aprendizajes obtenidas por cada clasificador utilizando PCA}}{57}{figure.caption.51}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Accuracy y Loss(Costo) obtenidos en el entrenamiento de la red neuronal profunda con dos capas ocultas utilizando PCA}}{58}{figure.caption.52}
 \contentsline {figure}{\numberline {5.20}{\ignorespaces abs}}{59}{figure.caption.54}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Archivo obtenido en la experimentaci\IeC {\'o}n online}}{60}{figure.caption.55}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces abs}}{63}{figure.caption.59}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces abs}}{64}{figure.caption.61}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces abs}}{66}{figure.caption.65}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces abs}}{63}{figure.caption.60}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces abs}}{64}{figure.caption.62}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces abs}}{66}{figure.caption.66}
 \addvspace {10\p@ }

@@ -38,19 +38,19 @@
 \BOOKMARK [2][-]{subsection.4.7.2}{Fase Online}{section.4.7}% 38
 \BOOKMARK [0][-]{chapter.5}{Experimentaci\363n}{}% 39
 \BOOKMARK [1][-]{section.5.1}{Beacons y configuraci\363n}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{Lugar de experimentacion}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{Lugar de experimentaci\363n}{chapter.5}% 41
 \BOOKMARK [1][-]{section.5.3}{Software Utilizado}{chapter.5}% 42
 \BOOKMARK [2][-]{subsection.5.3.1}{Descripci\363n de la aplicaci\363n}{section.5.3}% 43
 \BOOKMARK [2][-]{subsection.5.3.2}{scikit-learn}{section.5.3}% 44
-\BOOKMARK [1][-]{section.5.4}{ Tensorflow}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.5}{Recolecci\363n de fingerprints}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.6}{Visualizaci\363n de los datos obtenidos}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.7}{Analisis PCA y LDA}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.8}{Entrenamiento de clasificadores}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.9}{Entrenamiento utilizando PCA}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.10}{Fase Online}{chapter.5}% 51
+\BOOKMARK [2][-]{subsection.5.3.3}{ Tensorflow}{section.5.3}% 45
+\BOOKMARK [1][-]{section.5.4}{Recolecci\363n de Fingerprints}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.5}{Visualizaci\363n de los datos obtenidos}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.6}{Analisis PCA y LDA}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.7}{Entrenamiento de clasificadores}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.8}{Entrenamiento utilizando PCA}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.9}{Fase Online}{chapter.5}% 51
 \BOOKMARK [0][-]{chapter.6}{Resultados}{}% 52
 \BOOKMARK [1][-]{section.6.1}{M\351tricas Obtenidas}{chapter.6}% 53
 \BOOKMARK [1][-]{section.6.2}{An\341lisis de resultados}{chapter.6}% 54
-\BOOKMARK [0][-]{chapter*.67}{Bibliograf\355a}{}% 55
+\BOOKMARK [0][-]{chapter*.68}{Bibliograf\355a}{}% 55
 \BOOKMARK [0][-]{appendix.Alph1}{LICENCIA}{}% 56
