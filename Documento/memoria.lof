@@ -44,10 +44,10 @@
 \contentsline {figure}{\numberline {5.17}{\ignorespaces Comparativa de resultados obtenidos por los clasificadores utilizando PCA}}{56}{figure.caption.50}
 \contentsline {figure}{\numberline {5.18}{\ignorespaces Curvas de aprendizajes obtenidas por cada clasificador utilizando PCA}}{57}{figure.caption.51}
 \contentsline {figure}{\numberline {5.19}{\ignorespaces Accuracy y Loss(Costo) obtenidos en el entrenamiento de la red neuronal profunda con dos capas ocultas utilizando PCA}}{58}{figure.caption.52}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces abs}}{59}{figure.caption.54}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Pantallas utilizadas en la fase Online para la realizaci\IeC {\'o}n de las pruebas}}{59}{figure.caption.54}
 \contentsline {figure}{\numberline {5.21}{\ignorespaces Archivo obtenido en la experimentaci\IeC {\'o}n online}}{60}{figure.caption.55}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces abs}}{63}{figure.caption.60}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces abs}}{64}{figure.caption.62}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces abs}}{66}{figure.caption.66}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Cummulative distribution function para el m\IeC {\'e}todo din\IeC {\'a}mico}}{63}{figure.caption.60}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Cummulative distribution function para el m\IeC {\'e}todo est\IeC {\'a}tico}}{64}{figure.caption.62}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Diagrama de cajas para m\IeC {\'e}todo est\IeC {\'a}tico y din\IeC {\'a}mico}}{66}{figure.caption.66}
 \addvspace {10\p@ }
