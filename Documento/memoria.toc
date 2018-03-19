@@ -55,5 +55,6 @@
 \contentsline {chapter}{\numberline {6}Resultados}{61}{chapter.6}
 \contentsline {section}{\numberline {6.1}M\IeC {\'e}tricas Obtenidas}{61}{section.6.1}
 \contentsline {section}{\numberline {6.2}An\IeC {\'a}lisis de resultados}{66}{section.6.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{71}{chapter*.68}
-\contentsline {chapter}{\numberline {A}LICENCIA}{75}{appendix.Alph1}
+\contentsline {chapter}{\numberline {7}Conclusi\IeC {\'o}n}{71}{chapter.7}
+\contentsline {chapter}{Bibliograf\'{\i }a}{75}{chapter*.68}
+\contentsline {chapter}{\numberline {A}LICENCIA}{79}{appendix.Alph1}
