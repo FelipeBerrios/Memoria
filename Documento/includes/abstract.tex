@@ -1,8 +1,6 @@
 %!TEX root = ../memoria.tex
 
-This is a \LaTeX{} thesis template for the Departamento de Industrias, UTFSM. A few examples about the inclusion of figures and tables are also provided.
-
-(The abstract can be edited by opening the file \inlinecode{includes/abstract.tex}.)
+Achieving accurate positioning and low error indoors has become one of the most important issues of recent times, since other technologies such as GPS do not behave in the way expected in this type of enclosures, especially where the signals It costs to penetrate as buildings or places underground. So, in this report we present a way of covering the problem of positioning indoor, by means of the wireless networks of the Bluetooth protocol with which using their signal intensity and in conjunction with algorithms of learning machines and the technique Fingerprint, a solution is proposed to achieve indoor positioning. For this, experimentation is carried out in the underground parking of Federico Santa María University and an Android mobile application is developed to measure and test the algorithms. The results show that the best algorithm is neural networks with an average error of 3.93 meters for the static case (no movement) and k nearest neighbor with 6.68 meters in the dynamic case (in movement). In addition, we analyze the advantages of using dimensionality reduction techniques such as PCA, where most algorithms are favored, except for neural networks. Finally, it is determined that neural networks is the best algorithm, despite its dispersed distribution, since it presents low errors and little processing time.
 
 \vspace{20mm}
 
@@ -10,21 +8,3 @@ This is a \LaTeX{} thesis template for the Departamento de Industrias, UTFSM. A 
 \LaTeX{}, Thesis Template, Departamento de Industrias, USM
 
 \vspace{20mm}
-
-
-\begin{framed}
-\noindent\textbf{Instrucciones para la Plantilla.}
-
-Editar el archivo \inlinecode{/includes/abstract.tex} para modificar los contenidos de esta sección.
-
-Si no desea incluir un abstract, editar el archivo \inlinecode{/memoria.tex}, y comentar o borrar la sección que se muestra a continuación.
-
-\begin{Verbatim}[frame=lines, label=\inlinecode{/memoria.tex} (extracto)
-				, fontsize=\footnotesize
-				, baselinestretch=1
-				, formatcom=\color{gray}]
-\section*{ABSTRACT}
-\insertFile[plain]{abstract}			% Archivo abstract.tex
-\end{Verbatim}
-
-\end{framed}
