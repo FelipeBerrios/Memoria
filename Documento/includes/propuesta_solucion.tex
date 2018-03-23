@@ -35,12 +35,12 @@ Los Beacons envían sus ID únicos aproximadamente 10 veces por segundo dependie
 
 \subsubsection{¿Donde comenzó la tecnología Beacon?}
 
-Los Beacons como se conocen hoy en día comenzaron con la creación de los reconocidos IBeacons, implementados por la compañía Apple. IBeacon es un protocolo simple que permite transmitir muy pequeñas porciones de datos. Posteriormente Google lanza su propio protocolo en 2015, denominado EddyStone, como una alternativa a IBeacon. A raíz de esto se ha generado una competencia que ha ayudado a mejorar el hardware y software de los dispositivos Beacons. A continuación, se muestra una tabla con los parámetros básicos de cualquier dispositivo Beacon, que ayudan a mejorar su eficiencia sin pérdida de precisión.
+Los Beacons como se conocen hoy en día comenzaron con la creación de los reconocidos IBeacons, implementados por la compañía Apple. IBeacon es un protocolo simple que permite transmitir muy pequeñas porciones de datos. Posteriormente Google lanza su propio protocolo en 2015, denominado EddyStone, como una alternativa a IBeacon. A raíz de esto se ha generado una competencia que ha ayudado a mejorar el hardware y software de los dispositivos Beacons. A continuación, la \autoref{tabla-parametros-defecto} muestra los parámetros básicos de cualquier dispositivo Beacon, que ayudan a mejorar su eficiencia sin pérdida de precisión.
 
 \begin{table}[ht!]
 \centering
 \caption{Parámetros por defecto y métricas esperadas en los dispositivos Beacons Bluetooth}
-\label{my-label}
+\label{tabla-parametros-defecto}
 \begin{tabular}{|c|c|c|c|}
 \hline
 Intervalo & Tx Power   & Rango esperado & Batería esperada \\ \hline
@@ -114,7 +114,7 @@ La \autoref{fig:eddystone} y \ref{fig:ibeacon} muestran como son construidos los
 \label{fig:ibeacon}
 \end{figure}
 
-\section{Estabilidad de la señal Bluetooth}
+\subsection{Estabilidad de la señal Bluetooth}
 
 Las señales u ondas de radio son altamente afectadas por ruido o interferencia presente en el entorno, perdiendo así intensidad en la señal o resultando en valores fluctuantes que causan estimaciones o eventos no esperados. Esto ocurre por ejemplo en las interferencias de señales Wi-Fi al descargar un archivo, o también en equipos Bluetooth al conectarse a un dispositivo de música. La localización en interiores al depender igualmente del valor de \textit{Received Signal Strength Indicator}(RSSI) o intensidad de la señal recibida; se ve ampliamente afectado, sobre todo por el hecho de que los usuarios están caminando y en un entorno cambiante. El RSSI habitualmente se expresa en dBm para medir la potencia obtenida por una señal recibida. Su valor mayor teórico es 0 dBm y la escala corresponde a valores negativos, en donde más negativo implica una mayor pérdida de señal.
 
@@ -135,7 +135,7 @@ Como se observa en la imagen, en un principio, la señal oscila en valores infer
 Todo esto demuestra principalmente que no se puede confiar completamente en el valor de la intensidad de la señal recibida, ya que es muy probable que arribe con efectos de multicamino u obstrucciones que modifican su valor durante el viaje. Este efecto es significativamente mayor en grandes distancias de viaje en las señales, lo cual sugiere que los Beacons instalados no tengan una disposición tan distante, es decir, para obtener mejores resultados es mucho mejor una gran densidad de Beacons por superficie, lo que aumenta el costo de despliegue. Por otra parte, los algoritmos de posicionamiento deben aprender a leer e interpretar este ruido, basado en patrones según la posición, con lo cual los algoritmos supervisados de máquinas de aprendizaje son sumamente efectivos en este ámbito.
 
 
-\section{Evaluación y selección de Beacons Bluetooth}
+\subsection{Evaluación y selección de Beacons Bluetooth}
 \label{sec:seleccion}
 
 A pesar de que en el mercado existe una gran variedad de empresas proveedoras de Beacons Bluetooth, hay dos que se destacan por sobre los demás y que son pioneras dentro de esta industria, estas son Estimote \citep{estimote} y Kontakt \citep{kontaktio}. Ambas empresas proveen de hardware y soluciones de software ya implementadas y listas para el uso empresarial o pequeños desarrollos. Para compararlos solo se consideran los Beacons estándar dentro de cada proveedor, ya que existen múltiples variedades en cada segmento, sin embargo, estos poseen otras cualidades como sensores de luz, temperatura, lectores NFC, UWB, o son resistentes al agua, polvo, entre otros. Para hacer un análisis justo y conciso, en este caso se obviarán estas características, aunque si pueden ser utilizadas en diversos contextos. 
@@ -170,7 +170,7 @@ Precio                      & 60 USD                          & 59 USD          
 
 La \autoref{tabla-comparativa-beacons} muestra que ambos equipos son muy similares en teoría, además ambos presentan kits de desarrollo de software para las principales plataformas, ya sea web, aplicaciones móviles como Android e IOS como también permiten la integración de la infraestructura en la nube. Para determinar entonces la elección, es necesario realizar pruebas en ambos hardware, sin embargo, estas pruebas ya han sido realizadas en múltiples ocasiones por investigadores como se aprecia en \citep{comparativaKontakt} en donde se realizaron pruebas de fluctuación en las señales para ambos equipos. La prueba consiste en poner Beacons Kontakt y Estimote a una distancia de 2 metros de un dispositivo móvil que registra la señal. Ambas configuraciones son idénticas en los equipos y las mediciones fueron realizadas cada 500ms. Los resultados de las pruebas indican que los Beacons de Kontakt tienen muchas menos fluctuaciones y la señal permanece estable por mucho más tiempo, lo que es un indicio que pueden ser mucho más factibles en la localización en tiempo real.
 
-\section{Algoritmos de \textit{Machine Learning}}
+\subsection{Algoritmos de \textit{Machine Learning}}
 
 Para determinar la posición del dispositivo móvil, es necesario contar con un algoritmo que pueda inferir la posición del usuario basado en las señales percibidas por los distintos Beacons. Para ello en este trabajo se utilizaran los denominados algoritmos de aprendizaje automático o \textit{machine learning}. En términos generales los algoritmos de aprendizaje automático corresponden a una rama de la inteligencia artificial en donde su objetivo principal es lograr que los computadores puedan aprender por sí mismos, sin necesidad de programar su comportamiento explícitamente. Para lograr esto, se entrenan los diferentes algoritmos mediante información suministrada en forma de ejemplos según el tipo de resultado que se espera. El auge de este tipo de técnicas ocurre con la llegada del internet y los grandes volúmenes de datos, ya que para resolver ciertos problemas como clasificación de imágenes, los algoritmos convencionales son NP-Hard, es decir, su complejidad computacional es muy alta o desconocida, por lo tanto no es computacionalmente computable en un tiempo razonable, por lo que las técnicas de aprendizaje automático o heurísticas pueden entregar resultados positivos con una alta precisión sin necesidad de programar un algoritmo especifico a cada problema.
 
@@ -180,7 +180,7 @@ Dentro del aprendizaje automático se distinguen dos tipos de técnicas de las m
 
 Estos algoritmos son típicamente implementados en dos fases. En la primera fase, denominada fase de entrenamiento o \textbf{training phase}, los datos son recopilados y manipulados de forma tal que pueden ser suministrados a los algoritmos de aprendizaje automático, de esta forma, los algoritmos pueden ``aprender" patrones de los datos y clasificarlos. En la segunda fase, denominada fase de pruebas o \textbf{testing phase}, nuevos datos no vistos previamente son probados en el algoritmo entrenado en la primera fase, para dilucidar la efectividad del modelo construido.
 
-A lo largo de este trabajo se utilizan muchos tipos de algoritmos, sin embargo, a continuación, se procede a describir los más relevantes y que serán mayormente utilizados en la localización en interiores, ya que a lo largo de investigaciones previas han demostrado buenos resultados en problemas similares.
+A lo largo de este trabajo se utilizan muchos tipos de algoritmos, sin embargo, a continuación, se procede a describir los más relevantes y que serán mayormente utilizados en la localización en interiores, ya que a lo largo de investigaciones previas han demostrado buenos resultados en problemas similares. La \autoref{fig:machineLearningBasic} muestra el esquema básico que sigue cualquier técnica de machine learning.
 
 \begin{figure}[ht!]
 \centering
@@ -190,7 +190,7 @@ A lo largo de este trabajo se utilizan muchos tipos de algoritmos, sin embargo, 
 \label{fig:machineLearningBasic}
 \end{figure}
 
-\subsection{K-Nearest Neighbor}
+\subsubsection{K-Nearest Neighbor}
 
 El método K-Nearest Neighbor o método de los \textbf{k} vecinos más cercanos, abreviado también como \textbf{\textit{k-nn}} es un método de clasificación y regresión supervisada, muy simple, pero a la vez poderoso, ya que es no paramétrico, es decir, no es necesario configurar parámetros del modelo, por lo que entradas de datos similares deben tener salidas de datos similares. Este método estima la función de densidad $F(\frac{x}{C_{j}})$ de las predictoras $x$ (datos de entrada) por cada clase $C_{j}$. En el proceso de aprendizaje no se hace ninguna suposición sobre la distribución de las variables predictoras.
 
@@ -227,7 +227,7 @@ La \autoref{fig:knn} muestra el funcionamiento de k-nn y como el valor seleccion
 \label{fig:knn}
 \end{figure}
 
-\section{Support Vector Machines}
+\subsubsection{Support Vector Machines}
 
 Otro de los algoritmos más utilizados en aprendizaje supervisado corresponde al denominado \textit{support vector machine}(SVM) o máquina de vectores de soporte. Ese algoritmo es sumamente utilizado sobre todo en problemas de clasificación, regresión y \textit{detección de outliers}. Una máquina de vectores de soporte construye un hiperplano o un conjunto de ellos, en un espacio de alta dimensionalidad o dimensionalidad infinita, el cual puede ser utilizado para clasificación. Intuitivamente, un buen hiperplano separador es aquel que logra maximizar la distancia a cada ejemplo de entrenamiento más cercano a él, de cada clase, lo cual se conoce como margen funcional, entonces mientras más grande es este margen, menor es el error de generalización del clasificador, es decir, permite mayor generalización para nuevos datos, sin definir un margen estricto que solo se adapte a los datos de entrenamiento. Posteriormente para clasificar nuevos ejemplos, la SVM ubica este nuevo punto en una región del espacio que corresponde a una clase, según su distancia y posición respecto al hiperplano definido en la fase de entrenamiento.
 
@@ -282,7 +282,7 @@ Luego, utilizando este kernel, se debe escoger el parámetro $\gamma$ y el pará
 
 Por otra parte, el hiperparámetro $\gamma$ define que tan lejos alcanza la influencia de un ejemplo de entrenamiento por sí solo, es decir, puede ser visto como el inverso del radio de influencia de los ejemplos de entrenamiento escogidos como vectores de soporte. Un valor pequeño de $\gamma$ producirá un largo alcance, definiendo zonas de clasificación muy amplias, con lo cual no se aprecia completamente la forma o patrón de estas. Por otra parte, un valor grande, provoca demasiada separación, aislando cada ejemplo de entrenamiento.
 
-\section{Redes Neuronales y Deep learning}
+\subsubsection{Redes Neuronales y Deep learning}
 
 Uno de los campos de investigación con mayor auge en el último periodo, es todo lo relativo a los avances en redes neuronales, particularmente \textit{deep learning}.  La base de estos modelos computacionales es, como indica su nombre, las neuronas y su funcionamiento en el cerebro y el sistema nervioso. El cerebro, en particular el sistema visual o corteza visual primaria, es el responsable de reconocer patrones, y lo hace de manera tal en que una imagen es dividida y analizada a través de muchas capas, disminuyendo la complejidad en cada una de ellas para ir de lo macro a lo micro, pudiendo así establecer patrones de menor escala y localidades en la imagen que ayuda a distinguir de que se trata el objeto visualizado.
 
@@ -312,7 +312,7 @@ En donde $ w\cdot x = \sum_{j} w_{j} x_{j} $ con $w$ y $x$ son vectores en donde
 La neurona más utilizada es la denominada neurona sigmoid. Estas neuronas son similares a las neuronas perceptron(primeras neuronas inventadas), pero pequeños cambios en sus pesos y sesgos, provocan pequeños cambios en las salidas, lo cual las hace mucho más útiles y diversifican muy bien la información a través de la red. La función de activación de este tipo de neuronas corresponde a la función sigmoid, y ayuda a resolver problemas estrictamente no lineales. Luego el output $y_{k}$ viene dado por:
 
 
-\begin{equation} \sigma( w \cdot x + b) = \frac{1}{1 + exp(- \sum_{j} w_{j}x_{j} - b)} \end{equation}
+\begin{equation} \sigma( w \cdot x + b) = \frac{1}{1 + exp(- \sum_{j} w_{j}x_{j} - b )} \end{equation}
 
 Luego el procedimiento por el cual aprende la red corresponde a un algoritmo denominado \textit{backpropagation} el cual puede computar los pesos y bias adecuados para la red, con el objetivo de entrenarla y definir los mejores hiperparámetros para posteriormente clasificar de manera correcta nuevos ejemplos. El algoritmo de backpropagation consiste en los siguientes pasos:
 
@@ -331,7 +331,7 @@ Luego el procedimiento por el cual aprende la red corresponde a un algoritmo den
 
 Para calcular el gradiente se utiliza gradiente descendente, y entonces, cada iteración consiste en atravesar la red hacia adelante, computar el error y volver para propagar el error y computar los ajustes y actualizaciones a los hiperparámetros. Este algoritmo ha logrado un gran avance en las redes neuronales artificiales permitiendo entrenarlas de manera mucho más rápida, logrando grandes resultados.
 
-Las redes neuronales obtienen buenos resultados en gran parte de los problemas, pero para problemas demasiado complejos el concepto de multilayer perceptron, es decir, el modelo estándar de redes neuronales no es suficiente. Para ello, ha surgido el concepto de \textit{deep learning} o aprendizaje profundo. Estas redes son similares a las redes normales, pero poseen más de una capa escondida y además se han desarrollado otros algoritmos para resolverlas eficientemente. 
+Las redes neuronales obtienen buenos resultados en gran parte de los problemas, pero para problemas demasiado complejos el concepto de multilayer perceptron, es decir, el modelo estándar de redes neuronales no es suficiente. Para ello, ha surgido el concepto de \textit{deep learning} o aprendizaje profundo. Estas redes son similares a las redes normales, pero poseen más de una capa escondida y además se han desarrollado otros algoritmos para resolverlas eficientemente. La \autoref{fig:mlp} muestra una red profunda.
 
 \begin{figure}[ht!]
 \centering
@@ -354,6 +354,8 @@ Lo primero a tener en consideración, es que se deben utilizar dispositivos Blue
 
 Para la generación del radiomap, se debe crear un tipo de aplicación que sea capaz de recolectar los vectores RSSI en diversos puntos dentro del lugar de experimentación. Esta aplicación debe ser simple y permitir la adición de nuevos puntos Fingerprint. Por lo tanto, esta es una tarea muy importante, ya que a partir de estos datos se implementarán los algoritmos de máquinas de aprendizaje. El periodo y frecuencia de los datos se debe determinar experimentalmente. Para ello, cada medición a colectar representa un punto en el espacio $2-dimensional$, es decir, un punto dentro del plano. Para generar la grilla, es necesario tener la posición exacta, que corresponde a la etiqueta de cada punto mapeado. Entonces, se formará una grilla de múltiples puntos con sus respectivos fingerprints leídos. Cabe destacar que los puntos de referencia en donde se toman los datos no necesariamente deben estar equiespaciados, pero de esta manera es mucho más simple formar la grilla, ya que cada punto de medición puede corresponder al centro de un cuadrado de determinadas dimensiones. La \autoref{fig:fingerprints} muestra la grilla a desarrollar, con un punto de referencia y su respectivo vector RSSI expresado en dBm.
 
+\newpage
+
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=.6\textwidth]{figures/fingerprints.jpg}
@@ -362,12 +364,12 @@ Para la generación del radiomap, se debe crear un tipo de aplicación que sea c
 \label{fig:fingerprints}
 \end{figure}
 
-Con los datos registrados, se debe crear la base de datos que almacenara estos Fingerprints, ya que desde ahí es posible analizar los datos y mantener su persistencia. Posteriormente, con estos datos se crea el radiomap respectivo, es decir, asociar un vector de señales RSSI, en donde cada componente representa la intensidad recibida proveniente de un access point, a cada posición en donde se colectaron los datos. El número de fingerprints depende del número de posiciones en donde se colectan los datos, y también de cuantos ejemplos se obtienen en cada una de estas posiciones. La tabla ejemplifica la estructura del radiomap a construir:
+Con los datos registrados, se debe crear la base de datos que almacenara estos Fingerprints, ya que desde ahí es posible analizar los datos y mantener su persistencia. Posteriormente, con estos datos se crea el radiomap respectivo, es decir, asociar un vector de señales RSSI, en donde cada componente representa la intensidad recibida proveniente de un access point, a cada posición en donde se colectaron los datos. El número de fingerprints depende del número de posiciones en donde se colectan los datos, y también de cuantos ejemplos se obtienen en cada una de estas posiciones. La \autoref{tabla-estructura-radiomap} ejemplifica la estructura del radiomap a construir:
 
 \begin{table}[ht!]
 \centering
 \caption{Estructura general del radiomap a construir}
-\label{my-label}
+\label{tabla-estructura-radiomap}
 \begin{tabular}{|c|c|c|c|c|}
 \hline
 Posicion & AP 1 & AP 2 & ... & AP N \\ \hline
@@ -380,7 +382,7 @@ Cabe destacar que los algoritmos de máquinas de aprendizaje a pesar que pueden 
 
 Teniendo en consideración los puntos anteriormente mencionados, el siguiente paso es entrenar los algoritmos de aprendizaje a ser comparados y utilizados en el posicionamiento. Antes del entrenamiento, es necesario de destacar que se utilizara un algoritmo de reducción de dimensional. Esto no ha sido mayormente explorado en la literatura, sin embargo, puede ser de mucha utilidad a la hora del entrenamiento y la fase \textit{online}. La principal razón de utilizar estas técnicas es que los puntos de referencia poseen una alta correlación, debido a que la onda decae según el cuadrado de la distancia, por lo que se presenta una correlación entre dos puntos adyacentes. Por otra parte, los métodos de extracción de características pueden ayudar a agilizar la fase de entrenamiento, ya que este proceso es lento. Además, al ser menos componentes, en la fase online, las técnicas tardaran mucho menos tiempo en determinar la posición en tiempo real, lo cual es sumamente efectivo en técnicas como KNN.
 
-Existen dos métodos muy conocidos mediante los cuales se puede reducir la dimensionalidad, estos son \textit{Linear discriminant analysis}(\textbf{LDA}) y \textit{principal component analysis}(\textbf{PCA}). Por un lado, LDA es una técnica habitualmente utilizado en los campos de estadísticas, reconocimiento de patrones y máquinas de aprendizaje. El objetivo de LDA es encontrar una combinación lineal de los \textit{features} o características del dataset, las cuales separan dos o más clases. La combinación lineal resultante es habitualmente utilizada como clasificador o más popularmente para reducir la dimensionalidad del dataset. LDA es similar a PCA, ya que ambos buscan combinaciones lineales que explican de mejor manera los datos, sin embargo, la manera en que los realizan es diferente, ya que LDA explícitamente intenta modelar la diferencia entre las clases de datos, por lo que necesita de las etiquetas de cada clase, lo cual lo torna un método supervisado. Por otro lado, PCA no toma en cuenta la diferencia entre las clases, por lo que es un método no supervisado. Además, LDA funciona bien en el caso de que las variables o atributos del dataset son independientes, y predicen la variable categórica o etiqueta de cada clase.
+Existen dos métodos muy conocidos mediante los cuales se puede reducir la dimensionalidad, estos son \textit{Linear discriminant analysis}      (\textbf{LDA}) y \textit{principal component analysis} (\textbf{PCA}). Por un lado, LDA es una técnica habitualmente utilizado en los campos de estadísticas, reconocimiento de patrones y máquinas de aprendizaje. El objetivo de LDA es encontrar una combinación lineal de los \textit{features} o características del dataset, las cuales separan dos o más clases. La combinación lineal resultante es habitualmente utilizada como clasificador o más popularmente para reducir la dimensionalidad del dataset. LDA es similar a PCA, ya que ambos buscan combinaciones lineales que explican de mejor manera los datos, sin embargo, la manera en que los realizan es diferente, ya que LDA explícitamente intenta modelar la diferencia entre las clases de datos, por lo que necesita de las etiquetas de cada clase, lo cual lo torna un método supervisado. Por otro lado, PCA no toma en cuenta la diferencia entre las clases, por lo que es un método no supervisado. Además, LDA funciona bien en el caso de que las variables o atributos del dataset son independientes, y predicen la variable categórica o etiqueta de cada clase.
 
 Como se mencionó anteriormente, LDA maximiza la separación entre clases, es decir, la varianza entre clases o interclases. PCA por su parte, busca las componentes de la combinación lineal, las cuales maximizan la varianza en los datos, esto quiere decir, la varianza de las variables o varianza intraclases. LDA hace presunciones sobre los datos que lo vuelven más complejo de implementar, por ejemplo, las clases deben estar normalmente distribuidas, y la covarianza de las clases debe ser igual. Por todo lo anterior, y como es necesario reducir la correlación entre los puntos adyacentes, se decide utilizar PCA como técnica para reducir el espacio de dimensionalidad y para encontrar un espacio no correlacionado de variables. Esto es necesario, debido a que al estar tan correlacionado los puntos de referencia en la grilla, puede existir información o \textit{features} escondidos, lo cual no aumentara la \textit{accuracy} de las técnicas de machine learning, pero si mejora los tiempos de entrenamiento y en la fase online, lo cual es muy relevante en un sistema de posicionamiento en tiempo real. La correlación se debe a que como es sabido, las ondas se propagan de la siguiente forma:
 
@@ -464,6 +466,7 @@ La fase Online es muy simple, ya que solo se deben evaluar los nuevos valores en
 
 A continuación, la \autoref{fig:propuesta} describe el procedimiento completo a desarrollar en este trabajo.
 
+\newpage
 
 \begin{figure}[ht!]
 \centering

@@ -27,15 +27,15 @@
 \BOOKMARK [3][-]{subsubsection.4.1.1.2}{\277Donde comenz\363 la tecnolog\355a Beacon?}{subsection.4.1.1}% 27
 \BOOKMARK [3][-]{subsubsection.4.1.1.3}{\277En donde pueden ser utilizados los Beacons?}{subsection.4.1.1}% 28
 \BOOKMARK [3][-]{subsubsection.4.1.1.4}{Perfiles Beacon}{subsection.4.1.1}% 29
-\BOOKMARK [1][-]{section.4.2}{Estabilidad de la se\361al Bluetooth}{chapter.4}% 30
-\BOOKMARK [1][-]{section.4.3}{Evaluaci\363n y selecci\363n de Beacons Bluetooth}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.4}{Algoritmos de Machine Learning}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.4.1}{K-Nearest Neighbor}{section.4.4}% 33
-\BOOKMARK [1][-]{section.4.5}{Support Vector Machines}{chapter.4}% 34
-\BOOKMARK [1][-]{section.4.6}{Redes Neuronales y Deep learning}{chapter.4}% 35
-\BOOKMARK [1][-]{section.4.7}{Descripci\363n del framework de posicionamiento}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.7.1}{Fase Offline}{section.4.7}% 37
-\BOOKMARK [2][-]{subsection.4.7.2}{Fase Online}{section.4.7}% 38
+\BOOKMARK [2][-]{subsection.4.1.2}{Estabilidad de la se\361al Bluetooth}{section.4.1}% 30
+\BOOKMARK [2][-]{subsection.4.1.3}{Evaluaci\363n y selecci\363n de Beacons Bluetooth}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.4}{Algoritmos de Machine Learning}{section.4.1}% 32
+\BOOKMARK [3][-]{subsubsection.4.1.4.1}{K-Nearest Neighbor}{subsection.4.1.4}% 33
+\BOOKMARK [3][-]{subsubsection.4.1.4.2}{Support Vector Machines}{subsection.4.1.4}% 34
+\BOOKMARK [3][-]{subsubsection.4.1.4.3}{Redes Neuronales y Deep learning}{subsection.4.1.4}% 35
+\BOOKMARK [1][-]{section.4.2}{Descripci\363n del framework de posicionamiento}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.2.1}{Fase Offline}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.2}{Fase Online}{section.4.2}% 38
 \BOOKMARK [0][-]{chapter.5}{Experimentaci\363n}{}% 39
 \BOOKMARK [1][-]{section.5.1}{Beacons y configuraci\363n}{chapter.5}% 40
 \BOOKMARK [1][-]{section.5.2}{Lugar de experimentaci\363n}{chapter.5}% 41
@@ -54,4 +54,3 @@
 \BOOKMARK [1][-]{section.6.2}{An\341lisis de resultados}{chapter.6}% 54
 \BOOKMARK [0][-]{chapter.7}{Conclusi\363n}{}% 55
 \BOOKMARK [0][-]{chapter*.68}{Bibliograf\355a}{}% 56
-\BOOKMARK [0][-]{appendix.Alph1}{LICENCIA}{}% 57

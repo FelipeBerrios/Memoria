@@ -8,7 +8,7 @@ Para los resultados, se deben elaborar métricas que permitan determinar cuáles
 RMSE = \sqrt{\frac{1}{n} \sum_{j=1}^{n}(y_{j} - \hat{y_{j}})^{2}} 
 \end{equation}
 
-Para las tablas se considera el método dinámico y estático definido anteriormente. La primera tabla muestra los resultados obtenidos en el método dinámico sin utilizar PCA. Se debe considerar que todos los valores están en metros.
+Para las tablas se considera el método dinámico y estático definido anteriormente. La \autoref{tabla-dinamica-nPCA} muestra los resultados obtenidos en el método dinámico sin utilizar PCA. Se debe considerar que todos los valores están en metros.
 
 
 \begin{table}[ht!]
@@ -84,7 +84,9 @@ El siguiente análisis realizado, tiene que ver con el valor de \textit{Cumulati
 F_{X} (x) = P(X \le x)
 \end{equation}
 
-La importancia de este indicador es que refleja en este caso, que tan frecuente se repite un valor de error, o, dicho de otra forma, en qué porcentaje se puede asegurar que el error será menor o igual a un determinado valor, por ejemplo el 90\% de las veces el error es menor a 10 metros. Con esta definición, a continuación, se procede a mostrar los gráficos obtenidos tanto para el método estático como para el método dinámico.
+La importancia de este indicador es que refleja en este caso, que tan frecuente se repite un valor de error, o, dicho de otra forma, en qué porcentaje se puede asegurar que el error será menor o igual a un determinado valor, por ejemplo el 90\% de las veces el error es menor a 10 metros. Con esta definición, a continuación, se procede a mostrar los gráficos obtenidos tanto para el método estático como para el método dinámico. La \autoref{fig:cdf-dinamicos} muestra esta situación.
+
+\newpage
 
 \begin{figure}[ht!]
 \centering
@@ -133,7 +135,9 @@ La importancia de este indicador es que refleja en este caso, que tan frecuente 
 
 Los gráficos muestran que los valores son muy símiles en cuanto a si se utiliza PCA o no. K-NN se mantiene el 80\% de las veces bajo los 10 metros, en ambos casos y cerca del 60\% bajo los 6 metros. Por otro lado, SVM igualmente el 80\% de las veces está bajo los 10 metros con respecto a SVM sin utilizar PCA, el 50\% de las veces está bajo los 8 metros y utilizando PCA esto ocurre el 60\% de las veces por lo que PCA es más estable en este sentido, y genera valores más uniformes. Finalmente, con las redes neuronales, los resultados presentados sin utilizar PCA, el 80\% de las veces esta cercano a los 12 metros y 50\% de las veces en los 7.5 metros. Utilizando PCA en este último caso, los resultados son mejores para porcentajes más bajos, ya que el 80\% de las veces esta sobre los 15 metros aproximadamente,  pero esto no cambia relativamente hacia porcentajes superiores, sin embargo para porcentajes inferiores los valores mejoran, ya que por ejemplo para un error menor a 6 metros, ocurre con una probabilidad del 60\% .
 
-Para ver el mínimo error al 100\%, es decir, el error mínimo que está asegurado, se realiza la siguiente tabla comparando sus valores utilizando o no PCA. Nuevamente los valores están en metros.
+Para ver el mínimo error al 100\%, es decir, el error mínimo que está asegurado, se realiza la \autoref{cambio-cdf-dinamico} comparando sus valores utilizando o no PCA. Nuevamente los valores están en metros.
+
+\newpage
 
 \begin{table}[!h]
 \centering
@@ -219,7 +223,7 @@ NN           & 11.18033 & 16.1554 & -44.49 \% \\ \hline
 
 Los cambios para KNN y SVM no son significativos, y además los errores mínimos son muy similares, del orden de los 16 metros, lo cual indica que PCA funciona efectivamente para reducir la información redundante. Con respecto a NN, se presenta una anomalía al utilizar o no PCA, esto se debe a que las redes neuronales ya hacen una reducción de la dimensionalidad en sus capas escondidas, y retienen lo mejor de la información en cada paso, por lo que aplicar PCA no ayuda demasiado, debido a que resta información relevante, entonces, para Neural Networks, específicamente deep learning, PCA no es efectivo, y es mejor pasar la mayor cantidad de información \textbf{relevante} que se posea.
 
-El siguiente análisis tiene relación con la dispersión del error, vale decir, que tan distintos son los valores, y además determinar en qué valores se agrupan en su mayoría los datos. Para ello se utiliza un análisis de diagrama de cajas o \textit{boxplot}. Con este tipo de análisis se puede visualizar la dispersión y distribución de los datos en términos de cuartiles. En primer lugar, se construyen las siguientes tablas que muestran los valores relevantes para el boxplot. La primera tabla resume los valores de error obtenidos para el método dinámico.
+El siguiente análisis tiene relación con la dispersión del error, vale decir, que tan distintos son los valores, y además determinar en qué valores se agrupan en su mayoría los datos. Para ello se utiliza un análisis de diagrama de cajas o \textit{boxplot}. Con este tipo de análisis se puede visualizar la dispersión y distribución de los datos en términos de cuartiles. En primer lugar, se construyen las siguientes tablas que muestran los valores relevantes para el boxplot. La \autoref{tabla-boxplot-dinamico} resume los valores de error obtenidos para el método dinámico.
 
 \begin{table}[!ht]
 \centering
@@ -239,6 +243,8 @@ NN PCA                & 6.0827           & 3.0           & 15.1327       & 16.15
 
 
 Para el método estático, la \autoref{tabla-boxplot-estatico} muestra los valores resultantes de error.
+
+\newpage
 
 \begin{table}[!ht]
 \centering
@@ -304,7 +310,7 @@ Para el análisis de CDF en el caso estático, los resultados son mucho mejores 
 
 Para el análisis del CDF al 100\%, la \autoref{cambio-cdf-estatico}, muestra que KNN no cambia prácticamente, SVM disminuye 16.1544 a 15.1327 metros, disminuyendo así 6.33\%. Finalmente, las redes neuronales pasan de 11.18033 metros sin PCA a 16.1554 metros con este, lo cual supone un aumento de 44.49\%.  Los resultados muestran los errores mínimos asociados. En este caso y como se menciona anteriormente, NN con PCA aumenta el error, mientras SVM con kernel Gaussiano mejora un poco, aunque no siempre ocurrirá esto, ya que PCA origina un espacio no correlacionado y SVM con función de radio basal asume que el espacio se distribuye de manera Gaussiana, lo cual no siempre es cierto, y por lo que tener en cuenta esta mejora tanto para el caso estático y dinámico no es fiable, debido a que puede ser producto de una casualidad. Con lo anterior, es claro que para el método estático es mejor utilizar redes neuronales sin PCA basado en el análisis del CDF.
 
-Para el análisis de distribución de los datos, es necesario analizar los datos relativos a los percentiles o cuartiles, y el análisis cualitativo del diagrama de cajas.  Con respecto a los datos de la \autoref{tabla-boxplot-dinamico}, que representan la distribución obtenida en el método dinámico, se observa que la mediana de los errores se encuentra entre los valores 6.0827 metros y 9.2195 metros. Por otra parte, para el primer cuartil, es decir, $Q1$, que es equivalente al 25avo percentil, el máximo valor es 5 metros en SVM y SVM utilizando PCA, y el mínimo lo obtiene redes neuronales con PCA, con 3 metros, lo cual es indicativo que el 25\% menor de los datos están en este rango, por lo que no es buen indicativo para el posicionamiento, debido a que este error es muy grande. Luego, el tercer cuartil, es decir $Q3$, esta entre 9.2195 metros para KNN y KNN PCA, hasta 15.1327 para NN PCA. Esto indica que la distribución del 50\% total de los datos está en un rango intercuartílico ($Q3 – Q1$) de 5.0 metros para SVM PCA en el mejor caso, y 12.1327 metros para el peor caso. 
+Para el análisis de distribución de los datos, es necesario analizar los datos relativos a los percentiles o cuartiles, y el análisis cualitativo del diagrama de cajas.  Con respecto a los datos de la \autoref{tabla-boxplot-dinamico}, que representan la distribución obtenida en el método dinámico, se observa que la mediana de los errores se encuentra entre los valores 6.0827 metros y 9.2195 metros. Por otra parte, para el primer cuartil, es decir, $Q1$, que es equivalente al 25avo percentil, el máximo valor es 5 metros en SVM y SVM utilizando PCA, y el mínimo lo obtiene redes neuronales con PCA, con 3 metros, lo cual es indicativo que el 25\% menor de los datos están en este rango, por lo que no es buen indicativo para el posicionamiento, debido a que este error es muy grande. Luego, el tercer cuartil, es decir $Q3$, esta entre 9.2195 metros para KNN y KNN PCA, hasta 15.1327 para NN PCA. Esto indica que la distribución del 50\% total de los datos está en un rango intercuartílico (Q3 – Q1) de 5.0 metros para SVM PCA en el mejor caso, y 12.1327 metros para el peor caso. 
 
 Con lo anterior, es claro que el mejor algoritmo según este análisis es KNN PCA, debido a que sus valores de $Q1$ y $Q3$ son los más bajos y el rango intercuartílico es no es tan grande, por lo que se puede determinar que el valor máximo de la distribución no escapa tanto, en este caso es 16 metros, que se condice con los análisis de CDF. Los peores resultados en la distribución del error lo obtienen las redes neuronales siempre y cuando se analicen solo los datos del Boxplot, ya que si se toman en cuenta los percentiles 90 y 95, SVM es el peor debido a que alcanza los 20 metros en el 95\% inferior de los datos. El peor valor entonces, según el Boxplot es obtenido por NN PCA, ya que el tercer cuartil es muy elevado, además su rango intercuartílico es muy grande, lo que indicaría que el 50\% central de los datos están demasiado dispersos en este rango, y a pesar de que su distribución general es similar a las demás, ya que el mínimo y máximo están en un rango parecido a KNN por ejemplo, la distribución interna es muy disociada, mostrando así falta de agrupación en los datos, provocando de esta forma resultados poco estables.
 

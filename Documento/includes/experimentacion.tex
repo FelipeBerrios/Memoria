@@ -21,7 +21,7 @@ Cabe destacar que las características básicas del \textit{Hardware} de cada Be
 \includegraphics[width=.6\textwidth]{figures/beacons_all.jpg}
 \caption[Beacons utilizados en la experimentación]{Diferentes tipos de Beacons utilizados en la experimentación \\
 {\scriptsize (Fuente: Elaboración propia)}}
-\label{fig:propuesta}
+\label{fig:beacons}
 \end{figure}
 
 Lo siguiente es definir la configuración de cada Beacon. Los parámetros más relevantes en este caso serian el \textit{TX Power} y el \textit{Beacon Interval}. En un despliegue real, lo más relevante es disminuir los costos, que en este caso están asociado a las baterías o más bien al cambio de estas a lo largo del tiempo. Estos dos parámetros son importantes para la localización indoor, ya que el TX Power define la potencia de salida de cada Beacon y el intervalo corresponde a cada cuanto un Beacon envía un mensaje a los dispositivos Bluetooth cercanos. 
@@ -196,14 +196,16 @@ Los algoritmos a comparar no serán abordados en detalle porque no es el objetiv
 x^{'} = \frac{x- \overline{x}}{\sigma}
 \end{equation}
 
-Una vez estandarizados los datos, se procede a evaluar los algoritmos en ellos. Cabe destacar que para realizar la evaluación se utilizan las clases de la etiqueta $X$, a pesar de que puede usarse $Y$ igualmente, por lo mismo el número de clases corresponde a 11. La \autoref{fig:manifold} resume los resultados obtenidos debido a aplicar los algoritmos anteriormente mencionados para una proyección en dos componentes, es decir en 2-D, con 10 vecinos, donde los vecinos representan un área o vecindario similar al que utiliza K-NN.
+Una vez estandarizados los datos, se procede a evaluar los algoritmos en ellos. Cabe destacar que para realizar la evaluación se utilizan las clases de la etiqueta $X$, a pesar de que puede usarse $Y$ igualmente, por lo mismo el número de clases corresponde a 11. La \autoref{fig:manifold-nopca} resume los resultados obtenidos debido a aplicar los algoritmos anteriormente mencionados para una proyección en dos componentes, es decir en 2-D, con 10 vecinos, donde los vecinos representan un área o vecindario similar al que utiliza K-NN.
+
+\newpage
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=.6\textwidth]{figures/manifold.png}
 \caption[Comparación de los diferentes algoritmos Manifold Learning]{Comparación de los diferentes algoritmos Manifold para la reducción de la dimensionalidad con sus respectivos tiempos de ejecución. \\
 {\scriptsize (Fuente: Elaboración Propia)}}
-\label{fig:manifold}
+\label{fig:manifold-nopca}
 \end{figure}
 
 
@@ -337,20 +339,22 @@ La estructura de la red puede visualizarse en la \autoref{fig:nn_estructura}.
 
 En la imagen se muestra la estructura de la red construida y extraída del visor \textbf{Tensorboard}, un addon de Tensorflow para la visualización de gráficos, grafos, histogramas, entre otros. Se debe notar que existen dos redes paralelas, esto se debe a que las redes neuronales para predecir la clase de X y la clase de Y se entrenan simultáneamente, por esto aparecen juntas en la imagen, pero cada una tiene su propio entrenamiento y evaluación.
 
-Con todos estos puntos definidos, se muestra los resultados obtenidos en el entrenamiento de la red neuronal profunda. La \autoref{nn_metrics} exhibe esta situación.
+Con todos estos puntos definidos, se muestra los resultados obtenidos en el entrenamiento de la red neuronal profunda. La \autoref{fig:nn_metrics} exhibe esta situación.
+
+\newpage
 
 
 \begin{figure}[ht!]
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.8\linewidth]{figures/nn_plot.png}
+  \includegraphics[width=1.0\linewidth]{figures/nn_plot.png}
   \caption{Accuracy}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.8\linewidth]{figures/nn_loss.png}
+  \includegraphics[width=1.0\linewidth]{figures/nn_loss.png}
   \caption{Loss}
   \label{fig:sub2}
 \end{subfigure}
@@ -363,7 +367,7 @@ Debe tenerse en cuenta que para la accuracy, los resultados de entrenamiento y p
 
 Con toda la información presentada, es claro que los mejores resultados se presentan principalmente en 3 algoritmos, estos son KNN, SVM con kernel RBF y Redes Neuronales profundas. Lo anterior demuestra que los datos efectivamente tienen estructuras no lineales, ya que K-NN no depende específicamente de la estructura de los datos, ya que busca un radio o vecindario de clasificación. SVM RBF define áreas de clasificación que precisamente son no lineales, por lo que puede buscar mejores representaciones en este tipo de estructuras que los clasificadores lineales. La forma en que modela estas fronteras no lineales es debido a la elección del kernel RBF el cual por su función de radio basal es flexible en torno a este tipo de regiones. Por último, las redes neuronales pueden aprender de datos no lineales debido a sus funciones de activación que precisamente son no lineales, además de poder aprender patrones más detallados en cada capa, por su capacidad de reducir la complejidad y dimensionalidad de los datos.
 
-Para corroborar los resultados visualizados en los gráficos, se realiza la tabla con los mejores valores de accuracy para cada algoritmo. Aunque esto puede ser suficiente, además se incorpora el mejor error obtenido en metros, es decir, el error cuadrático medio para cada coordenada respectivamente, ya que, aunque la accuracy determina que tanto acierta el algoritmo, igualmente es necesario establecer el error medio, porque es preferible tener un valor de error más pequeño, debido a que este representa el error presente al momento de la fase online de ubicación. Este error esta expresado en metros y se separa según coordenadas, ya sea X o Y.
+Para corroborar los resultados visualizados en los gráficos, se realiza la \autoref{tabla-clasificacion} con los mejores valores de accuracy para cada algoritmo. Aunque esto puede ser suficiente, además se incorpora el mejor error obtenido en metros, es decir, el error cuadrático medio para cada coordenada respectivamente, ya que, aunque la accuracy determina que tanto acierta el algoritmo, igualmente es necesario establecer el error medio, porque es preferible tener un valor de error más pequeño, debido a que este representa el error presente al momento de la fase online de ubicación. Este error esta expresado en metros y se separa según coordenadas, ya sea X o Y.
 
 \begin{table}[ht!]
 \centering
@@ -398,14 +402,14 @@ Lo primero a determinar claramente, es el número de componentes principales que
 
 Para la selección, es necesario realizar pruebas que ayuden a la toma de decisiones sobre el número de componentes principales a utilizar, ya que hasta el momento no existe un algoritmo que lo determine automáticamente, por lo que depende netamente del experimentador y los resultados deseados en términos de accuracy y ahorro de procesamiento. Para ello se proponen tres métodos explicados a continuación. El primer método se basa en la información contextual presente en cada componente principal a través de los valores propios de la matriz de covarianzas. Estos valores propios representan que tanto se explica la varianza en una determinada dirección, en donde la dirección es la determinada por el vector propio asociado al valor propio de esa componente principal. Por lo anterior, a medida que los valores propios de una determinada componente principal incrementan su valor, esta componente principal tiende a tener más información valiosa en términos generales para el conjunto total de datos. 
 
-Después de aplicar el algoritmo PCA, el espacio de características se mantiene constante según el número de componentes originales, por lo que si el radiomap se proyecta directamente no hay mejoría y la complejidad computacional incluso puede aumentar. Para la selección, se incorpora una variable $U$, donde esta representa el número de componentes principales seleccionadas. Como se explica anteriormente, el primer método es determinar los valores propios que aportan más información(varianza), mientras más alto su valor, la componente principal asociada mantiene más información valiosa para los datos, es decir, puede interpretarse como la importancia de esa componente. Para determinar los valores propios más relevantes, estos se determinan según un criterio muy conocido, el cual es seleccionar aquellos valores propios con valor cercano o mayor a 1. Para ello, se grafican los valores propios en orden descendente:
+Después de aplicar el algoritmo PCA, el espacio de características se mantiene constante según el número de componentes originales, por lo que si el radiomap se proyecta directamente no hay mejoría y la complejidad computacional incluso puede aumentar. Para la selección, se incorpora una variable $U$, donde esta representa el número de componentes principales seleccionadas. Como se explica anteriormente, el primer método es determinar los valores propios que aportan más información(varianza), mientras más alto su valor, la componente principal asociada mantiene más información valiosa para los datos, es decir, puede interpretarse como la importancia de esa componente. Para determinar los valores propios más relevantes, estos se determinan según un criterio muy conocido, el cual es seleccionar aquellos valores propios con valor cercano o mayor a 1. Para ello, se grafican los valores propios en orden descendente en la \autoref{fig:analisis-vp}
 
 \begin{figure}[ht!]
 \centering
 \includegraphics[width=.6\textwidth]{figures/eigenvalues.png}
 \caption[Análisis de los valores propios obtenidos a partir de la matriz de covarianza]{Análisis de los valores propios obtenidos a partir de la matriz de covarianza utilizada en el algoritmo PCA  \\
 {\scriptsize (Fuente: Elaboración Propia)}}
-\label{fig:manifold}
+\label{fig:analisis-vp}
 \end{figure}
 
 Como se observa, los primeros 4 valores propios cumplen la heurística de selección necesaria, por lo que mantienen la mayor parte de la información del \textit{dataset}.
@@ -433,7 +437,7 @@ Representa la suma acumulada que retiene la información. Además, el limite req
 
 Como se aprecia en la imagen anterior, las primeras 5 componentes principales retienen la cantidad de información especificada según el límite impuesto $\xi =0.8$. Para clarificar este punto se construye una tabla resumen con los valores propios, la proporción de varianza explicada y la suma acumulada de estas proporciones.
 
-\begin{table}[]
+\begin{table}[ht!]
 \centering
 \caption[Tabla resumen varianza explicada y acumulada PCA]{Tabla resumen varianza explicada y acumulada PCA}
 \label{my-label}
@@ -452,7 +456,7 @@ La \autoref{fig:comparativa_pca} muestra la comparativa de los clasificadores.
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[width=.6\textwidth]{figures/comparativa_clasificadores_pca.png}
+\includegraphics[width=.8\textwidth]{figures/comparativa_clasificadores_pca.png}
 \caption[Comparativa de resultados obtenidos por los clasificadores utilizando PCA]{Comparativa de resultados obtenidos por los clasificadores utilizando PCA  \\
 {\scriptsize (Fuente: Elaboración Propia)}}
 \label{fig:comparativa_pca}
@@ -461,6 +465,8 @@ La \autoref{fig:comparativa_pca} muestra la comparativa de los clasificadores.
 Según la comparativa, es claro que la mayoría de los clasificadores presentan una gran mejoría hasta la quinta componente, y posteriormente la ganancia no es significante respecto a la información aportada a los respectivos algoritmos. Esto indica al igual que los otros métodos de selección, que a partir de la quinta componente la varianza aportada no es realmente significativa, por lo que puede reducirse la dimensionalidad de los datos a 5, ya que los tres métodos utilizados presentan resultados similares y coinciden en este valor de componentes principales.
 
 Posteriormente, se procede a evaluar según el procedimiento realizado anteriormente para los clasificadores sin utilizar PCA. Los resultados obtenidos en cada clasificador se muestran en la \autoref{fig:comparativa_clasificadores_pca}. Se debe destacar que los hiperparámetros de cada algoritmo no fueron cambiados respecto a sus versiones sin utilizar PCA.
+
+\newpage
 
 
 \begin{figure}[ht!]
@@ -527,13 +533,13 @@ En este caso, se obtienen resultados similares a los obtenidos sin utilizar PCA,
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.8\linewidth]{figures/nn_plot_pca.png}
+  \includegraphics[width=1.0\linewidth]{figures/nn_plot_pca.png}
   \caption{Accuracy PCA}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=.8\linewidth]{figures/nn_loss_pca.png}
+  \includegraphics[width=1.0\linewidth]{figures/nn_loss_pca.png}
   \caption{Loss PCA}
   \label{fig:sub2}
 \end{subfigure}

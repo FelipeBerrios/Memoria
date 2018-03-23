@@ -1,4 +1,3 @@
-\backcite {git2016}{{\es@scroman {iii}}{(document)}{Doc-Start}}
 \backcite {5647401}{{3}{2.1}{section.2.1}}
 \backcite {6071925}{{6}{3.1.1}{subsection.3.1.1}}
 \backcite {4058367}{{6}{3.1.1}{subsection.3.1.1}}
@@ -37,21 +36,21 @@
 \backcite {Haeberlen:2004:PRL:1023720.1023728}{{18}{2}{equation.3.2.8}}
 \backcite {Haeberlen:2004:PRL:1023720.1023728}{{18}{2}{equation.3.2.8}}
 \backcite {Ladd:2002:RLS:570645.570674}{{18}{2}{equation.3.2.8}}
-\backcite {6681592}{{18}{1}{Item.12}}
-\backcite {7174948}{{19}{3.11}{figure.caption.18}}
+\backcite {7174948}{{18}{3.11}{figure.caption.18}}
+\backcite {6681592}{{19}{1}{Item.12}}
 \backcite {Chan2006}{{19}{2}{Item.13}}
 \backcite {6407455}{{19}{3}{Item.14}}
-\backcite {6846747}{{20}{3}{Item.14}}
+\backcite {6846747}{{19}{3}{Item.14}}
 \backcite {protocolosBeacon}{{24}{4.1}{figure.caption.20}}
 \backcite {protocolosBeacon}{{24}{4.2}{figure.caption.21}}
-\backcite {estimote}{{25}{4.3}{section.4.3}}
-\backcite {kontaktio}{{25}{4.3}{section.4.3}}
-\backcite {comparativaKontakt}{{26}{4.3}{table.caption.23}}
+\backcite {estimote}{{25}{4.1.3}{subsection.4.1.3}}
+\backcite {kontaktio}{{25}{4.1.3}{subsection.4.1.3}}
+\backcite {comparativaKontakt}{{26}{4.1.3}{table.caption.23}}
 \backcite {machineLearningBasic}{{27}{4.4}{figure.caption.24}}
 \backcite {slp}{{32}{4.7}{figure.caption.27}}
 \backcite {slp}{{33}{4.8}{figure.caption.28}}
-\backcite {7743586}{{36}{4.7.1}{equation.4.7.20}}
+\backcite {7743586}{{36}{4.2.1}{equation.4.2.20}}
 \backcite {interval}{{40}{5.2}{figure.caption.33}}
 \backcite {scikit-learn}{{43}{5.3.2}{subsection.5.3.2}}
 \backcite {tensorflow2015-whitepaper}{{44}{5.3.3}{subsection.5.3.3}}
-\backcite {Ugave}{{58}{5.9}{section.5.9}}
+\backcite {Ugave}{{59}{5.9}{section.5.9}}

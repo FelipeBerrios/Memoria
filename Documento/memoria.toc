@@ -1,6 +1,6 @@
 \select@language {spanish}
-\contentsline {paragraph}{Palabras Clave.}{\es@scroman {v}}{paragraph*.2}
-\contentsline {paragraph}{Keywords.}{\es@scroman {vii}}{paragraph*.3}
+\contentsline {paragraph}{Palabras Clave.}{\es@scroman {i}}{paragraph*.2}
+\contentsline {paragraph}{Keywords.}{\es@scroman {ii}}{paragraph*.3}
 \contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.1}
 \contentsline {chapter}{\numberline {2}Definici\IeC {\'o}n del problema}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Definici\IeC {\'o}n del problema}{3}{section.2.1}
@@ -30,15 +30,15 @@
 \contentsline {subsubsection}{\numberline {4.1.1.2}\IeC {\textquestiondown }Donde comenz\IeC {\'o} la tecnolog\IeC {\'\i }a Beacon?}{22}{subsubsection.4.1.1.2}
 \contentsline {subsubsection}{\numberline {4.1.1.3}\IeC {\textquestiondown }En donde pueden ser utilizados los Beacons?}{23}{subsubsection.4.1.1.3}
 \contentsline {subsubsection}{\numberline {4.1.1.4}Perfiles Beacon}{23}{subsubsection.4.1.1.4}
-\contentsline {section}{\numberline {4.2}Estabilidad de la se\IeC {\~n}al Bluetooth}{24}{section.4.2}
-\contentsline {section}{\numberline {4.3}Evaluaci\IeC {\'o}n y selecci\IeC {\'o}n de Beacons Bluetooth}{25}{section.4.3}
-\contentsline {section}{\numberline {4.4}Algoritmos de \textit {Machine Learning}}{26}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}K-Nearest Neighbor}{27}{subsection.4.4.1}
-\contentsline {section}{\numberline {4.5}Support Vector Machines}{29}{section.4.5}
-\contentsline {section}{\numberline {4.6}Redes Neuronales y Deep learning}{31}{section.4.6}
-\contentsline {section}{\numberline {4.7}Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{33}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Fase Offline}{33}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Fase Online}{37}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.1.2}Estabilidad de la se\IeC {\~n}al Bluetooth}{24}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Evaluaci\IeC {\'o}n y selecci\IeC {\'o}n de Beacons Bluetooth}{25}{subsection.4.1.3}
+\contentsline {subsection}{\numberline {4.1.4}Algoritmos de \textit {Machine Learning}}{26}{subsection.4.1.4}
+\contentsline {subsubsection}{\numberline {4.1.4.1}K-Nearest Neighbor}{27}{subsubsection.4.1.4.1}
+\contentsline {subsubsection}{\numberline {4.1.4.2}Support Vector Machines}{29}{subsubsection.4.1.4.2}
+\contentsline {subsubsection}{\numberline {4.1.4.3}Redes Neuronales y Deep learning}{31}{subsubsection.4.1.4.3}
+\contentsline {section}{\numberline {4.2}Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{33}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Fase Offline}{33}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Fase Online}{37}{subsection.4.2.2}
 \contentsline {chapter}{\numberline {5}Experimentaci\IeC {\'o}n}{39}{chapter.5}
 \contentsline {section}{\numberline {5.1}Beacons y configuraci\IeC {\'o}n}{39}{section.5.1}
 \contentsline {section}{\numberline {5.2}Lugar de experimentaci\IeC {\'o}n}{42}{section.5.2}
@@ -50,11 +50,10 @@
 \contentsline {section}{\numberline {5.5}Visualizaci\IeC {\'o}n de los datos obtenidos}{47}{section.5.5}
 \contentsline {section}{\numberline {5.6}Analisis PCA y LDA}{48}{section.5.6}
 \contentsline {section}{\numberline {5.7}Entrenamiento de clasificadores}{49}{section.5.7}
-\contentsline {section}{\numberline {5.8}Entrenamiento utilizando PCA}{53}{section.5.8}
+\contentsline {section}{\numberline {5.8}Entrenamiento utilizando PCA}{54}{section.5.8}
 \contentsline {section}{\numberline {5.9}Fase Online}{58}{section.5.9}
 \contentsline {chapter}{\numberline {6}Resultados}{61}{chapter.6}
 \contentsline {section}{\numberline {6.1}M\IeC {\'e}tricas Obtenidas}{61}{section.6.1}
-\contentsline {section}{\numberline {6.2}An\IeC {\'a}lisis de resultados}{66}{section.6.2}
+\contentsline {section}{\numberline {6.2}An\IeC {\'a}lisis de resultados}{67}{section.6.2}
 \contentsline {chapter}{\numberline {7}Conclusi\IeC {\'o}n}{71}{chapter.7}
 \contentsline {chapter}{Bibliograf\'{\i }a}{75}{chapter*.68}
-\contentsline {chapter}{\numberline {A}LICENCIA}{79}{appendix.Alph1}

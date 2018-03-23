@@ -10,16 +10,15 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Tabla de resultados algoritmos de clasificaci\IeC {\'o}n}}{53}{table.caption.46}
 \contentsline {table}{\numberline {5.2}{\ignorespaces Tabla resumen varianza explicada y acumulada PCA}}{55}{table.caption.49}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Tabla de resultados algoritmos de clasificaci\IeC {\'o}n PCA}}{56}{table.caption.53}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Tabla de resultados algoritmos de clasificaci\IeC {\'o}n PCA}}{58}{table.caption.53}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6.1}{\ignorespaces Resultados m\IeC {\'e}todo din\IeC {\'a}mico sin utilizar PCA}}{61}{table.caption.56}
 \contentsline {table}{\numberline {6.2}{\ignorespaces Resultados m\IeC {\'e}todo din\IeC {\'a}mico utilizando PCA con 5 componentes}}{61}{table.caption.57}
 \contentsline {table}{\numberline {6.3}{\ignorespaces Resultados m\IeC {\'e}todo est\IeC {\'a}tico sin utilizar PCA}}{62}{table.caption.58}
 \contentsline {table}{\numberline {6.4}{\ignorespaces Resultados m\IeC {\'e}todo est\IeC {\'a}tico utilizando PCA con 5 componentes}}{62}{table.caption.59}
-\contentsline {table}{\numberline {6.5}{\ignorespaces Error con un CDF del 100 \% para los algoritmos analizados en el m\IeC {\'e}todo din\IeC {\'a}mico}}{63}{table.caption.61}
+\contentsline {table}{\numberline {6.5}{\ignorespaces Error con un CDF del 100 \% para los algoritmos analizados en el m\IeC {\'e}todo din\IeC {\'a}mico}}{64}{table.caption.61}
 \contentsline {table}{\numberline {6.6}{\ignorespaces Error con un CDF del 100 \% para los algoritmos analizados en el m\IeC {\'e}todo est\IeC {\'a}tico}}{65}{table.caption.63}
 \contentsline {table}{\numberline {6.7}{\ignorespaces Tabla Boxplot m\IeC {\'e}todo din\IeC {\'a}mico}}{65}{table.caption.64}
-\contentsline {table}{\numberline {6.8}{\ignorespaces Tabla Boxplot m\IeC {\'e}todo est\IeC {\'a}tico}}{65}{table.caption.65}
+\contentsline {table}{\numberline {6.8}{\ignorespaces Tabla Boxplot m\IeC {\'e}todo est\IeC {\'a}tico}}{66}{table.caption.65}
 \contentsline {table}{\numberline {6.9}{\ignorespaces Mejoras de tiempo en cada algoritmo}}{66}{table.caption.67}
-\addvspace {10\p@ }
 \addvspace {10\p@ }

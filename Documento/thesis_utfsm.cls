@@ -150,7 +150,7 @@ backref=section
 \newcommand{\insertFile}[2][empty]{%
     \thispagestyle{#1}
     \input{includes/#2}\newpage
-    \thispagestyle{#1}\cleardoublepage
+    \thispagestyle{#1}
 }
 
 \newcommand{\dedicatoria}[1]{%
