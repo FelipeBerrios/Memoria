@@ -23,6 +23,7 @@
 \contentsline {subsubsection}{\numberline {3.2.3.1}Formulaci\IeC {\'o}n del problema Fingerprint}{16}{subsubsection.3.2.3.1}
 \contentsline {subsubsection}{\numberline {3.2.3.2}Acercamientos convencionales de Fingerprint}{17}{subsubsection.3.2.3.2}
 \contentsline {subsubsection}{\numberline {3.2.3.3}Avances recientes en Fingerprint}{18}{subsubsection.3.2.3.3}
+\contentsline {section}{\numberline {3.3}Motivaci\IeC {\'o}n de la selecci\IeC {\'o}n de Fingerprint}{20}{section.3.3}
 \contentsline {chapter}{\numberline {4}Propuesta de soluci\IeC {\'o}n}{21}{chapter.4}
 \contentsline {section}{\numberline {4.1}Consideraciones Previas}{21}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}Definici\IeC {\'o}n de Beacons Bluetooth y sus protocolos}{21}{subsection.4.1.1}
@@ -51,9 +52,9 @@
 \contentsline {section}{\numberline {5.6}Analisis PCA y LDA}{48}{section.5.6}
 \contentsline {section}{\numberline {5.7}Entrenamiento de clasificadores}{49}{section.5.7}
 \contentsline {section}{\numberline {5.8}Entrenamiento utilizando PCA}{54}{section.5.8}
-\contentsline {section}{\numberline {5.9}Fase Online}{58}{section.5.9}
-\contentsline {chapter}{\numberline {6}Resultados}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}M\IeC {\'e}tricas Obtenidas}{61}{section.6.1}
-\contentsline {section}{\numberline {6.2}An\IeC {\'a}lisis de resultados}{67}{section.6.2}
-\contentsline {chapter}{\numberline {7}Conclusi\IeC {\'o}n}{71}{chapter.7}
-\contentsline {chapter}{Bibliograf\'{\i }a}{75}{chapter*.68}
+\contentsline {section}{\numberline {5.9}Fase Online}{59}{section.5.9}
+\contentsline {chapter}{\numberline {6}Resultados}{63}{chapter.6}
+\contentsline {section}{\numberline {6.1}M\IeC {\'e}tricas Obtenidas}{63}{section.6.1}
+\contentsline {section}{\numberline {6.2}An\IeC {\'a}lisis de resultados}{69}{section.6.2}
+\contentsline {chapter}{\numberline {7}Conclusi\IeC {\'o}n}{73}{chapter.7}
+\contentsline {chapter}{Bibliograf\'{\i }a}{77}{chapter*.68}

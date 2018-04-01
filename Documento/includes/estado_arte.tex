@@ -409,5 +409,14 @@ La presente sección pretende mostrar los últimos avances en las técnicas de F
 
 \item \textbf{Modelos de fusión avanzados y eficientes:} Como fusionar el movimiento con y la detección de señales RSS es esencial para mejorar la precisión en la localización en interiores. El modelo usado en fusión necesita capturar la correlación (ya sea temporal o espacial) entre las señales medidas. Sin embargo, si el modelo es altamente complejo, el alto costo computacional también afecta la calidad de la estimación en la localización. A pesar de esto, buscar un algoritmo de fusión eficiente y preciso se ha convertido recientemente en una importante tendencia para la localización asistida por movimiento \citep{6846747}.
 
+\section{Motivación de la selección de Fingerprint}
+
+Ya que se muestran la mayor parte de las técnicas y tecnologías desarrolladas para la resolución del problema de posicionamiento indoor, a continuación, se describe el motivo de elección de Fingerprint. En primer lugar, es claro que el estado del arte refleja que los modelos más avanzados y de mejores resultados apuntan hacia las tecnologías \textit{Wireless}, vale decir, aquellas que utilizan ondas de radiofrecuencia, por lo cual este tipo de técnicas son las apropiadas para el problema contemporáneo de posicionamiento en interiores, esto se debe a que este tipo de técnicas son muy escalables, requieren poca configuración a priori y además sus costos son relativamente bajos, comparados a otras técnicas por ejemplo basado en visión o en sonido. 
+
+En general, como la mayor parte de las tecnologías de radiofrecuencia han sido ampliamente exploradas, como WiFi y UWB por ejemplo, en este trabajo se utiliza Bluetooth, ya que está en constante desarrollo, a tal punto que al momento de escribir esta memoria, se desarrolla la versión 5 de su protocolo, con menos consumo energético y mayor alcance y estabilidad. Además, sus costos son muy bajos en comparación a otras tecnologías y su implementación igualmente, mediante \textit{Beacons} de pequeño tamaño. 
+
+La técnica a utilizar es Fingerprint, y esto se debe a que es la que presenta mejores resultados por ejemplo al ser utilizada con modelos estadísticos, o filtros apropiados de ruido. Aunque Fingerprint si ha sido explorado para ser utilizado con algoritmos de machine learning, en su mayoría los estudios son utilizando WiFi, y no se abarca una comparativa de todos los algoritmos recientes de machine learning. Es por ello que, ante la falta de un estudio completo en este tipo de problemas, esta memoria estudia los resultados obtenidos por Fingerprint, mediante la utilización de Bluetooth Low Energy, junto a algoritmos contemporáneos de machine learning, como por ejemplo deep learning. Se deben comparar, evaluarlos y seleccionar los mejores, además de utilizar modelos para reducir el ruido o reducir dimensionalidad.
+
+
 \end{itemize}
 \end{enumerate}

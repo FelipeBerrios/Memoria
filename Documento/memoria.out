@@ -20,37 +20,38 @@
 \BOOKMARK [3][-]{subsubsection.3.2.3.1}{Formulaci\363n del problema Fingerprint}{subsection.3.2.3}% 20
 \BOOKMARK [3][-]{subsubsection.3.2.3.2}{Acercamientos convencionales de Fingerprint}{subsection.3.2.3}% 21
 \BOOKMARK [3][-]{subsubsection.3.2.3.3}{Avances recientes en Fingerprint}{subsection.3.2.3}% 22
-\BOOKMARK [0][-]{chapter.4}{Propuesta de soluci\363n}{}% 23
-\BOOKMARK [1][-]{section.4.1}{Consideraciones Previas}{chapter.4}% 24
-\BOOKMARK [2][-]{subsection.4.1.1}{Definici\363n de Beacons Bluetooth y sus protocolos}{section.4.1}% 25
-\BOOKMARK [3][-]{subsubsection.4.1.1.1}{\277Como se comunican los Beacons?}{subsection.4.1.1}% 26
-\BOOKMARK [3][-]{subsubsection.4.1.1.2}{\277Donde comenz\363 la tecnolog\355a Beacon?}{subsection.4.1.1}% 27
-\BOOKMARK [3][-]{subsubsection.4.1.1.3}{\277En donde pueden ser utilizados los Beacons?}{subsection.4.1.1}% 28
-\BOOKMARK [3][-]{subsubsection.4.1.1.4}{Perfiles Beacon}{subsection.4.1.1}% 29
-\BOOKMARK [2][-]{subsection.4.1.2}{Estabilidad de la se\361al Bluetooth}{section.4.1}% 30
-\BOOKMARK [2][-]{subsection.4.1.3}{Evaluaci\363n y selecci\363n de Beacons Bluetooth}{section.4.1}% 31
-\BOOKMARK [2][-]{subsection.4.1.4}{Algoritmos de Machine Learning}{section.4.1}% 32
-\BOOKMARK [3][-]{subsubsection.4.1.4.1}{K-Nearest Neighbor}{subsection.4.1.4}% 33
-\BOOKMARK [3][-]{subsubsection.4.1.4.2}{Support Vector Machines}{subsection.4.1.4}% 34
-\BOOKMARK [3][-]{subsubsection.4.1.4.3}{Redes Neuronales y Deep learning}{subsection.4.1.4}% 35
-\BOOKMARK [1][-]{section.4.2}{Descripci\363n del framework de posicionamiento}{chapter.4}% 36
-\BOOKMARK [2][-]{subsection.4.2.1}{Fase Offline}{section.4.2}% 37
-\BOOKMARK [2][-]{subsection.4.2.2}{Fase Online}{section.4.2}% 38
-\BOOKMARK [0][-]{chapter.5}{Experimentaci\363n}{}% 39
-\BOOKMARK [1][-]{section.5.1}{Beacons y configuraci\363n}{chapter.5}% 40
-\BOOKMARK [1][-]{section.5.2}{Lugar de experimentaci\363n}{chapter.5}% 41
-\BOOKMARK [1][-]{section.5.3}{Software Utilizado}{chapter.5}% 42
-\BOOKMARK [2][-]{subsection.5.3.1}{Descripci\363n de la aplicaci\363n}{section.5.3}% 43
-\BOOKMARK [2][-]{subsection.5.3.2}{scikit-learn}{section.5.3}% 44
-\BOOKMARK [2][-]{subsection.5.3.3}{ Tensorflow}{section.5.3}% 45
-\BOOKMARK [1][-]{section.5.4}{Recolecci\363n de Fingerprints}{chapter.5}% 46
-\BOOKMARK [1][-]{section.5.5}{Visualizaci\363n de los datos obtenidos}{chapter.5}% 47
-\BOOKMARK [1][-]{section.5.6}{Analisis PCA y LDA}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.7}{Entrenamiento de clasificadores}{chapter.5}% 49
-\BOOKMARK [1][-]{section.5.8}{Entrenamiento utilizando PCA}{chapter.5}% 50
-\BOOKMARK [1][-]{section.5.9}{Fase Online}{chapter.5}% 51
-\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 52
-\BOOKMARK [1][-]{section.6.1}{M\351tricas Obtenidas}{chapter.6}% 53
-\BOOKMARK [1][-]{section.6.2}{An\341lisis de resultados}{chapter.6}% 54
-\BOOKMARK [0][-]{chapter.7}{Conclusi\363n}{}% 55
-\BOOKMARK [0][-]{chapter*.68}{Bibliograf\355a}{}% 56
+\BOOKMARK [1][-]{section.3.3}{Motivaci\363n de la selecci\363n de Fingerprint}{chapter.3}% 23
+\BOOKMARK [0][-]{chapter.4}{Propuesta de soluci\363n}{}% 24
+\BOOKMARK [1][-]{section.4.1}{Consideraciones Previas}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.1.1}{Definici\363n de Beacons Bluetooth y sus protocolos}{section.4.1}% 26
+\BOOKMARK [3][-]{subsubsection.4.1.1.1}{\277Como se comunican los Beacons?}{subsection.4.1.1}% 27
+\BOOKMARK [3][-]{subsubsection.4.1.1.2}{\277Donde comenz\363 la tecnolog\355a Beacon?}{subsection.4.1.1}% 28
+\BOOKMARK [3][-]{subsubsection.4.1.1.3}{\277En donde pueden ser utilizados los Beacons?}{subsection.4.1.1}% 29
+\BOOKMARK [3][-]{subsubsection.4.1.1.4}{Perfiles Beacon}{subsection.4.1.1}% 30
+\BOOKMARK [2][-]{subsection.4.1.2}{Estabilidad de la se\361al Bluetooth}{section.4.1}% 31
+\BOOKMARK [2][-]{subsection.4.1.3}{Evaluaci\363n y selecci\363n de Beacons Bluetooth}{section.4.1}% 32
+\BOOKMARK [2][-]{subsection.4.1.4}{Algoritmos de Machine Learning}{section.4.1}% 33
+\BOOKMARK [3][-]{subsubsection.4.1.4.1}{K-Nearest Neighbor}{subsection.4.1.4}% 34
+\BOOKMARK [3][-]{subsubsection.4.1.4.2}{Support Vector Machines}{subsection.4.1.4}% 35
+\BOOKMARK [3][-]{subsubsection.4.1.4.3}{Redes Neuronales y Deep learning}{subsection.4.1.4}% 36
+\BOOKMARK [1][-]{section.4.2}{Descripci\363n del framework de posicionamiento}{chapter.4}% 37
+\BOOKMARK [2][-]{subsection.4.2.1}{Fase Offline}{section.4.2}% 38
+\BOOKMARK [2][-]{subsection.4.2.2}{Fase Online}{section.4.2}% 39
+\BOOKMARK [0][-]{chapter.5}{Experimentaci\363n}{}% 40
+\BOOKMARK [1][-]{section.5.1}{Beacons y configuraci\363n}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{Lugar de experimentaci\363n}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.3}{Software Utilizado}{chapter.5}% 43
+\BOOKMARK [2][-]{subsection.5.3.1}{Descripci\363n de la aplicaci\363n}{section.5.3}% 44
+\BOOKMARK [2][-]{subsection.5.3.2}{scikit-learn}{section.5.3}% 45
+\BOOKMARK [2][-]{subsection.5.3.3}{ Tensorflow}{section.5.3}% 46
+\BOOKMARK [1][-]{section.5.4}{Recolecci\363n de Fingerprints}{chapter.5}% 47
+\BOOKMARK [1][-]{section.5.5}{Visualizaci\363n de los datos obtenidos}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.6}{Analisis PCA y LDA}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.7}{Entrenamiento de clasificadores}{chapter.5}% 50
+\BOOKMARK [1][-]{section.5.8}{Entrenamiento utilizando PCA}{chapter.5}% 51
+\BOOKMARK [1][-]{section.5.9}{Fase Online}{chapter.5}% 52
+\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 53
+\BOOKMARK [1][-]{section.6.1}{M\351tricas Obtenidas}{chapter.6}% 54
+\BOOKMARK [1][-]{section.6.2}{An\341lisis de resultados}{chapter.6}% 55
+\BOOKMARK [0][-]{chapter.7}{Conclusi\363n}{}% 56
+\BOOKMARK [0][-]{chapter*.68}{Bibliograf\355a}{}% 57
