@@ -1,0 +1,15 @@
+\select@language {spanish}
+\beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Descripci\IeC {\'o}n del Problema}{5}{0}{1}
+\beamer@subsectionintoc {1}{2}{Objetivos}{8}{0}{1}
+\beamer@sectionintoc {2}{Estado del Arte}{10}{0}{2}
+\beamer@subsectionintoc {2}{1}{M\IeC {\'e}todos de Posicionamiento}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{24}{0}{2}
+\beamer@sectionintoc {3}{Dise\IeC {\~n}o del Estudio}{32}{0}{3}
+\beamer@subsectionintoc {3}{1}{Cualidades y costos de tecnolog\IeC {\'\i }as}{33}{0}{3}
+\beamer@subsectionintoc {3}{2}{Lugar del estudio}{47}{0}{3}
+\beamer@sectionintoc {4}{Implementaci\IeC {\'o}n}{48}{0}{4}
+\beamer@subsectionintoc {4}{1}{Requerimientos}{49}{0}{4}
+\beamer@subsectionintoc {4}{2}{Ejecuci\IeC {\'o}n}{56}{0}{4}
+\beamer@sectionintoc {5}{Resultados}{60}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones}{72}{0}{6}
