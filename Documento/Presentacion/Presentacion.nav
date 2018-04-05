@@ -10,120 +10,151 @@
 \headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
 \headcommand {\beamer@subsectionpages {3}{4}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Descripci\IeC {\'o}n del Problema}}
-\headcommand {\slideentry {1}{1}{1}{5/7}{Descripci\IeC {\'o}n del Problema}{0}}
-\headcommand {\beamer@framepages {5}{7}}
-\headcommand {\beamer@subsectionpages {5}{7}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{8}{Objetivos}}
-\headcommand {\slideentry {1}{2}{1}{8/9}{Objetivos}{0}}
-\headcommand {\beamer@framepages {8}{9}}
-\headcommand {\beamer@sectionpages {3}{9}}
-\headcommand {\beamer@subsectionpages {8}{9}}
-\headcommand {\sectionentry {2}{Estado del Arte}{10}{Estado del Arte}{0}}
-\headcommand {\slideentry {2}{0}{1}{10/10}{}{0}}
-\headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{11}{M\IeC {\'e}todos de Posicionamiento}}
-\headcommand {\slideentry {2}{1}{1}{11/15}{M\IeC {\'e}todos de Posicionamiento}{0}}
-\headcommand {\beamer@framepages {11}{15}}
-\headcommand {\slideentry {2}{1}{2}{16/16}{M\IeC {\'e}todos de Posicionamiento}{0}}
-\headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {2}{1}{3}{17/17}{M\IeC {\'e}todos de Posicionamiento}{0}}
-\headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {2}{1}{4}{18/18}{M\IeC {\'e}todos de Posicionamiento}{0}}
-\headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {2}{1}{5}{19/19}{M\IeC {\'e}todos de Posicionamiento}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{5}{Definici\IeC {\'o}n del problema}}
+\headcommand {\slideentry {1}{1}{1}{5/8}{Definici\IeC {\'o}n del problema}{0}}
+\headcommand {\beamer@framepages {5}{8}}
+\headcommand {\beamer@subsectionpages {5}{8}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{Objetivos}}
+\headcommand {\slideentry {1}{2}{1}{9/11}{Objetivos}{0}}
+\headcommand {\beamer@framepages {9}{11}}
+\headcommand {\beamer@sectionpages {3}{11}}
+\headcommand {\beamer@subsectionpages {9}{11}}
+\headcommand {\sectionentry {2}{Estado del Arte}{12}{Estado del Arte}{0}}
+\headcommand {\slideentry {2}{0}{1}{12/12}{}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{13}{Tecnolog\IeC {\'\i }as para posicionamiento \textit {indoor}}}
+\headcommand {\slideentry {2}{1}{1}{13/18}{Tecnolog\IeC {\'\i }as para posicionamiento \textit {indoor}}{0}}
+\headcommand {\beamer@framepages {13}{18}}
+\headcommand {\beamer@subsectionpages {13}{18}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{19}{T\IeC {\'e}cnicas matem\IeC {\'a}ticas Wireless para localizaci\IeC {\'o}n indoor}}
+\headcommand {\slideentry {2}{2}{1}{19/19}{T\IeC {\'e}cnicas matem\IeC {\'a}ticas Wireless para localizaci\IeC {\'o}n indoor}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {2}{1}{6}{20/22}{M\IeC {\'e}todos de Posicionamiento}{0}}
-\headcommand {\beamer@framepages {20}{22}}
-\headcommand {\slideentry {2}{1}{7}{23/23}{M\IeC {\'e}todos de Posicionamiento}{0}}
-\headcommand {\beamer@framepages {23}{23}}
-\headcommand {\beamer@subsectionpages {11}{23}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{24}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}}
-\headcommand {\slideentry {2}{2}{1}{24/24}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {24}{24}}
-\headcommand {\slideentry {2}{2}{2}{25/25}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {25}{25}}
-\headcommand {\slideentry {2}{2}{3}{26/26}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {26}{26}}
-\headcommand {\slideentry {2}{2}{4}{27/27}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {27}{27}}
-\headcommand {\slideentry {2}{2}{5}{28/28}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {2}{2}{6}{29/29}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {29}{29}}
-\headcommand {\slideentry {2}{2}{7}{30/31}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {30}{31}}
-\headcommand {\beamer@sectionpages {10}{31}}
-\headcommand {\beamer@subsectionpages {24}{31}}
-\headcommand {\sectionentry {3}{Dise\IeC {\~n}o del Estudio}{32}{Dise\IeC {\~n}o del Estudio}{0}}
-\headcommand {\slideentry {3}{0}{1}{32/32}{}{0}}
-\headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@subsectionpages {32}{32}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{33}{Cualidades y costos de tecnolog\IeC {\'\i }as}}
-\headcommand {\slideentry {3}{1}{1}{33/36}{Cualidades y costos de tecnolog\IeC {\'\i }as}{0}}
-\headcommand {\beamer@framepages {33}{36}}
-\headcommand {\slideentry {3}{1}{2}{37/41}{Cualidades y costos de tecnolog\IeC {\'\i }as}{0}}
-\headcommand {\beamer@framepages {37}{41}}
-\headcommand {\slideentry {3}{1}{3}{42/45}{Cualidades y costos de tecnolog\IeC {\'\i }as}{0}}
-\headcommand {\beamer@framepages {42}{45}}
-\headcommand {\slideentry {3}{1}{4}{46/46}{Cualidades y costos de tecnolog\IeC {\'\i }as}{0}}
-\headcommand {\beamer@framepages {46}{46}}
-\headcommand {\beamer@subsectionpages {33}{46}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{47}{Lugar del estudio}}
-\headcommand {\slideentry {3}{2}{1}{47/47}{Lugar del estudio}{0}}
-\headcommand {\beamer@framepages {47}{47}}
-\headcommand {\beamer@sectionpages {32}{47}}
-\headcommand {\beamer@subsectionpages {47}{47}}
-\headcommand {\sectionentry {4}{Implementaci\IeC {\'o}n}{48}{Implementaci\IeC {\'o}n}{0}}
-\headcommand {\slideentry {4}{0}{1}{48/48}{}{0}}
-\headcommand {\beamer@framepages {48}{48}}
-\headcommand {\beamer@subsectionpages {48}{48}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{49}{Requerimientos}}
-\headcommand {\slideentry {4}{1}{1}{49/55}{Requerimientos}{0}}
-\headcommand {\beamer@framepages {49}{55}}
-\headcommand {\beamer@subsectionpages {49}{55}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{56}{Ejecuci\IeC {\'o}n}}
-\headcommand {\slideentry {4}{2}{1}{56/59}{Ejecuci\IeC {\'o}n}{0}}
-\headcommand {\beamer@framepages {56}{59}}
-\headcommand {\beamer@sectionpages {48}{59}}
-\headcommand {\beamer@subsectionpages {56}{59}}
-\headcommand {\sectionentry {5}{Resultados}{60}{Resultados}{0}}
-\headcommand {\slideentry {5}{0}{1}{60/60}{}{0}}
+\headcommand {\slideentry {2}{2}{2}{20/20}{T\IeC {\'e}cnicas matem\IeC {\'a}ticas Wireless para localizaci\IeC {\'o}n indoor}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\slideentry {2}{2}{3}{21/21}{T\IeC {\'e}cnicas matem\IeC {\'a}ticas Wireless para localizaci\IeC {\'o}n indoor}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@sectionpages {12}{21}}
+\headcommand {\beamer@subsectionpages {19}{21}}
+\headcommand {\sectionentry {3}{Propuesta de soluci\IeC {\'o}n}{22}{Propuesta de soluci\IeC {\'o}n}{0}}
+\headcommand {\slideentry {3}{0}{1}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\slideentry {3}{0}{2}{23/26}{}{0}}
+\headcommand {\beamer@framepages {23}{26}}
+\headcommand {\beamer@subsectionpages {22}{26}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{27}{Consideraciones Previas}}
+\headcommand {\slideentry {3}{1}{1}{27/29}{Consideraciones Previas}{0}}
+\headcommand {\beamer@framepages {27}{29}}
+\headcommand {\slideentry {3}{1}{2}{30/30}{Consideraciones Previas}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\slideentry {3}{1}{3}{31/31}{Consideraciones Previas}{0}}
+\headcommand {\beamer@framepages {31}{31}}
+\headcommand {\slideentry {3}{1}{4}{32/34}{Consideraciones Previas}{0}}
+\headcommand {\beamer@framepages {32}{34}}
+\headcommand {\beamer@subsectionpages {27}{34}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{35}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}}
+\headcommand {\slideentry {3}{2}{1}{35/37}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{0}}
+\headcommand {\beamer@framepages {35}{37}}
+\headcommand {\slideentry {3}{2}{2}{38/41}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{0}}
+\headcommand {\beamer@framepages {38}{41}}
+\headcommand {\slideentry {3}{2}{3}{42/42}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {3}{2}{4}{43/46}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{0}}
+\headcommand {\beamer@framepages {43}{46}}
+\headcommand {\slideentry {3}{2}{5}{47/49}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{0}}
+\headcommand {\beamer@framepages {47}{49}}
+\headcommand {\slideentry {3}{2}{6}{50/54}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{0}}
+\headcommand {\beamer@framepages {50}{54}}
+\headcommand {\slideentry {3}{2}{7}{55/55}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\slideentry {3}{2}{8}{56/56}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\beamer@subsectionpages {35}{56}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{57}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}}
+\headcommand {\slideentry {3}{3}{1}{57/57}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\slideentry {3}{3}{2}{58/58}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {3}{3}{3}{59/59}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {3}{3}{4}{60/60}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
 \headcommand {\beamer@framepages {60}{60}}
-\headcommand {\slideentry {5}{0}{2}{61/61}{}{0}}
+\headcommand {\slideentry {3}{3}{5}{61/61}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {5}{0}{3}{62/62}{}{0}}
+\headcommand {\slideentry {3}{3}{6}{62/62}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
 \headcommand {\beamer@framepages {62}{62}}
-\headcommand {\slideentry {5}{0}{4}{63/63}{}{0}}
-\headcommand {\beamer@framepages {63}{63}}
-\headcommand {\slideentry {5}{0}{5}{64/64}{}{0}}
-\headcommand {\beamer@framepages {64}{64}}
-\headcommand {\slideentry {5}{0}{6}{65/65}{}{0}}
+\headcommand {\slideentry {3}{3}{7}{63/64}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{0}}
+\headcommand {\beamer@framepages {63}{64}}
+\headcommand {\beamer@sectionpages {22}{64}}
+\headcommand {\beamer@subsectionpages {57}{64}}
+\headcommand {\sectionentry {4}{Dise\IeC {\~n}o del Estudio}{65}{Dise\IeC {\~n}o del Estudio}{0}}
+\headcommand {\slideentry {4}{0}{1}{65/65}{}{0}}
 \headcommand {\beamer@framepages {65}{65}}
-\headcommand {\slideentry {5}{0}{7}{66/66}{}{0}}
-\headcommand {\beamer@framepages {66}{66}}
-\headcommand {\slideentry {5}{0}{8}{67/67}{}{0}}
-\headcommand {\beamer@framepages {67}{67}}
-\headcommand {\slideentry {5}{0}{9}{68/68}{}{0}}
-\headcommand {\beamer@framepages {68}{68}}
-\headcommand {\slideentry {5}{0}{10}{69/69}{}{0}}
-\headcommand {\beamer@framepages {69}{69}}
-\headcommand {\slideentry {5}{0}{11}{70/70}{}{0}}
-\headcommand {\beamer@framepages {70}{70}}
-\headcommand {\slideentry {5}{0}{12}{71/71}{}{0}}
-\headcommand {\beamer@framepages {71}{71}}
-\headcommand {\beamer@sectionpages {60}{71}}
-\headcommand {\beamer@subsectionpages {60}{71}}
-\headcommand {\sectionentry {6}{Conclusiones}{72}{Conclusiones}{0}}
-\headcommand {\slideentry {6}{0}{1}{72/72}{}{0}}
-\headcommand {\beamer@framepages {72}{72}}
-\headcommand {\slideentry {6}{0}{2}{73/77}{}{0}}
-\headcommand {\beamer@framepages {73}{77}}
-\headcommand {\slideentry {6}{0}{3}{78/78}{}{0}}
-\headcommand {\beamer@framepages {78}{78}}
-\headcommand {\beamer@partpages {1}{78}}
-\headcommand {\beamer@subsectionpages {72}{78}}
-\headcommand {\beamer@sectionpages {72}{78}}
-\headcommand {\beamer@documentpages {78}}
-\headcommand {\gdef \inserttotalframenumber {45}}
+\headcommand {\beamer@subsectionpages {65}{65}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{66}{Cualidades y costos de tecnolog\IeC {\'\i }as}}
+\headcommand {\slideentry {4}{1}{1}{66/69}{Cualidades y costos de tecnolog\IeC {\'\i }as}{0}}
+\headcommand {\beamer@framepages {66}{69}}
+\headcommand {\slideentry {4}{1}{2}{70/74}{Cualidades y costos de tecnolog\IeC {\'\i }as}{0}}
+\headcommand {\beamer@framepages {70}{74}}
+\headcommand {\slideentry {4}{1}{3}{75/78}{Cualidades y costos de tecnolog\IeC {\'\i }as}{0}}
+\headcommand {\beamer@framepages {75}{78}}
+\headcommand {\slideentry {4}{1}{4}{79/79}{Cualidades y costos de tecnolog\IeC {\'\i }as}{0}}
+\headcommand {\beamer@framepages {79}{79}}
+\headcommand {\beamer@subsectionpages {66}{79}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{80}{Lugar del estudio}}
+\headcommand {\slideentry {4}{2}{1}{80/80}{Lugar del estudio}{0}}
+\headcommand {\beamer@framepages {80}{80}}
+\headcommand {\beamer@sectionpages {65}{80}}
+\headcommand {\beamer@subsectionpages {80}{80}}
+\headcommand {\sectionentry {5}{Implementaci\IeC {\'o}n}{81}{Implementaci\IeC {\'o}n}{0}}
+\headcommand {\slideentry {5}{0}{1}{81/81}{}{0}}
+\headcommand {\beamer@framepages {81}{81}}
+\headcommand {\beamer@subsectionpages {81}{81}}
+\headcommand {\beamer@subsectionentry {0}{5}{1}{82}{Requerimientos}}
+\headcommand {\slideentry {5}{1}{1}{82/88}{Requerimientos}{0}}
+\headcommand {\beamer@framepages {82}{88}}
+\headcommand {\beamer@subsectionpages {82}{88}}
+\headcommand {\beamer@subsectionentry {0}{5}{2}{89}{Ejecuci\IeC {\'o}n}}
+\headcommand {\slideentry {5}{2}{1}{89/92}{Ejecuci\IeC {\'o}n}{0}}
+\headcommand {\beamer@framepages {89}{92}}
+\headcommand {\beamer@sectionpages {81}{92}}
+\headcommand {\beamer@subsectionpages {89}{92}}
+\headcommand {\sectionentry {6}{Resultados}{93}{Resultados}{0}}
+\headcommand {\slideentry {6}{0}{1}{93/93}{}{0}}
+\headcommand {\beamer@framepages {93}{93}}
+\headcommand {\slideentry {6}{0}{2}{94/94}{}{0}}
+\headcommand {\beamer@framepages {94}{94}}
+\headcommand {\slideentry {6}{0}{3}{95/95}{}{0}}
+\headcommand {\beamer@framepages {95}{95}}
+\headcommand {\slideentry {6}{0}{4}{96/96}{}{0}}
+\headcommand {\beamer@framepages {96}{96}}
+\headcommand {\slideentry {6}{0}{5}{97/97}{}{0}}
+\headcommand {\beamer@framepages {97}{97}}
+\headcommand {\slideentry {6}{0}{6}{98/98}{}{0}}
+\headcommand {\beamer@framepages {98}{98}}
+\headcommand {\slideentry {6}{0}{7}{99/99}{}{0}}
+\headcommand {\beamer@framepages {99}{99}}
+\headcommand {\slideentry {6}{0}{8}{100/100}{}{0}}
+\headcommand {\beamer@framepages {100}{100}}
+\headcommand {\slideentry {6}{0}{9}{101/101}{}{0}}
+\headcommand {\beamer@framepages {101}{101}}
+\headcommand {\slideentry {6}{0}{10}{102/102}{}{0}}
+\headcommand {\beamer@framepages {102}{102}}
+\headcommand {\slideentry {6}{0}{11}{103/103}{}{0}}
+\headcommand {\beamer@framepages {103}{103}}
+\headcommand {\slideentry {6}{0}{12}{104/104}{}{0}}
+\headcommand {\beamer@framepages {104}{104}}
+\headcommand {\beamer@sectionpages {93}{104}}
+\headcommand {\beamer@subsectionpages {93}{104}}
+\headcommand {\sectionentry {7}{Conclusiones}{105}{Conclusiones}{0}}
+\headcommand {\slideentry {7}{0}{1}{105/105}{}{0}}
+\headcommand {\beamer@framepages {105}{105}}
+\headcommand {\slideentry {7}{0}{2}{106/110}{}{0}}
+\headcommand {\beamer@framepages {106}{110}}
+\headcommand {\slideentry {7}{0}{3}{111/111}{}{0}}
+\headcommand {\beamer@framepages {111}{111}}
+\headcommand {\beamer@partpages {1}{111}}
+\headcommand {\beamer@subsectionpages {105}{111}}
+\headcommand {\beamer@sectionpages {105}{111}}
+\headcommand {\beamer@documentpages {111}}
+\headcommand {\gdef \inserttotalframenumber {56}}

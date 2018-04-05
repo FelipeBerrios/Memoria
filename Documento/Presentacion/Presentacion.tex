@@ -163,13 +163,13 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 
 %\item La geolocalización ha jugado un papel fundamental en las últimas décadas.
 
-\item Usado ampliamente por el sector militar, académico e industrial.
+\item Desde la edad antigua, múltiples formas de localización han sido desarrolladas.
 
-\item Cada vez se vuelve más accesible: basta con tener un smartphone o similar para poder geolocalizarse.
+\item Dentro de los avances más importantes en este ámbito, es el desarrollo de la teoría científica y técnica denominada georreferenciación.
 
-\begin{itemize}
-\item 2 mil millones de \textit{smartphones} activos en el mundo\footnote{Worldwide Internet and Mobile Users, eMarketer, 2015.}.
-\end{itemize}
+\item Gracias a GPS, el crecimiento y acceso de la georreferenciación y navegación está en progresivo aumento.
+
+\item Motivación: Georreferenciar dentro de una explotación minera, donde no hay alcance de señales GPS.
 
 \end{itemize}
 
@@ -179,25 +179,26 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 
 
 %------------------------------------------------
-\subsection{Descripción del Problema}
+\subsection{Definición del problema}
 
 \begin{frame}
-\frametitle{Descripción del Problema}
+\frametitle{Definición del problema}
 
 \begin{itemize}
 
-\item Alta demanda en el posicionamiento en interiores
+\item Es necesario posicionamiento en interiores (Mall, Evacuación, Mineras, edificios subterráneos)
+
 \pause
-\item Tecnologías de geolocalización satelital como GPS funciona de manera limitada o nula en ambientes interiores
+\item Cuando se usa tecnología GPS dentro de edificios o bajo tierra, existen muchos obstáculos e interferencia que imposibilitan su uso.
+
+\pause
+\item Sistemas de posicionamiento actuales (IPS) presentan problemas ya que confían en indicadores que son afectados por ruido como el indicador de fuerza de la señal (RSSI).
 
 \end{itemize}
 
 \pause
 \vspace*{.5cm}
-\textbf{¿Cómo podemos conocer nuestra posición en dichos lugares? }
-
-
-
+\textbf{Problema: Mejorar exactitud de sistemas de posicionamiento en interiores mediante modelos que aprendan de las señales}
 
 \end{frame}
 
@@ -209,9 +210,14 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 \frametitle{Objetivos}
 
 \begin{itemize}
-\item Identificar los métodos y tecnologías que actualmente permiten conocer la posición.
+%\item Evaluar calidad de las señales \textit{Bluetooth Low Energy}, tanto en precisión como exactitud.
+
+\item Diseñar un método de mapeo para un área mediante señales RSSI (\textit{fingerprint}).
 \pause
-\item Determinar los \textit{trade-offs} entre exactitud y costo para tecnologías de posicionamiento \textit{indoor}
+\item Comparar métodos de aprendizaje automático sobre mediciones RSSI para determinar cúal posee menor error y es más exacto.
+\pause
+\item Determinar que tanto afectan los métodos de reducción de dimensionalidad tanto en precisión, error y tiempo de procesamiento para los algoritmos de máquinas de aprendizaje estudiados.
+
 \end{itemize}
 
 \end{frame}
@@ -220,44 +226,84 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 \section{Estado del Arte}
 %------------------------------------------------
 
-\subsection{Métodos de Posicionamiento}
+\subsection{Tecnologías para posicionamiento \textit{indoor}}
 \begin{frame}
-\frametitle{Métodos de Posicionamiento}
+\frametitle{Tecnologías para posicionamiento \textit{indoor}}
 
-%  MAPA MENTAL DE MATERIALES
-\centering
-\resizebox{!}{0.6\textwidth}{%
-\begin{tikzpicture}
-  \path[mindmap,concept color=gray!30!,text=red!60!black]
-    node[concept] {Métodos de posicionamiento}
-    [clockwise from=0]
-    child[visible on=<5->,concept color=gray!30!,text=red!60!black] { node[concept] {Trilateración} }  
-    child[visible on=<4->,concept color=gray!30!,text=red!60!black] { node[concept] {Triangulación} }
-    child[visible on=<3->,concept color=gray!30!,text=red!60!black] { node[concept] {Basado en celdas de origen} }
-    child[visible on=<2->,concept color=gray!30!,text=red!60!black] { node[concept] {\textit{Fingerprints}} };
-\end{tikzpicture}
+ % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\only<1>{Basado en Visión
+
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/Murallas.png}
+\end{figure}}
+
+\only<2>{Infrarrojo
+
+\begin{itemize}
+
+\item Transmisor infrarrojo con un identificador único.
+
+\item Receptores son colocados en lugares dentro del recinto, los cuales pueden detectar este identificador único y comunicar a un software especializado.
+
+\item No se afecta por interferencia electromagnética. Costoso y complejo.
+\end{itemize}
 }
+
+\only<3>{Tecnologías basadas en Sonido
+
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{../figures/abs.png}
+\end{figure}
+}
+
+\only<4>{RFID
+
+\begin{itemize}
+\item La localización mediante RFID puede categorizarse en dos tipos, los cuales son localización del lector y localización de tags.
+
+\item Costoso y no escalable.
+
+\item Poco alcance, sin embargo no necesita linea de visión directa.
+\end{itemize}
+}
+
+\only<5>{Tecnologías Inalámbricas
+
+\begin{block}{Received Signal Strength Indicator}
+RSSI es una escala de referencia para medir el nivel de potencia de la fuerza de la señal recibida por el receptor. Se mide en dBm donde 0 RSSI indica señal ideal y valores más negativos indican mayor perdida. 
+\end{block}
+
+\begin{block}{Tx Power}
+Es la potencia de salida o fuerza de la señal que el emisor produce durante el tiempo de transmisión. A mayor Tx Power, más estable es la señal, pero más energía se consume.
+\end{block}
+}
+
+\only<6> { Comparativa de tecnologías
+
+\begin{figure}
+\includegraphics[width=0.8\textwidth]{../figures/comparativa.png}
+\end{figure}
+
+}
+
+
 \end{frame}
 
 %------------------------------------------------
-
+\subsection{Técnicas  matemáticas Wireless para localización indoor}
 \begin{frame}
-\frametitle{Fingerprints}
+\frametitle{Proximidad}
 
-\begin{figure}
-\includegraphics[width=\linewidth]{../figures_chesta/estado_del_arte/fingerprints}
-\end{figure}
+\begin{itemize}
 
-\end{frame}
+\item Es el método más simple, y se basa en determinar una posición simbólica y aproximada de la posición del usuario.
 
-%------------------------------------------------
+\item Antenas o emisores de ondas de radio. Según la señal más fuerte detectada por el usuario, es donde se localiza en el sistema.
 
-\begin{frame}
-\frametitle{Basado en celdas de origen}
+\item Ampliamente usado en redes celulares, ya que permite determinar la posición de un dispositivo con una precisión de 50-200 m, sin embargo, no es buena en espacios reducidos. GSM, Infrarrojo, Cell-ID.
+\end{itemize}
 
-\begin{figure}
-\includegraphics[width=.8\linewidth]{../figures_chesta/estado_del_arte/conection_based_positioning}
-\end{figure}
 
 \end{frame}
 
@@ -267,7 +313,7 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 \frametitle{Triangulación}
 
 \begin{figure}
-\includegraphics[width=.8\linewidth]{../figures_chesta/estado_del_arte/triangulation}
+\includegraphics[width=\linewidth]{../figures/triangulacion.png}
 \end{figure}
 
 \end{frame}
@@ -275,42 +321,62 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Trilateración}
+\frametitle{Fingerprint}
 
 \begin{figure}
-\includegraphics[width=.7\textheight]{../figures_chesta/estado_del_arte/trilateration}
+\includegraphics[width=.8\linewidth]{../figures/finger.png}
 \end{figure}
 
 \end{frame}
 
+
+%------------------------------------------------
+\section{Propuesta de solución}
 %------------------------------------------------
 
+\begin{frame}
+\frametitle{Propuesta}
+
+\begin{itemize}
+\item Establecer un marco de trabajo para la recolección, entrenamiento y clasificación de algoritmos de machine learning utilizando Bluetooth Low Energy.\\
+
+\pause
+
+\item Comparación de diferentes clasificadores.\\
+
+\pause
+\item Utilizar técnicas de reducción de dimensionalidad.\\
+\pause
+
+\item Utilizar modelos sin necesidad de conexión a internet.
+\end{itemize}
+
+\end{frame}
+
+
+%------------------------------------------------
+\subsection{Consideraciones Previas}
 
 \begin{frame}
-\frametitle{Trilateración}
+\frametitle{Beacons}
 
 \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
 \column{.5\textwidth} % Left column and width
 
-\visible<1->{$P_1$, $P_2$, $P_3$, $r_1$, $r_2$ y $r_3$ conocidos}
-\visible<2->{¿Cuál es la posición de $B$?}
+\begin{itemize}
+\item \onslide<1->{La transmisión corresponde a un ID único que está presente en cada Beacon y que no se repite, como una dirección MAC o un UUID.}
 
-\vspace*{.15\textwidth}
+\item \onslide<2->{Auge del Internet de las cosas.}
 
-\visible<3->{\begin{equation*}
-x^2+y^2+z^2=r_1^2
-\end{equation*}
-\begin{equation*}
-(x-d)^2+y^2+z^2=r_2^2
-\end{equation*}
-\begin{equation*}
-(x-i)^2+(y-j)^2+z^2=r_3^2
-\end{equation*}
-}
+\item \onslide<3->{Habitualmente los Beacons soportan ambos protocolos existentes, es decir IBeacon y Eddystone.}
+
+\end{itemize}
+
 \column{.5\textwidth} % Right column and width
 \begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/estado_del_arte/trilateration}
+\includegraphics[width=\textwidth]{../figures/beacons_all.jpg}
+
 \end{figure}
 
 \end{columns}
@@ -318,10 +384,232 @@ x^2+y^2+z^2=r_1^2
 \end{frame}
 
 %------------------------------------------------
+\begin{frame}
+\frametitle{Beacons - Valores esperados}
+
+\begin{table}[ht!]
+\centering
+\resizebox{\columnwidth}{!}{
+\begin{tabular}{|c|c|c|}
+Parámetro                   & Kontakt.io                      & Estimote                             \\ \hline
+Duración de la batería      & Hasta 4 años                    & Hasta 2 años                         \\ \hline
+Rango                       & 70m                             & 70m                                  \\ \hline
+Procesador                  & 32-bit ARM® Cortex™ M0 CPU core & ARM® Cortex®-M4 32-bit processor FPU \\ \hline
+Sensibilidad                & -93dBm                          & -96 dBm                              \\ \hline
+Velocidades                 & 250kBs, 1Mbs, y 2Mbs            & 1 Mbps (2 Mbps soportado)            \\ \hline
+Memoria                     & 256KB flash 16KB RAM            & 512 kB Flash memory 64 kB RAM memory \\ \hline
+Transmission power          & -30dBm a 4dBm                  & -20dBm a +4 dBm                        \\ \hline
+Batería                     & 2 x 1.000mAh CR2477             & 1 x CR2477 – 3.0V                    \\ \hline
+Bluetooth                   & Bluetooth® 4.2 LE standard      & Bluetooth® 4.2 LE standard           \\ \hline
+Espesor                     & 15mm                            & 17mm                                 \\ \hline
+Peso                        & 35 gr                           & 30 gr                                \\ \hline
+Paquete IBeacon y Eddystone & 1 a la vez                      & 1 a la vez                           \\ \hline
+Paquetes adicionales        & telemetría                      & telemetría                           \\ \hline
+Sensores adicionales        & Temperatura                     & movimiento, temperatura              \\ \hline
+Batería reemplazable        & Si                              & Si                                   \\ \hline
+Numero de Beacons           & 3                               & 3                                    \\ \hline
+Precio                      & 60 USD                          & 59 USD                               \\ \hline
+\end{tabular}
+}
+\end{table}
+\end{frame}
+
+%------------------------------------------------
 
 \begin{frame}
-\frametitle{Trilateración}
+\frametitle{Estabilidad de la señal Bluetooth}
 
+\begin{itemize}
+\item Se realiza prueba para comprobar como afecta las interferencias a la señal Bluetooth.
+
+\end{itemize}
+
+\begin{figure}
+\includegraphics[width=.7\textheight]{../figures/mediciones_beacon_interferencia.jpg}
+\end{figure}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Algoritmos de \textit{Machine Learning}}
+
+\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.33\textwidth}
+
+\begin{center}k-NN\end{center}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/knn.png}
+\end{figure}
+
+\pause
+
+\column{.33\textwidth}
+
+\begin{center}SVM\end{center}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/SVM-Planes.png}
+\end{figure}
+
+\pause
+
+\column{.33\textwidth}
+
+\begin{center}Neural Networks\end{center}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/deep.png}
+\end{figure}
+
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+\subsection{Descripción del \textit{framework} de posicionamiento}
+\begin{frame}
+\frametitle{Descripción del \textit{framework} de posicionamiento}
+
+\begin{itemize}
+
+\item Establecer un marco de trabajo.
+
+\pause
+
+\item Se utiliza la técnica de Fingerprint discutida en el estado del arte, mediante la utilización de un mapa de señales, también denominado \textit{radiomap}.
+
+\pause
+
+\item Utilizar dispositivos Bluetooth Low Energy, lo cuales realizan la función de access point(AP) y que serán los responsables de emitir la señal RSSI. Luego, el procedimiento se divide en las dos clásicas etapas de Fingerprint, es decir, fase \textit{offline} y fase \textit{online}.
+\end{itemize}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+
+\begin{frame}
+\frametitle{Fase Offline}
+
+\begin{itemize}
+\item Crear un tipo de aplicación que sea capaz de recolectar los vectores RSSI.
+
+\pause
+
+\item El periodo y frecuencia de los datos se debe determinar experimentalmente. Para ello, cada medición a colectar representa un punto en el espacio $2-dimensional$.
+
+\pause
+
+\item Para generar la grilla, es necesario tener la posición exacta, que corresponde a la etiqueta de cada punto.
+
+\pause
+
+\item Con los datos registrados, se debe crear la base de datos que almacenara estos Fingerprints, ya que desde ahí es posible analizar los datos y mantener su persistencia. Posteriormente, con estos datos se crea el radiomap.
+\end{itemize}
+
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Fase Offline}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/fingerprints.jpg}
+\end{figure}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Reducción de dimensionalidad}
+
+\begin{itemize}
+
+\item Esto no ha sido mayormente explorado en la literatura
+
+\pause
+\item Existe correlación espacial lineal de las señales adyacentes. PCA ayuda a eliminar esta correlación.
+\pause
+
+\item Los métodos de extracción de características pueden ayudar a agilizar la fase de entrenamiento, ya que este proceso es lento. Además, al ser menos componentes, en la fase online, las técnicas tardaran mucho menos tiempo en determinar la posición en tiempo real.
+
+\pause
+
+\item Descubrir atributos en un espacio no correlacionado. Transformación lineal del vector RSSI.
+
+\end{itemize}
+
+\end{frame}
+
+%-------------------------------------------------
+
+\begin{frame}
+\frametitle{Entrenamiento de algoritmos}
+
+\begin{itemize}
+
+\item Entrenar técnicas de máquinas de aprendizaje muy conocidos y que han presentado buenos resultados a lo largo de muchos problemas.
+
+\pause
+\item Posteriormente, se seleccionan los mejores algoritmos, es decir, que presenten el mejor desempeño y luego son implementados.
+\pause
+
+\item ¿Implementación en cliente o servidor?
+
+\end{itemize}
+
+\end{frame}
+
+%-------------------------------------------------
+
+\begin{frame}
+\frametitle{Fase Online}
+
+\begin{itemize}
+
+\item Para la fase online se reconocen dos etapas principales.
+
+\begin{enumerate}
+\pause
+\item Colectar un vector de señales RSSI en la posición actual del usuario, es decir, el vector de intensidad de la señal.
+\pause
+\item Proveer este vector de entrada a los algoritmos de aprendizaje supervisado
+\end{enumerate}
+
+\pause
+\item Una vez que los algoritmos de clasificación proveen el resultado de la posición física, entonces la misma aplicación de la fase offline, es utilizada para mostrar en un mapa de tiempo real la localización actual de usuario.
+
+\pause
+
+\item Para realizar esta tarea se deben tener en cuenta las normalizaciones realizadas y aplicar correctamente la transformación PCA.
+
+
+\end{itemize}
+\end{frame}
+
+
+%-------------------------------------------------
+
+\begin{frame}
+\frametitle{Proceso de desarrollo}
+
+\begin{figure}
+\includegraphics[width=0.7\textwidth]{../figures/propuesta_memoria.png}
+\end{figure}
+
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
 \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
 \column{.5\textwidth} % Left column and width
