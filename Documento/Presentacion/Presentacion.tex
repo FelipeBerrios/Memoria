@@ -609,6 +609,364 @@ Precio                      & 60 USD                          & 59 USD          
 \end{frame}
 
 %-------------------------------------------------
+\section{Experimentación}
+%-------------------------------------------------
+
+\subsection{Implementación}
+
+\begin{frame}
+\frametitle{Beacons y configuración}
+
+\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=0.6\textwidth]{../figures/kontaktapp1.png}
+\end{figure}
+
+\column{.5\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=0.6\textwidth]{../figures/kontaktapp2.png}
+\end{figure}
+
+\end{columns}
+\end{frame}
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Lugar de experimentación}
+
+Estacionamiento subterráneo de la universidad Técnica Federico Santa María, Campus San Joaquín.
+
+\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.5\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/estSubterraneo.png}
+\end{figure}
+
+\column{.5\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/estReal.jpg}
+\end{figure}
+
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Software Utilizado}
+
+\begin{itemize}
+\item Aplicación Android:
+	\begin{enumerate}[1]
+\onslide<1->{\item Mostrar el plano del lugar de experimentación.}
+
+\onslide<2->{\item Permitir la adición de nuevos dispositivos Beacons.}
+
+\onslide<3->{\item Permitir la captura de datos, es decir, los nuevos Fingerprints. }
+
+\onslide<4->{\item Modificar los valores de intervalo y el número de mediciones en cada punto, el cual puede también definirse en periodo de tiempo.}
+
+\onslide<5->{\item Tener una base de datos \textit{SQLite}.}
+
+\onslide<6->{\item Para la etapa online, debe permitir seleccionar el algoritmo a utilizar y mostrar en tiempo real la posición del usuario.}
+
+\end{enumerate}
+
+\onslide<7->{\item Scikit-learn}
+
+\onslide<8->{\item Tensorflow}
+
+\end{itemize}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Recolección de Fingerprints}
+
+\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.7\textwidth} % Left column and width
+
+\begin{itemize}
+\onslide<1->{\item Samsung Galaxy J7 Prime,CPU Octa-core 1.6 GHz Cortex-A53, una GPU Mali-T830 MP1, 3GB de memoria ram interna y el tipo de Bluetooth corresponde a 4.1 LE}
+
+\onslide<2->{\item 8 beacons en un área reducida del estacionamiento y ubicar cada Beacon a una distancia de 16 metros a sus vecinos adyacentes. 16 x 44 metros ($704m^2$). }
+
+
+\onslide<3->{\item Grilla para los puntos de medición o referencia de 4 metros por 4 metros, 44 en total. }
+\end{itemize}
+
+\column{.5\textwidth} % Right column and width
+\onslide<1->{\begin{figure}
+\includegraphics[width=0.65\textwidth]{../figures/deployBeacons.png}
+\end{figure}
+}
+
+\end{columns}
+
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Recolección de Fingerprints}
+
+\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.7\textwidth} % Left column and width
+
+\begin{itemize}
+\onslide<1->{\item 3000 mediciones por posición. Se decide inspeccionar y recolectar datos a través de diferentes días.}
+
+\onslide<2->{\item Se seleccionan 150 mediciones por punto de la grilla, para tener menor información repetida y no sobre muestrear la base de datos.}
+
+
+\onslide<3->{\item Se obtiene una base de datos \textit{SQLite} con Figerprints, la cual presenta 6600 registros}
+
+\onslide<4->{\item Clases X e Y son las posiciones asociadas a cada coordenada.}
+\end{itemize}
+
+\column{.5\textwidth} % Right column and width
+\onslide<1->{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/ejemplo_csv.png}
+\end{figure}
+}
+
+\end{columns}
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Entrenamiento de clasificadores}
+
+\begin{columns}[t] 
+\column{.5\textwidth} % Left column and width
+
+\only<1>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/NB.png}
+\end{figure}}
+
+\only<2>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/SVM-Lineal.png}
+\end{figure}}
+
+\only<3>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/decision-tree.png}
+\end{figure}}
+
+\only<4>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/adaboost.png}
+\end{figure}}
+
+\column{.5\textwidth} % Right column and width
+\only<1>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/SVM-RBF.png}
+\end{figure}}
+
+\only<2>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/knn-results.png}
+\end{figure}}
+
+\only<3>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/random-forest.png}
+\end{figure}}
+
+\only<4>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/qda.png}
+\end{figure}}
+
+\end{columns}
+
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Entrenamiento de clasificadores}
+
+\begin{itemize}
+\item Red utilizada es una red neuronal profunda con dos capas ocultas, la primera de ellas tiene 256 neuronas o nodos, mientras que la segunda capa posee 64 neuronas.
+
+\item 20000 epoch, \textit{learning rate}  igual a $\alpha = 0.3$ . También se define un \textit{batch size} igual a 32.
+\end{itemize}
+\begin{columns}[t] 
+\column{.5\textwidth} % Left column and width
+
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/nn_estructura.png}
+\end{figure}
+
+
+
+\column{.5\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/nn_plot.png}
+\end{figure}
+
+\end{columns}
+
+
+\end{frame}
+
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Tabla de entrenamiento}
+
+\begin{table}[ht!]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Algoritmo                     & Accuracy & Error medio X & Error medio Y & Error Absoluto \\ \hline
+NN                            & 97.94\%  & 0.1579        & 0.0735        & 0.1741         \\ \hline
+$SVM(RBF, C=1, \gamma = 4)$   & 96.81\%  & 0.2254        & 0.1018        & 0.2473         \\ \hline
+$KNN(k = 2)$                  & 95.43\%  & 0.9842        & 0.1575        & 0.9967         \\ \hline
+QDA                           & 85.25\%  & 5.1103        & 4.7175        & 6.9548         \\ \hline
+$SVM(Lineal, C=1)$            & 78.75\%  & 9.3163        & 6.0387        & 11.1022        \\ \hline
+Random Forest                 & 77.33\%  & 11.3430       & 3.1409        & 11.7698        \\ \hline
+Naive Bayes                   & 71.73\%  & 12.2303       & 9.4836        & 15.4763        \\ \hline
+Decision Tree( max depth = 5) & 57.91\%  & 57.8012       & 5.6412        & 58.0758        \\ \hline
+Adaboost                      & 26.03\%  & 150.8848      & 6.5333        & 151.0261       \\ \hline
+\end{tabular}
+}
+\end{table}
+
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Entrenamiento utilizando PCA}
+
+\begin{itemize}
+\item Número de componentes principales que deben ser utilizadas para disminuir los tiempos de procesamiento y el número de componentes no ortogonales, es decir, reducir la información redundante total.
+\pause
+\item No existe un algoritmo que lo determine automáticamente.
+\pause
+\item Se proponen tres métodos para encontrar las componentes principales:
+
+\begin{enumerate}[1]
+\pause
+	\item El primer método se basa en la información contextual presente en los valores propios.
+	\pause
+	\item Para el segundo método, es necesario establecer la suma acumulada porcentual de la varianza explicada.
+	\pause
+	\item Con respecto al tercer método, este se basa en seleccionar las primeras componentes principales según los resultados obtenidos en los clasificadores.
+\end{enumerate}
+\end{itemize}
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Entrenamiento utilizando PCA}
+
+\only<1>{\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.5\textwidth} % Left column and width
+
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/eigenvalues.png}
+\end{figure}
+
+\column{.5\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/varianza_ratio.png}
+\end{figure}
+ % Right column and widt
+
+\end{columns}}
+
+\only<2>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/comparativa_clasificadores_pca.png}
+\end{figure}}
+
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Entrenamiento utilizando PCA}
+
+\begin{table}[ht!]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+Algoritmo                     & Accuracy & Error medio X & Error medio Y & Error Absoluto \\ \hline
+NN                            & 93\%  & 1.8956        & 0.6589        & 2.0068         \\ \hline
+$SVM(RBF, C=1, \gamma = 4)$   & 92.39\%  & 2.4581  & 0.7830        & 2.5797         \\ \hline
+$KNN(k = 2)$                  & 90.83\%  & 2.1381 & 0.4872        & 2.1929         \\ \hline
+QDA                           & 71.25\%  & 15.9418 & 9.3042        & 18.4583         \\ \hline
+$SVM(Lineal, C=1)$            & 66.20\%  & 19.5878 & 10.4824        & 22.2162        \\ \hline
+Random Forest                 & 64.15\%  & 21.3284 & 5.4472        & 22.0130       \\ \hline
+Decision Tree( max depth = 5) & 56.96\%  & 33.5151       & 8.9163       & 34.6808        \\ \hline
+Naive Bayes                   & 50.71\%  & 31.3406 & 10.0727        & 32.9194        \\ \hline
+Adaboost                      & 32.20\%  & 73.9345 & 9.3042       & 74.5176       \\ \hline
+\end{tabular}
+}
+\end{table}
+
+
+\end{frame}
+
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Fase Online}
+
+\begin{itemize}
+\item No hay forma de determinar el error absoluto, producto de que para ello se debe proporcionar la posición real.
+
+\pause
+\item Lo que se propone para determinar los resultados son dos formas llamadas método estático y método dinámico.
+\begin{enumerate}[1]
+\pause
+\item En el método estático lo que se hace es permanecer quieto en un determinado punto durante un tiempo predefinido. El tiempo utilizado en este caso corresponde a 15 minutos.
+
+\pause
+\item Para el caso del método dinámico, lo que se busca es abarcar la mayor cantidad de puntos posibles. En este caso se decide hacer una caminata a través de todos los 44 puntos.
+\end{enumerate}
+\end{itemize}
+
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Fase Online}
+
+\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.3\textwidth} % Left column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/fase_online1.png}
+\end{figure}
+
+\column{.3\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/fase_online2.png}
+\end{figure}
+
+\column{.3\textwidth} % Right column and width
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/fase_online3.png}
+\end{figure}
+
+\end{columns}
+
+\end{frame}
+
+
+%-------------------------------------------------
 \begin{frame}
 \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 

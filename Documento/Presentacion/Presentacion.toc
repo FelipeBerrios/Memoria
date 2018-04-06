@@ -8,12 +8,14 @@
 \beamer@sectionintoc {3}{Propuesta de soluci\IeC {\'o}n}{22}{0}{3}
 \beamer@subsectionintoc {3}{1}{Consideraciones Previas}{27}{0}{3}
 \beamer@subsectionintoc {3}{2}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{35}{0}{3}
-\beamer@subsectionintoc {3}{3}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{57}{0}{3}
-\beamer@sectionintoc {4}{Dise\IeC {\~n}o del Estudio}{65}{0}{4}
-\beamer@subsectionintoc {4}{1}{Cualidades y costos de tecnolog\IeC {\'\i }as}{66}{0}{4}
-\beamer@subsectionintoc {4}{2}{Lugar del estudio}{80}{0}{4}
-\beamer@sectionintoc {5}{Implementaci\IeC {\'o}n}{81}{0}{5}
-\beamer@subsectionintoc {5}{1}{Requerimientos}{82}{0}{5}
-\beamer@subsectionintoc {5}{2}{Ejecuci\IeC {\'o}n}{89}{0}{5}
-\beamer@sectionintoc {6}{Resultados}{93}{0}{6}
-\beamer@sectionintoc {7}{Conclusiones}{105}{0}{7}
+\beamer@sectionintoc {4}{Experimentaci\IeC {\'o}n}{56}{0}{4}
+\beamer@subsectionintoc {4}{1}{Implementaci\IeC {\'o}n}{57}{0}{4}
+\beamer@subsectionintoc {4}{2}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{95}{0}{4}
+\beamer@sectionintoc {5}{Dise\IeC {\~n}o del Estudio}{103}{0}{5}
+\beamer@subsectionintoc {5}{1}{Cualidades y costos de tecnolog\IeC {\'\i }as}{104}{0}{5}
+\beamer@subsectionintoc {5}{2}{Lugar del estudio}{118}{0}{5}
+\beamer@sectionintoc {6}{Implementaci\IeC {\'o}n}{119}{0}{6}
+\beamer@subsectionintoc {6}{1}{Requerimientos}{120}{0}{6}
+\beamer@subsectionintoc {6}{2}{Ejecuci\IeC {\'o}n}{127}{0}{6}
+\beamer@sectionintoc {7}{Resultados}{131}{0}{7}
+\beamer@sectionintoc {8}{Conclusiones}{143}{0}{8}

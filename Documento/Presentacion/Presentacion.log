@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  5 APR 2018 01:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  6 APR 2018 00:23
 entering extended mode
 **./Presentacion.tex
 (Presentacion.tex
@@ -1064,7 +1064,7 @@ LaTeX Info: Redefining \% on input line 1.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10.95> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 6.
 )
-Overfull \vbox (22.04744pt too high) detected at line 138
+Overfull \vbox (25.84746pt too high) detected at line 138
  []
 
 [2
@@ -1099,7 +1099,7 @@ LaTeX Info: Redefining \% on input line 1.
 ) [12
 
 ]
-<../figures/Murallas.png, id=259, 619.31375pt x 166.6225pt>
+<../figures/Murallas.png, id=273, 619.31375pt x 166.6225pt>
 File: ../figures/Murallas.png Graphic file (type png)
 <use ../figures/Murallas.png>
 Package pdftex.def Info: ../figures/Murallas.png  used on input line 291. on in
@@ -1115,7 +1115,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
  <../figures/Murallas.png>] [14
 
 ]
-<../figures/abs.png, id=280, 692.5875pt x 498.86375pt>
+<../figures/abs.png, id=294, 692.5875pt x 498.86375pt>
 File: ../figures/abs.png Graphic file (type png)
 <use ../figures/abs.png>
 Package pdftex.def Info: ../figures/abs.png  used on input line 291. on input l
@@ -1133,7 +1133,7 @@ Overfull \vbox (5.75447pt too high) detected at line 291
 ] [17
 
 ]
-<../figures/comparativa.png, id=311, 624.3325pt x 447.6725pt>
+<../figures/comparativa.png, id=325, 624.3325pt x 447.6725pt>
 File: ../figures/comparativa.png Graphic file (type png)
 <use ../figures/comparativa.png>
 Package pdftex.def Info: ../figures/comparativa.png  used on input line 291. on
@@ -1149,7 +1149,7 @@ Overfull \vbox (4.95522pt too high) detected at line 291
  <../figures/comparativa.png>] [19
 
 ]
-<../figures/triangulacion.png, id=332, 609.27625pt x 340.27126pt>
+<../figures/triangulacion.png, id=346, 609.27625pt x 340.27126pt>
 File: ../figures/triangulacion.png Graphic file (type png)
 <use ../figures/triangulacion.png>
 Package pdftex.def Info: ../figures/triangulacion.png  used on input line 319. 
@@ -1159,7 +1159,7 @@ e 319.
  [20
 
  <../figures/triangulacion.png>]
-<../figures/finger.png, id=343, 544.0325pt x 328.22626pt>
+<../figures/finger.png, id=357, 544.0325pt x 328.22626pt>
 File: ../figures/finger.png Graphic file (type png)
 <use ../figures/finger.png>
 Package pdftex.def Info: ../figures/finger.png  used on input line 330. on inpu
@@ -1183,7 +1183,7 @@ LaTeX Info: Redefining \% on input line 1.
 ] [26
 
 ]
-<../figures/beacons_all.jpg, id=409, 963.6pt x 722.7pt>
+<../figures/beacons_all.jpg, id=421, 963.6pt x 722.7pt>
 File: ../figures/beacons_all.jpg Graphic file (type jpg)
 <use ../figures/beacons_all.jpg>
 Package pdftex.def Info: ../figures/beacons_all.jpg  used on input line 384. on
@@ -1255,7 +1255,7 @@ File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 ) [30
 
 ]
-<../figures/mediciones_beacon_interferencia.jpg, id=450, 482.55281pt x 383.1815
+<../figures/mediciones_beacon_interferencia.jpg, id=462, 482.55281pt x 383.1815
 6pt>
 File: ../figures/mediciones_beacon_interferencia.jpg Graphic file (type jpg)
 <use ../figures/mediciones_beacon_interferencia.jpg>
@@ -1266,21 +1266,21 @@ Package pdftex.def Info: Requested size: 159.94939pt x 127.0116pt on input line
  [31
 
  <../figures/mediciones_beacon_interferencia.jpg>]
-<../figures/knn.png, id=462, 553.1064pt x 484.9317pt>
+<../figures/knn.png, id=474, 553.1064pt x 484.9317pt>
 File: ../figures/knn.png Graphic file (type png)
 <use ../figures/knn.png>
 Package pdftex.def Info: ../figures/knn.png  used on input line 470. on input l
 ine 470.
 Package pdftex.def Info: Requested size: 101.40622pt x 88.90442pt on input line
  470.
-<../figures/SVM-Planes.png, id=464, 331.2375pt x 283.81032pt>
+<../figures/SVM-Planes.png, id=476, 331.2375pt x 283.81032pt>
 File: ../figures/SVM-Planes.png Graphic file (type png)
 <use ../figures/SVM-Planes.png>
 Package pdftex.def Info: ../figures/SVM-Planes.png  used on input line 470. on 
 input line 470.
 Package pdftex.def Info: Requested size: 101.40622pt x 86.88464pt on input line
  470.
-<../figures/deep.png, id=465, 562.1pt x 280.04625pt>
+<../figures/deep.png, id=477, 562.1pt x 280.04625pt>
 File: ../figures/deep.png Graphic file (type png)
 <use ../figures/deep.png>
 Package pdftex.def Info: ../figures/deep.png  used on input line 470. on input 
@@ -1347,7 +1347,7 @@ Package pdftex.def Info: Requested size: 101.40622pt x 50.52151pt on input line
 [41
 
 ]
-<../figures/fingerprints.jpg, id=570, 512.66531pt x 322.20375pt>
+<../figures/fingerprints.jpg, id=582, 512.66531pt x 322.20375pt>
 File: ../figures/fingerprints.jpg Graphic file (type jpg)
 <use ../figures/fingerprints.jpg>
 Package pdftex.def Info: ../figures/fingerprints.jpg  used on input line 527. o
@@ -1386,7 +1386,7 @@ Overfull \vbox (5.77397pt too high) detected at line 527
 ] [54
 
 ]
-<../figures/propuesta_memoria.png, id=703, 438.8897pt x 382.42876pt>
+<../figures/propuesta_memoria.png, id=715, 438.8897pt x 382.42876pt>
 File: ../figures/propuesta_memoria.png Graphic file (type png)
 <use ../figures/propuesta_memoria.png>
 Package pdftex.def Info: ../figures/propuesta_memoria.png  used on input line 6
@@ -1395,134 +1395,476 @@ Package pdftex.def Info: Requested size: 215.10196pt x 187.43257pt on input lin
 e 609.
  [55
 
- <../figures/propuesta_memoria.png>]
-<../figures_chesta/estado_del_arte/trilateration.png, id=716, 327.2225pt x 353.
-32pt>
+ <../figures/propuesta_memoria.png>] (Presentacion.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+)
+[56
+
+]
+<../figures/kontaktapp1.png, id=747, 1084.05pt x 1927.2pt>
+File: ../figures/kontaktapp1.png Graphic file (type png)
+<use ../figures/kontaktapp1.png>
+Package pdftex.def Info: ../figures/kontaktapp1.png  used on input line 633. on
+ input line 633.
+Package pdftex.def Info: Requested size: 92.18788pt x 163.88335pt on input line
+ 633.
+<../figures/kontaktapp2.png, id=748, 1084.05pt x 1927.2pt>
+File: ../figures/kontaktapp2.png Graphic file (type png)
+<use ../figures/kontaktapp2.png>
+Package pdftex.def Info: ../figures/kontaktapp2.png  used on input line 633. on
+ input line 633.
+Package pdftex.def Info: Requested size: 92.18788pt x 163.88335pt on input line
+ 633.
+ [57
+
+ <../figures/kontaktapp1.png> <../figures/kontaktapp2.png>]
+<../figures/estSubterraneo.png, id=758, 997.47656pt x 252.945pt>
+File: ../figures/estSubterraneo.png Graphic file (type png)
+<use ../figures/estSubterraneo.png>
+Package pdftex.def Info: ../figures/estSubterraneo.png  used on input line 655.
+ on input line 655.
+Package pdftex.def Info: Requested size: 153.64493pt x 38.95905pt on input line
+ 655.
+<../figures/estReal.jpg, id=759, 4143.48pt x 3107.61pt>
+File: ../figures/estReal.jpg Graphic file (type jpg)
+<use ../figures/estReal.jpg>
+Package pdftex.def Info: ../figures/estReal.jpg  used on input line 655. on inp
+ut line 655.
+Package pdftex.def Info: Requested size: 153.64493pt x 115.22633pt on input lin
+e 655.
+ [58
+
+ <../figures/estSubterraneo.png> <../figures/estReal.jpg>]
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 685.
+ [59
+
+] [60
+
+] [61
+
+] [62
+
+] [63
+
+]
+[64
+
+] [65
+
+] [66
+
+]
+<../figures/deployBeacons.png, id=852, 1084.05pt x 1927.2pt>
+File: ../figures/deployBeacons.png Graphic file (type png)
+<use ../figures/deployBeacons.png>
+Package pdftex.def Info: ../figures/deployBeacons.png  used on input line 713. 
+on input line 713.
+Package pdftex.def Info: Requested size: 99.86826pt x 177.52805pt on input line
+ 713.
+
+Overfull \hbox (4.55153pt too wide) detected at line 713
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+
+Overfull \vbox (3.77495pt too high) detected at line 713
+ []
+
+[67
+
+ <../figures/deployBeacons.png>]
+File: ../figures/deployBeacons.png Graphic file (type png)
+<use ../figures/deployBeacons.png>
+Package pdftex.def Info: ../figures/deployBeacons.png  used on input line 713. 
+on input line 713.
+Package pdftex.def Info: Requested size: 99.86826pt x 177.52805pt on input line
+ 713.
+
+Overfull \hbox (4.55153pt too wide) detected at line 713
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+
+Overfull \vbox (3.77495pt too high) detected at line 713
+ []
+
+[68
+
+]
+File: ../figures/deployBeacons.png Graphic file (type png)
+<use ../figures/deployBeacons.png>
+Package pdftex.def Info: ../figures/deployBeacons.png  used on input line 713. 
+on input line 713.
+Package pdftex.def Info: Requested size: 99.86826pt x 177.52805pt on input line
+ 713.
+
+Overfull \hbox (4.55153pt too wide) detected at line 713
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+
+Overfull \vbox (3.77495pt too high) detected at line 713
+ []
+
+[69
+
+]
+<../figures/ejemplo_csv.png, id=884, 610.53094pt x 325.215pt>
+File: ../figures/ejemplo_csv.png Graphic file (type png)
+<use ../figures/ejemplo_csv.png>
+Package pdftex.def Info: ../figures/ejemplo_csv.png  used on input line 743. on
+ input line 743.
+Package pdftex.def Info: Requested size: 153.64493pt x 81.84444pt on input line
+ 743.
+
+Overfull \hbox (4.55153pt too wide) detected at line 743
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[70
+
+ <../figures/ejemplo_csv.png>]
+File: ../figures/ejemplo_csv.png Graphic file (type png)
+<use ../figures/ejemplo_csv.png>
+Package pdftex.def Info: ../figures/ejemplo_csv.png  used on input line 743. on
+ input line 743.
+Package pdftex.def Info: Requested size: 153.64493pt x 81.84444pt on input line
+ 743.
+
+Overfull \hbox (4.55153pt too wide) detected at line 743
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[71
+
+]
+File: ../figures/ejemplo_csv.png Graphic file (type png)
+<use ../figures/ejemplo_csv.png>
+Package pdftex.def Info: ../figures/ejemplo_csv.png  used on input line 743. on
+ input line 743.
+Package pdftex.def Info: Requested size: 153.64493pt x 81.84444pt on input line
+ 743.
+
+Overfull \hbox (4.55153pt too wide) detected at line 743
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[72
+
+]
+File: ../figures/ejemplo_csv.png Graphic file (type png)
+<use ../figures/ejemplo_csv.png>
+Package pdftex.def Info: ../figures/ejemplo_csv.png  used on input line 743. on
+ input line 743.
+Package pdftex.def Info: Requested size: 153.64493pt x 81.84444pt on input line
+ 743.
+
+Overfull \hbox (4.55153pt too wide) detected at line 743
+[][][] [][][][][][][][][] [][][][][][][] 
+ []
+
+[73
+
+]
+<../figures/NB.png, id=927, 397.485pt x 279.0425pt>
+File: ../figures/NB.png Graphic file (type png)
+<use ../figures/NB.png>
+Package pdftex.def Info: ../figures/NB.png  used on input line 788. on input li
+ne 788.
+Package pdftex.def Info: Requested size: 153.64493pt x 107.86386pt on input lin
+e 788.
+<../figures/SVM-RBF.png, id=928, 397.485pt x 281.05pt>
+File: ../figures/SVM-RBF.png Graphic file (type png)
+<use ../figures/SVM-RBF.png>
+Package pdftex.def Info: ../figures/SVM-RBF.png  used on input line 788. on inp
+ut line 788.
+Package pdftex.def Info: Requested size: 153.64493pt x 108.63985pt on input lin
+e 788.
+ [74
+
+ <../figures/NB.png> <../figures/SVM-RBF.png>]
+<../figures/SVM-Lineal.png, id=941, 390.45876pt x 281.05pt>
+File: ../figures/SVM-Lineal.png Graphic file (type png)
+<use ../figures/SVM-Lineal.png>
+Package pdftex.def Info: ../figures/SVM-Lineal.png  used on input line 788. on 
+input line 788.
+Package pdftex.def Info: Requested size: 153.64493pt x 110.59111pt on input lin
+e 788.
+<../figures/knn-results.png, id=942, 390.45876pt x 281.05pt>
+File: ../figures/knn-results.png Graphic file (type png)
+<use ../figures/knn-results.png>
+Package pdftex.def Info: ../figures/knn-results.png  used on input line 788. on
+ input line 788.
+Package pdftex.def Info: Requested size: 153.64493pt x 110.59111pt on input lin
+e 788.
+ [75
+
+ <../figures/SVM-Lineal.png> <../figures/knn-results.png>]
+<../figures/decision-tree.png, id=955, 390.45876pt x 279.0425pt>
+File: ../figures/decision-tree.png Graphic file (type png)
+<use ../figures/decision-tree.png>
+Package pdftex.def Info: ../figures/decision-tree.png  used on input line 788. 
+on input line 788.
+Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
+e 788.
+<../figures/random-forest.png, id=956, 438.63875pt x 279.0425pt>
+File: ../figures/random-forest.png Graphic file (type png)
+<use ../figures/random-forest.png>
+Package pdftex.def Info: ../figures/random-forest.png  used on input line 788. 
+on input line 788.
+Package pdftex.def Info: Requested size: 153.64493pt x 97.74297pt on input line
+ 788.
+ [76
+
+ <../figures/decision-tree.png> <../figures/random-forest.png>]
+<../figures/adaboost.png, id=969, 390.45876pt x 279.0425pt>
+File: ../figures/adaboost.png Graphic file (type png)
+<use ../figures/adaboost.png>
+Package pdftex.def Info: ../figures/adaboost.png  used on input line 788. on in
+put line 788.
+Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
+e 788.
+<../figures/qda.png, id=970, 397.485pt x 279.0425pt>
+File: ../figures/qda.png Graphic file (type png)
+<use ../figures/qda.png>
+Package pdftex.def Info: ../figures/qda.png  used on input line 788. on input l
+ine 788.
+Package pdftex.def Info: Requested size: 153.64493pt x 107.86386pt on input lin
+e 788.
+ [77
+
+ <../figures/adaboost.png> <../figures/qda.png>]
+<../figures/nn_estructura.png, id=983, 599.99156pt x 410.2828pt>
+File: ../figures/nn_estructura.png Graphic file (type png)
+<use ../figures/nn_estructura.png>
+Package pdftex.def Info: ../figures/nn_estructura.png  used on input line 816. 
+on input line 816.
+Package pdftex.def Info: Requested size: 153.64493pt x 105.06209pt on input lin
+e 816.
+<../figures/nn_plot.png, id=984, 719.68875pt x 342.5297pt>
+File: ../figures/nn_plot.png Graphic file (type png)
+<use ../figures/nn_plot.png>
+Package pdftex.def Info: ../figures/nn_plot.png  used on input line 816. on inp
+ut line 816.
+Package pdftex.def Info: Requested size: 153.64493pt x 73.12502pt on input line
+ 816.
+
+Overfull \vbox (4.30902pt too high) detected at line 816
+ []
+
+[78
+
+ <../figures/nn_estructura.png> <../figures/nn_plot.png>] [79
+
+] [80
+
+] [81
+
+]
+[82
+
+] [83
+
+] [84
+
+] [85
+
+]
+<../figures/eigenvalues.png, id=1071, 390.45876pt x 276.03125pt>
+File: ../figures/eigenvalues.png Graphic file (type png)
+<use ../figures/eigenvalues.png>
+Package pdftex.def Info: ../figures/eigenvalues.png  used on input line 893. on
+ input line 893.
+Package pdftex.def Info: Requested size: 153.64493pt x 108.61627pt on input lin
+e 893.
+<../figures/varianza_ratio.png, id=1072, 390.45876pt x 276.03125pt>
+File: ../figures/varianza_ratio.png Graphic file (type png)
+<use ../figures/varianza_ratio.png>
+Package pdftex.def Info: ../figures/varianza_ratio.png  used on input line 893.
+ on input line 893.
+Package pdftex.def Info: Requested size: 153.64493pt x 108.61627pt on input lin
+e 893.
+ [86
+
+ <../figures/eigenvalues.png> <../figures/varianza_ratio.png>]
+<../figures/comparativa_clasificadores_pca.png, id=1085, 589.20125pt x 276.0312
+5pt>
+File: ../figures/comparativa_clasificadores_pca.png Graphic file (type png)
+<use ../figures/comparativa_clasificadores_pca.png>
+Package pdftex.def Info: ../figures/comparativa_clasificadores_pca.png  used on
+ input line 893. on input line 893.
+Package pdftex.def Info: Requested size: 307.28987pt x 143.96246pt on input lin
+e 893.
+ [87
+
+ <../figures/comparativa_clasificadores_pca.png>] [88
+
+] [89
+
+] [90
+
+]
+[91
+
+] [92
+
+]
+<../figures/fase_online1.png, id=1148, 542.025pt x 963.6pt>
+File: ../figures/fase_online1.png Graphic file (type png)
+<use ../figures/fase_online1.png>
+Package pdftex.def Info: ../figures/fase_online1.png  used on input line 966. o
+n input line 966.
+Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
+966.
+<../figures/fase_online2.png, id=1149, 542.025pt x 963.6pt>
+File: ../figures/fase_online2.png Graphic file (type png)
+<use ../figures/fase_online2.png>
+Package pdftex.def Info: ../figures/fase_online2.png  used on input line 966. o
+n input line 966.
+Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
+966.
+<../figures/fase_online3.png, id=1150, 542.025pt x 963.6pt>
+File: ../figures/fase_online3.png Graphic file (type png)
+<use ../figures/fase_online3.png>
+Package pdftex.def Info: ../figures/fase_online3.png  used on input line 966. o
+n input line 966.
+Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
+966.
+ [93
+
+ <../figures/fase_online1.png (PNG copy)> <../figures/fase_online2.png (PNG cop
+y)> <../figures/fase_online3.png (PNG copy)>]
+<../figures_chesta/estado_del_arte/trilateration.png, id=1161, 327.2225pt x 353
+.32pt>
 File: ../figures_chesta/estado_del_arte/trilateration.png Graphic file (type pn
 g)
 <use ../figures_chesta/estado_del_arte/trilateration.png>
 Package pdftex.def Info: ../figures_chesta/estado_del_arte/trilateration.png  u
-sed on input line 639. on input line 639.
+sed on input line 997. on input line 997.
 Package pdftex.def Info: Requested size: 153.64493pt x 165.89868pt on input lin
-e 639.
- [56
+e 997.
+ [94
 
  <../figures_chesta/estado_del_arte/trilateration.png>]
 LaTeX Font Info:    Font shape `OT1/phv/bx/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/it' tried instead on input line 671.
-LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 671.
- [57
+(Font)              Font shape `OT1/phv/b/it' tried instead on input line 1029.
 
-] [58
+LaTeX Font Info:    Font shape `OT1/phv/b/it' in size <10.95> not available
+(Font)              Font shape `OT1/phv/b/sl' tried instead on input line 1029.
+
+ [95
+
+] [96
 
 ]
-<../figures_chesta/estado_del_arte/fspl.png, id=750, 321.2pt x 136.51pt>
+<../figures_chesta/estado_del_arte/fspl.png, id=1194, 321.2pt x 136.51pt>
 File: ../figures_chesta/estado_del_arte/fspl.png Graphic file (type png)
 <use ../figures_chesta/estado_del_arte/fspl.png>
 Package pdftex.def Info: ../figures_chesta/estado_del_arte/fspl.png  used on in
-put line 718. on input line 718.
+put line 1076. on input line 1076.
 Package pdftex.def Info: Requested size: 199.73653pt x 84.88943pt on input line
- 718.
- [59
+ 1076.
+ [97
 
  <../figures_chesta/estado_del_arte/fspl.png>]
 File: ../figures_chesta/estado_del_arte/fspl.png Graphic file (type png)
 <use ../figures_chesta/estado_del_arte/fspl.png>
 Package pdftex.def Info: ../figures_chesta/estado_del_arte/fspl.png  used on in
-put line 749. on input line 749.
+put line 1107. on input line 1107.
 Package pdftex.def Info: Requested size: 153.64493pt x 65.30116pt on input line
- 749.
- [60
+ 1107.
+ [98
 
 ]
-<../figures_chesta/estado_del_arte/beacons_estimote.png, id=775, 310.15875pt x 
-155.07938pt>
+<../figures_chesta/estado_del_arte/beacons_estimote.png, id=1219, 310.15875pt x
+ 155.07938pt>
 File: ../figures_chesta/estado_del_arte/beacons_estimote.png Graphic file (type
  png)
 <use ../figures_chesta/estado_del_arte/beacons_estimote.png>
 Package pdftex.def Info: ../figures_chesta/estado_del_arte/beacons_estimote.png
-  used on input line 765. on input line 765.
+  used on input line 1123. on input line 1123.
 Package pdftex.def Info: Requested size: 153.64493pt x 76.8225pt on input line 
-765.
- [61
+1123.
+ [99
 
- <../figures_chesta/estado_del_arte/beacons_estimote.png>] [62
+ <../figures_chesta/estado_del_arte/beacons_estimote.png>] [100
 
 ]
-<../figures_chesta/estado_del_arte/how_rfid_works.png, id=799, 301.125pt x 253.
-69781pt>
+<../figures_chesta/estado_del_arte/how_rfid_works.png, id=1242, 301.125pt x 253
+.69781pt>
 File: ../figures_chesta/estado_del_arte/how_rfid_works.png Graphic file (type p
 ng)
 <use ../figures_chesta/estado_del_arte/how_rfid_works.png>
 Package pdftex.def Info: ../figures_chesta/estado_del_arte/how_rfid_works.png  
-used on input line 825. on input line 825.
+used on input line 1183. on input line 1183.
 Package pdftex.def Info: Requested size: 153.64493pt x 129.44998pt on input lin
-e 825.
- [63
+e 1183.
+ [101
 
  <../figures_chesta/estado_del_arte/how_rfid_works.png>]
 File: ../figures_chesta/estado_del_arte/how_rfid_works.png Graphic file (type p
 ng)
 <use ../figures_chesta/estado_del_arte/how_rfid_works.png>
 Package pdftex.def Info: ../figures_chesta/estado_del_arte/how_rfid_works.png  
-used on input line 825. on input line 825.
+used on input line 1183. on input line 1183.
 Package pdftex.def Info: Requested size: 153.64493pt x 129.44998pt on input lin
-e 825.
+e 1183.
 
-[64
+[102
 
 ] (Presentacion.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [65
+) [103
 
-] [66
+] [104
 
-] [67
+] [105
 
-] [68
+] [106
 
-] [69
+] [107
 
 ]
-<../figures_chesta/diseno_del_exp/location_beacon.png, id=878, 79.29625pt x 115
-.43124pt>
+<../figures_chesta/diseno_del_exp/location_beacon.png, id=1322, 79.29625pt x 11
+5.43124pt>
 File: ../figures_chesta/diseno_del_exp/location_beacon.png Graphic file (type p
 ng)
 <use ../figures_chesta/diseno_del_exp/location_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/location_beacon.png  
-used on input line 920. on input line 920.
+used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 34.62962pt on input line 
-920.
-<../figures_chesta/diseno_del_exp/proximity_beacon.png, id=879, 62.2325pt x 94.
-3525pt>
+1278.
+<../figures_chesta/diseno_del_exp/proximity_beacon.png, id=1323, 62.2325pt x 94
+.3525pt>
 File: ../figures_chesta/diseno_del_exp/proximity_beacon.png Graphic file (type 
 png)
 <use ../figures_chesta/diseno_del_exp/proximity_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/proximity_beacon.png 
- used on input line 920. on input line 920.
+ used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 18.66989pt x 28.30595pt on input line 
-920.
-<../figures_chesta/diseno_del_exp/sticker_beacon.png, id=880, 59.22125pt x 47.1
-7625pt>
+1278.
+<../figures_chesta/diseno_del_exp/sticker_beacon.png, id=1324, 59.22125pt x 47.
+17625pt>
 File: ../figures_chesta/diseno_del_exp/sticker_beacon.png Graphic file (type pn
 g)
 <use ../figures_chesta/diseno_del_exp/sticker_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/sticker_beacon.png  u
-sed on input line 920. on input line 920.
-Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 9
-20.
-<../figures_chesta/diseno_del_exp/video_beacon.png, id=881, 79.29625pt x 100.37
-5pt>
+sed on input line 1278. on input line 1278.
+Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 1
+278.
+<../figures_chesta/diseno_del_exp/video_beacon.png, id=1325, 79.29625pt x 100.3
+75pt>
 File: ../figures_chesta/diseno_del_exp/video_beacon.png Graphic file (type png)
 
 <use ../figures_chesta/diseno_del_exp/video_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/video_beacon.png  use
-d on input line 920. on input line 920.
+d on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 30.11272pt on input line 
-920.
- [70
+1278.
+ [108
 
  <../figures_chesta/diseno_del_exp/location_beacon.png> <../figures_chesta/dise
 no_del_exp/proximity_beacon.png> <../figures_chesta/diseno_del_exp/sticker_beac
@@ -1531,382 +1873,383 @@ File: ../figures_chesta/diseno_del_exp/location_beacon.png Graphic file (type p
 ng)
 <use ../figures_chesta/diseno_del_exp/location_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/location_beacon.png  
-used on input line 920. on input line 920.
+used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 34.62962pt on input line 
-920.
+1278.
 File: ../figures_chesta/diseno_del_exp/proximity_beacon.png Graphic file (type 
 png)
 <use ../figures_chesta/diseno_del_exp/proximity_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/proximity_beacon.png 
- used on input line 920. on input line 920.
+ used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 18.66989pt x 28.30595pt on input line 
-920.
+1278.
 File: ../figures_chesta/diseno_del_exp/sticker_beacon.png Graphic file (type pn
 g)
 <use ../figures_chesta/diseno_del_exp/sticker_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/sticker_beacon.png  u
-sed on input line 920. on input line 920.
-Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 9
-20.
+sed on input line 1278. on input line 1278.
+Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 1
+278.
 File: ../figures_chesta/diseno_del_exp/video_beacon.png Graphic file (type png)
 
 <use ../figures_chesta/diseno_del_exp/video_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/video_beacon.png  use
-d on input line 920. on input line 920.
+d on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 30.11272pt on input line 
-920.
- [71
+1278.
+ [109
 
 ]
 File: ../figures_chesta/diseno_del_exp/location_beacon.png Graphic file (type p
 ng)
 <use ../figures_chesta/diseno_del_exp/location_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/location_beacon.png  
-used on input line 920. on input line 920.
+used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 34.62962pt on input line 
-920.
+1278.
 File: ../figures_chesta/diseno_del_exp/proximity_beacon.png Graphic file (type 
 png)
 <use ../figures_chesta/diseno_del_exp/proximity_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/proximity_beacon.png 
- used on input line 920. on input line 920.
+ used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 18.66989pt x 28.30595pt on input line 
-920.
+1278.
 File: ../figures_chesta/diseno_del_exp/sticker_beacon.png Graphic file (type pn
 g)
 <use ../figures_chesta/diseno_del_exp/sticker_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/sticker_beacon.png  u
-sed on input line 920. on input line 920.
-Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 9
-20.
+sed on input line 1278. on input line 1278.
+Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 1
+278.
 File: ../figures_chesta/diseno_del_exp/video_beacon.png Graphic file (type png)
 
 <use ../figures_chesta/diseno_del_exp/video_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/video_beacon.png  use
-d on input line 920. on input line 920.
+d on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 30.11272pt on input line 
-920.
- [72
+1278.
+ [110
 
 ]
 File: ../figures_chesta/diseno_del_exp/location_beacon.png Graphic file (type p
 ng)
 <use ../figures_chesta/diseno_del_exp/location_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/location_beacon.png  
-used on input line 920. on input line 920.
+used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 34.62962pt on input line 
-920.
+1278.
 File: ../figures_chesta/diseno_del_exp/proximity_beacon.png Graphic file (type 
 png)
 <use ../figures_chesta/diseno_del_exp/proximity_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/proximity_beacon.png 
- used on input line 920. on input line 920.
+ used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 18.66989pt x 28.30595pt on input line 
-920.
+1278.
 File: ../figures_chesta/diseno_del_exp/sticker_beacon.png Graphic file (type pn
 g)
 <use ../figures_chesta/diseno_del_exp/sticker_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/sticker_beacon.png  u
-sed on input line 920. on input line 920.
-Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 9
-20.
+sed on input line 1278. on input line 1278.
+Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 1
+278.
 File: ../figures_chesta/diseno_del_exp/video_beacon.png Graphic file (type png)
 
 <use ../figures_chesta/diseno_del_exp/video_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/video_beacon.png  use
-d on input line 920. on input line 920.
+d on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 30.11272pt on input line 
-920.
- [73
+1278.
+ [111
 
 ]
 File: ../figures_chesta/diseno_del_exp/location_beacon.png Graphic file (type p
 ng)
 <use ../figures_chesta/diseno_del_exp/location_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/location_beacon.png  
-used on input line 920. on input line 920.
+used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 34.62962pt on input line 
-920.
+1278.
 File: ../figures_chesta/diseno_del_exp/proximity_beacon.png Graphic file (type 
 png)
 <use ../figures_chesta/diseno_del_exp/proximity_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/proximity_beacon.png 
- used on input line 920. on input line 920.
+ used on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 18.66989pt x 28.30595pt on input line 
-920.
+1278.
 File: ../figures_chesta/diseno_del_exp/sticker_beacon.png Graphic file (type pn
 g)
 <use ../figures_chesta/diseno_del_exp/sticker_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/sticker_beacon.png  u
-sed on input line 920. on input line 920.
-Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 9
-20.
+sed on input line 1278. on input line 1278.
+Package pdftex.def Info: Requested size: 17.7665pt x 14.15297pt on input line 1
+278.
 File: ../figures_chesta/diseno_del_exp/video_beacon.png Graphic file (type png)
 
 <use ../figures_chesta/diseno_del_exp/video_beacon.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/video_beacon.png  use
-d on input line 920. on input line 920.
+d on input line 1278. on input line 1278.
 Package pdftex.def Info: Requested size: 23.78905pt x 30.11272pt on input line 
-920.
- [74
+1278.
+ [112
 
 ]
-LaTeX Font Info:    Try loading font information for OML+phv on input line 962.
-
+LaTeX Font Info:    Try loading font information for OML+phv on input line 1320
+.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omlphv.fd"
 File: omlphv.fd 
 )
 LaTeX Font Info:    Font shape `OML/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 962.
- [75
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 1320.
 
-] [76
+ [113
 
-] [77
+] [114
 
-]
-[78
-
-] [79
+] [115
 
 ]
-<../figures_chesta/diseno_del_exp/plano_est.png, id=990, 1600.98125pt x 455.702
-5pt>
+[116
+
+] [117
+
+]
+<../figures_chesta/diseno_del_exp/plano_est.png, id=1434, 1600.98125pt x 455.70
+25pt>
 File: ../figures_chesta/diseno_del_exp/plano_est.png Graphic file (type png)
 <use ../figures_chesta/diseno_del_exp/plano_est.png>
 Package pdftex.def Info: ../figures_chesta/diseno_del_exp/plano_est.png  used o
-n input line 1000. on input line 1000.
+n input line 1358. on input line 1358.
 Package pdftex.def Info: Requested size: 307.28987pt x 87.4605pt on input line 
-1000.
- [80
+1358.
+ [118
 
  <../figures_chesta/diseno_del_exp/plano_est.png>]
 (Presentacion.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [81
+) [119
 
-] [82
+] [120
 
-] [83
+] [121
 
-] [84
+] [122
 
-] [85
+] [123
 
-] [86
+] [124
 
-] [87
+] [125
 
-] [88
+] [126
 
 ]
-<../figures_chesta/implementacion/triangle_area.png, id=1086, 1084.05pt x 1927.
+<../figures_chesta/implementacion/triangle_area.png, id=1531, 1084.05pt x 1927.
 2pt>
 File: ../figures_chesta/implementacion/triangle_area.png Graphic file (type png
 )
 <use ../figures_chesta/implementacion/triangle_area.png>
 Package pdftex.def Info: ../figures_chesta/implementacion/triangle_area.png  us
-ed on input line 1085. on input line 1085.
+ed on input line 1443. on input line 1443.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-1085.
- [89
+1443.
+ [127
 
  <../figures_chesta/implementacion/triangle_area.png>]
 File: ../figures_chesta/implementacion/triangle_area.png Graphic file (type png
 )
 <use ../figures_chesta/implementacion/triangle_area.png>
 Package pdftex.def Info: ../figures_chesta/implementacion/triangle_area.png  us
-ed on input line 1085. on input line 1085.
+ed on input line 1443. on input line 1443.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-1085.
- [90
+1443.
+ [128
 
 ]
 File: ../figures_chesta/implementacion/triangle_area.png Graphic file (type png
 )
 <use ../figures_chesta/implementacion/triangle_area.png>
 Package pdftex.def Info: ../figures_chesta/implementacion/triangle_area.png  us
-ed on input line 1085. on input line 1085.
+ed on input line 1443. on input line 1443.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-1085.
- [91
+1443.
+ [129
 
 ]
 File: ../figures_chesta/implementacion/triangle_area.png Graphic file (type png
 )
 <use ../figures_chesta/implementacion/triangle_area.png>
 Package pdftex.def Info: ../figures_chesta/implementacion/triangle_area.png  us
-ed on input line 1085. on input line 1085.
+ed on input line 1443. on input line 1443.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-1085.
- [92
+1443.
+ [130
 
-] (Presentacion.toc
+]
+(Presentacion.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-[93
+) [131
 
 ]
-<../figures_chesta/resultados/posicion__7_95.png, id=1142, 542.025pt x 301.125p
+<../figures_chesta/resultados/posicion__7_95.png, id=1588, 542.025pt x 301.125p
 t>
 File: ../figures_chesta/resultados/posicion__7_95.png Graphic file (type png)
 <use ../figures_chesta/resultados/posicion__7_95.png>
 Package pdftex.def Info: ../figures_chesta/resultados/posicion__7_95.png  used 
-on input line 1102. on input line 1102.
+on input line 1460. on input line 1460.
 Package pdftex.def Info: Requested size: 307.28987pt x 170.71947pt on input lin
-e 1102.
- [94
+e 1460.
+ [132
 
  <../figures_chesta/resultados/posicion__7_95.png>]
-<../figures_chesta/resultados/area__7_95.png, id=1152, 542.025pt x 316.18124pt>
+<../figures_chesta/resultados/area__7_95.png, id=1598, 542.025pt x 316.18124pt>
 
 File: ../figures_chesta/resultados/area__7_95.png Graphic file (type png)
 <use ../figures_chesta/resultados/area__7_95.png>
 Package pdftex.def Info: ../figures_chesta/resultados/area__7_95.png  used on i
-nput line 1117. on input line 1117.
+nput line 1475. on input line 1475.
 Package pdftex.def Info: Requested size: 307.28987pt x 179.25545pt on input lin
-e 1117.
+e 1475.
 
-Overfull \vbox (7.80724pt too high) detected at line 1117
+Overfull \vbox (7.80724pt too high) detected at line 1475
  []
 
-[95
+[133
 
  <../figures_chesta/resultados/area__7_95.png>]
-<../figures_chesta/resultados/posicion__25_09.png, id=1162, 542.025pt x 301.125
+<../figures_chesta/resultados/posicion__25_09.png, id=1609, 542.025pt x 301.125
 pt>
 File: ../figures_chesta/resultados/posicion__25_09.png Graphic file (type png)
 <use ../figures_chesta/resultados/posicion__25_09.png>
 Package pdftex.def Info: ../figures_chesta/resultados/posicion__25_09.png  used
- on input line 1131. on input line 1131.
+ on input line 1489. on input line 1489.
 Package pdftex.def Info: Requested size: 307.28987pt x 170.71947pt on input lin
-e 1131.
- [96
+e 1489.
+ [134
 
  <../figures_chesta/resultados/posicion__25_09.png>]
-<../figures_chesta/resultados/area__25_09.png, id=1171, 542.025pt x 316.18124pt
+<../figures_chesta/resultados/area__25_09.png, id=1618, 542.025pt x 316.18124pt
 >
 File: ../figures_chesta/resultados/area__25_09.png Graphic file (type png)
 <use ../figures_chesta/resultados/area__25_09.png>
 Package pdftex.def Info: ../figures_chesta/resultados/area__25_09.png  used on 
-input line 1146. on input line 1146.
+input line 1504. on input line 1504.
 Package pdftex.def Info: Requested size: 307.28987pt x 179.25545pt on input lin
-e 1146.
+e 1504.
 
-Overfull \vbox (7.80724pt too high) detected at line 1146
+Overfull \vbox (7.80724pt too high) detected at line 1504
  []
 
-[97
+[135
 
  <../figures_chesta/resultados/area__25_09.png>]
-<../figures_chesta/resultados/posicion__27_64.png, id=1182, 542.025pt x 301.125
+<../figures_chesta/resultados/posicion__27_64.png, id=1628, 542.025pt x 301.125
 pt>
 File: ../figures_chesta/resultados/posicion__27_64.png Graphic file (type png)
 <use ../figures_chesta/resultados/posicion__27_64.png>
 Package pdftex.def Info: ../figures_chesta/resultados/posicion__27_64.png  used
- on input line 1160. on input line 1160.
+ on input line 1518. on input line 1518.
 Package pdftex.def Info: Requested size: 307.28987pt x 170.71947pt on input lin
-e 1160.
- [98
+e 1518.
+ [136
 
  <../figures_chesta/resultados/posicion__27_64.png>]
-<../figures_chesta/resultados/area__27_64.png, id=1191, 541.27219pt x 316.18124
+<../figures_chesta/resultados/area__27_64.png, id=1637, 541.27219pt x 316.18124
 pt>
 File: ../figures_chesta/resultados/area__27_64.png Graphic file (type png)
 <use ../figures_chesta/resultados/area__27_64.png>
 Package pdftex.def Info: ../figures_chesta/resultados/area__27_64.png  used on 
-input line 1175. on input line 1175.
+input line 1533. on input line 1533.
 Package pdftex.def Info: Requested size: 307.28987pt x 179.50632pt on input lin
-e 1175.
+e 1533.
 
-Overfull \vbox (8.0581pt too high) detected at line 1175
+Overfull \vbox (8.0581pt too high) detected at line 1533
  []
 
-[99
+[137
 
  <../figures_chesta/resultados/area__27_64.png>]
-<../figures_chesta/resultados/posicion__84_52.png, id=1201, 542.025pt x 301.125
+<../figures_chesta/resultados/posicion__84_52.png, id=1647, 542.025pt x 301.125
 pt>
 File: ../figures_chesta/resultados/posicion__84_52.png Graphic file (type png)
 <use ../figures_chesta/resultados/posicion__84_52.png>
 Package pdftex.def Info: ../figures_chesta/resultados/posicion__84_52.png  used
- on input line 1189. on input line 1189.
+ on input line 1547. on input line 1547.
 Package pdftex.def Info: Requested size: 307.28987pt x 170.71947pt on input lin
-e 1189.
- [100
+e 1547.
+ [138
 
  <../figures_chesta/resultados/posicion__84_52.png>]
-<../figures_chesta/resultados/area__84_52.png, id=1210, 542.025pt x 316.18124pt
+<../figures_chesta/resultados/area__84_52.png, id=1656, 542.025pt x 316.18124pt
 >
 File: ../figures_chesta/resultados/area__84_52.png Graphic file (type png)
 <use ../figures_chesta/resultados/area__84_52.png>
 Package pdftex.def Info: ../figures_chesta/resultados/area__84_52.png  used on 
-input line 1204. on input line 1204.
+input line 1562. on input line 1562.
 Package pdftex.def Info: Requested size: 307.28987pt x 179.25545pt on input lin
-e 1204.
+e 1562.
 
-Overfull \vbox (7.80724pt too high) detected at line 1204
+Overfull \vbox (7.80724pt too high) detected at line 1562
  []
 
-[101
+[139
 
  <../figures_chesta/resultados/area__84_52.png>]
-<../figures_chesta/resultados/posicion__118_37.png, id=1220, 542.025pt x 301.12
+<../figures_chesta/resultados/posicion__118_37.png, id=1667, 542.025pt x 301.12
 5pt>
 File: ../figures_chesta/resultados/posicion__118_37.png Graphic file (type png)
 
 <use ../figures_chesta/resultados/posicion__118_37.png>
 Package pdftex.def Info: ../figures_chesta/resultados/posicion__118_37.png  use
-d on input line 1218. on input line 1218.
+d on input line 1576. on input line 1576.
 Package pdftex.def Info: Requested size: 307.28987pt x 170.71947pt on input lin
-e 1218.
- [102
+e 1576.
+ [140
 
  <../figures_chesta/resultados/posicion__118_37.png>]
-<../figures_chesta/resultados/area__118_37.png, id=1229, 542.025pt x 316.18124p
+<../figures_chesta/resultados/area__118_37.png, id=1676, 542.025pt x 316.18124p
 t>
 File: ../figures_chesta/resultados/area__118_37.png Graphic file (type png)
 <use ../figures_chesta/resultados/area__118_37.png>
 Package pdftex.def Info: ../figures_chesta/resultados/area__118_37.png  used on
- input line 1233. on input line 1233.
+ input line 1591. on input line 1591.
 Package pdftex.def Info: Requested size: 307.28987pt x 179.25545pt on input lin
-e 1233.
+e 1591.
 
-Overfull \vbox (7.80724pt too high) detected at line 1233
+Overfull \vbox (7.80724pt too high) detected at line 1591
  []
 
-[103
+[141
 
  <../figures_chesta/resultados/area__118_37.png>]
-<../figures_chesta/resultados/summary.png, id=1240, 542.025pt x 301.125pt>
+<../figures_chesta/resultados/summary.png, id=1686, 542.025pt x 301.125pt>
 File: ../figures_chesta/resultados/summary.png Graphic file (type png)
 <use ../figures_chesta/resultados/summary.png>
 Package pdftex.def Info: ../figures_chesta/resultados/summary.png  used on inpu
-t line 1273. on input line 1273.
+t line 1631. on input line 1631.
 Package pdftex.def Info: Requested size: 307.28987pt x 170.71947pt on input lin
-e 1273.
- [104
+e 1631.
+ [142
 
  <../figures_chesta/resultados/summary.png>] (Presentacion.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [105
+) [143
 
-] [106
+] [144
 
-] [107
+] [145
 
-] [108
+] [146
 
-] [109
+] [147
 
 ]
-[110
+[148
 
-] [111
+] [149
 
 ]
 \tf@nav=\write6
@@ -1918,24 +2261,24 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@snm=\write8
 \openout8 = `Presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1307.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1307.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1665.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1665.
  (Presentacion.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1307.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1307.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1665.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1665.
 
 Package rerunfilecheck Info: File `Presentacion.out' has not changed.
-(rerunfilecheck)             Checksum: EB4A696537B9581F2E2A63F31A835E96;1273.
+(rerunfilecheck)             Checksum: 27C2DF68534459C915ACB764DAAB978E;1401.
  ) 
 Here is how much of TeX's memory you used:
- 23454 strings out of 493312
- 454912 string characters out of 3138899
- 537475 words of memory out of 3000000
- 26157 multiletter control sequences out of 15000+200000
- 55164 words of font info for 105 fonts, out of 3000000 for 9000
+ 23685 strings out of 493312
+ 459316 string characters out of 3138899
+ 539544 words of memory out of 3000000
+ 26285 multiletter control sequences out of 15000+200000
+ 57050 words of font info for 107 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,15n,65p,1143b,772s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
@@ -1951,9 +2294,9 @@ ts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 e1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helveti
 c/uhvro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Presentacion.pdf (111 pages, 1917589 bytes).
+Output written on Presentacion.pdf (149 pages, 6765247 bytes).
 PDF statistics:
- 1413 PDF objects out of 1440 (max. 8388607)
- 244 named destinations out of 1000 (max. 500000)
- 352 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1876 PDF objects out of 2073 (max. 8388607)
+ 322 named destinations out of 1000 (max. 500000)
+ 478 words of extra memory for PDF output out of 10000 (max. 10000000)
 
