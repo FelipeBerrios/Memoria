@@ -965,7 +965,244 @@ Adaboost                      & 32.20\%  & 73.9345 & 9.3042       & 74.5176     
 
 \end{frame}
 
+%-------------------------------------------------
+\section{Resultados}
+%-------------------------------------------------
 
+\subsection{Métricas Obtenidas}
+\begin{frame}
+\frametitle{Errores medios método dinámico}
+
+Método dinámico sin PCA
+
+\begin{table}[ht!]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Clasificador & Error x & Error y & Varianza x & Varianza y & RMSE    \\ \hline
+KNN          & 1.5858  & 4.6391  & 7.1970     & 2.1780     & 6.9323  \\ \hline
+SVM          & 6.8207  & 2.8874  & 1.7243     & 0.5989     & 10.0323 \\ \hline
+NN           & 4.3784  & 3.9113  & 13.0950    & 5.0712     & 8.2994  \\ \hline
+\end{tabular}
+}
+\end{table}
+
+Método dinámico con PCA
+\begin{table}[!ht]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Clasificador & Error x & Error y & Varianza x & Varianza y & RMSE   \\ \hline
+KNN PCA      & 2.0023  & 4.3983  & 7.5113     & 2.0696     & 6.6812 \\ \hline
+SVM PCA      & 6.8948  & 2.4257  & 4.1134     & 2.0348     & 9.5668 \\ \hline
+NN PCA       & 5.8874  & 4.4513  & 8.6088     & 3.2089     & 9.5188 \\ \hline
+\end{tabular}
+}
+\end{table}
+
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Errores medios método estático}
+
+Método estático sin PCA
+
+\begin{table}[!h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Clasificador & Error x & Error y & Varianza x & Varianza y & RMSE   \\ \hline
+KNN          & 3.2385  & 1.5417  & 3.3321     & 1.0940     & 5.0520 \\ \hline
+SVM          & 5.2493  & 1.6986  & 2.0598     & 0.7594     & 7.0241 \\ \hline
+NN           & 3.7300  & 2.1937  & 5.8885     & 0.7373     & 4.4857 \\ \hline
+\end{tabular}
+}
+\end{table}
+
+Método estático con PCA
+\begin{table}[!h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+Clasificador & Error x & Error y & Varianza x & Varianza y & RMSE   \\ \hline
+KNN PCA      & 2.9892  & 1.4475  & 3.1487     & 1.6391     & 5.0340 \\ \hline
+SVM PCA      & 3.2313  & 1.4905  & 3.0630     & 1.7817     & 5.1757 \\ \hline
+NN PCA       & 1.5578  & 1.7488  & 3.8045    & 2.6885     & 3.9341 \\ \hline
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Cumulative distribution function Dinámico}
+
+\begin{equation}
+F_{X} (x) = P(X \le x)
+\end{equation}
+
+\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.5\textwidth} % Left column and width
+
+\only<1>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-knn-dinamico.png}
+\end{figure}}
+
+\only<2>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-svm-dinamico.png}
+\end{figure}}
+
+\only<3>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-nn-dinamico.png}
+\end{figure}}
+
+\column{.5\textwidth} % Right column and width
+\only<1>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-knnPCA-dinamico.png}
+\end{figure}}
+
+\only<2>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-svmPCA-dinamico.png}
+\end{figure}}
+
+\only<3>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-nnPCA-dinamico.png}
+\end{figure}}
+
+\end{columns}
+
+\only<4>{\begin{table}[!h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|}
+\hline
+Clasificador & Sin PCA & Con PCA & Mejora     \\ \hline
+KNN          & 16.576  & 16.1554 & 2.5374 \%  \\ \hline
+SVM          & 20.8962 & 19.3874 & 7.2204 \%  \\ \hline
+NN           & 20.5677 & 16.1554 & 21.4525 \% \\ \hline
+\end{tabular}
+}
+\end{table}}
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Cumulative distribution function Estático}
+
+\begin{equation}
+F_{X} (x) = P(X \le x)
+\end{equation}
+
+\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+
+\column{.5\textwidth} % Left column and width
+
+\only<1>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-knn-estatico.png}
+\end{figure}}
+
+\only<2>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-svm-estatico.png}
+\end{figure}}
+
+\only<3>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-nn-estatico.png}
+\end{figure}}
+
+\column{.5\textwidth} % Right column and width
+\only<1>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-knnPCA-estatico.png}
+\end{figure}}
+
+\only<2>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-svmPCA-estatico.png}
+\end{figure}}
+
+\only<3>{\begin{figure}
+\includegraphics[width=\textwidth]{../figures/cdf-nnPCA-estatico.png}
+\end{figure}}
+
+\end{columns}
+
+\only<4>{\begin{table}[!h]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|}
+\hline
+Clasificador & Sin PCA  & Con PCA & Cambio    \\ \hline
+KNN          & 16.1554  & 16.1554 & 0 \%      \\ \hline
+SVM          & 16.1554  & 15.1327 & 6.33 \%   \\ \hline
+NN           & 11.18033 & 16.1554 & -44.49 \% \\ \hline
+\end{tabular}
+}
+\end{table}}
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Análisis de distribución}
+
+\begin{figure}
+\includegraphics[width=\textwidth]{../figures/boxplot.png}
+\end{figure}
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Análisis tiempos de ejecución}
+
+Resultados en términos de milisegundos con su respectiva mejora.
+
+\begin{table}[ht!]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Clasificador} & \textbf{Sin PCA} & \textbf{Con PCA} & \textbf{Incremento} \\ \hline
+KNN                   & 64.9642          & 59.6786          & 8.1361\%            \\ \hline
+SVM                   & 54.5985          & 25.6085          & 53.0966\%           \\ \hline
+NN                    & 0.7610           & 0.5777           & 24.0867\%           \\ \hline
+\end{tabular}
+}
+\end{table}
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Análisis de resultados}
+
+\begin{itemize}
+
+\item Resultados estáticos son mucho mejores que los resultados dinámicos, sin embargo, el escenario de que el usuario este estático en un punto no es para nada realista.
+\pause
+
+\item Primero, los mejores valores de error medio son obtenidos por KNN y NN, en ambos métodos (estático y dinámico).
+\pause
+
+\item KNN es mucho menos disperso en ambos métodos y sus errores están más centrados en valores bajos, mientras NN presenta mucho mayor dispersión en el método dinámico, pero casi nada en el método estático, sobre todo al no utilizar PCA.
+\pause
+
+\item Mejor algoritmo es redes neuronales, a pesar de su distribución, mantiene valores bajos de error y tiempos de procesamiento.
+
+\end{itemize}
+
+
+
+\end{frame}
+
+%-------------------------------------------------
+\section{Conclusiones}
 %-------------------------------------------------
 \begin{frame}
 \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
