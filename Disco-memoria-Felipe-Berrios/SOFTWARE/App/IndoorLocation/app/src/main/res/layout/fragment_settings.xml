@@ -1,0 +1,138 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.memoria.felipe.indoorlocation.Fragments.SettingsFragment"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/textview_exportar_db"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exportar base de datos"
+                android:textSize="20sp"
+                android:layout_marginEnd="16dp"/>
+
+            <Button
+                android:id="@+id/button_export"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="#fff"
+                android:text="Exportar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:id="@+id/textview_generar_csv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Generar CSV"
+                android:textSize="20sp"
+                android:layout_marginEnd="16dp"/>
+
+            <Button
+                android:id="@+id/button__generate_csv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="#fff"
+                android:text="Generar"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Configuracion"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Numero de Mediciones: "
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_number_of_meditions"
+                android:layout_width="50dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intervalo(ms): "
+                android:layout_marginEnd="8dp"/>
+
+            <EditText
+                android:id="@+id/edit_text_interval_meditions"
+                android:layout_width="50dp"
+                android:inputType="number"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textview_calculo_tiempo_mediciones"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button_save_meditions_settings"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="#fff"
+            android:text="Guardar" />
+
+    </LinearLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/button_delete_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red_material"
+        android:layout_gravity="bottom|end"
+        android:textColor="#fff"
+        android:text="Eliminar BD"/>
+
+
+</FrameLayout>

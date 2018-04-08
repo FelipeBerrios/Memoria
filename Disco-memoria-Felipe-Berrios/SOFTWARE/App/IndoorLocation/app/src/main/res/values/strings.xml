@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Indoor Location</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="kontakt_io_api_key">iMMcjMyJrDZIQQQnQXFyOIYXrLxvbKpO</string>
+    <string-array name="orientation_array">
+        <item>Norte</item>
+        <item>Este</item>
+        <item>Oeste</item>
+        <item>Sur</item>
+    </string-array>
+
+
+    <string-array name="algorithms_array">
+        <item>KNN</item>
+        <item>KNN PCA</item>
+        <item>SVM</item>
+        <item>SVM PCA</item>
+        <item>NN</item>
+        <item>NN PCA</item>
+    </string-array>
+
+</resources>
