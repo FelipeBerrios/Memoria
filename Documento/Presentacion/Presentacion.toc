@@ -12,13 +12,5 @@
 \beamer@subsectionintoc {4}{1}{Implementaci\IeC {\'o}n}{57}{0}{4}
 \beamer@sectionintoc {5}{Resultados}{94}{0}{5}
 \beamer@subsectionintoc {5}{1}{M\IeC {\'e}tricas Obtenidas}{95}{0}{5}
+\beamer@subsectionintoc {5}{2}{An\IeC {\'a}lisis de resultados}{107}{0}{5}
 \beamer@sectionintoc {6}{Conclusiones}{111}{0}{6}
-\beamer@subsectionintoc {6}{1}{Tecnolog\IeC {\'\i }as que permiten la geolocalizaci\IeC {\'o}n}{113}{0}{6}
-\beamer@sectionintoc {7}{Dise\IeC {\~n}o del Estudio}{121}{0}{7}
-\beamer@subsectionintoc {7}{1}{Cualidades y costos de tecnolog\IeC {\'\i }as}{122}{0}{7}
-\beamer@subsectionintoc {7}{2}{Lugar del estudio}{136}{0}{7}
-\beamer@sectionintoc {8}{Implementaci\IeC {\'o}n}{137}{0}{8}
-\beamer@subsectionintoc {8}{1}{Requerimientos}{138}{0}{8}
-\beamer@subsectionintoc {8}{2}{Ejecuci\IeC {\'o}n}{145}{0}{8}
-\beamer@sectionintoc {9}{Resultados}{149}{0}{9}
-\beamer@sectionintoc {10}{Conclusiones}{161}{0}{10}

@@ -186,7 +186,7 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 
 \begin{itemize}
 
-\item Es necesario posicionamiento en interiores (Mall, Evacuación, Mineras, edificios subterráneos)
+\item Es necesario posicionamiento en interiores.
 
 \pause
 \item Cuando se usa tecnología GPS dentro de edificios o bajo tierra, existen muchos obstáculos e interferencia que imposibilitan su uso.
@@ -214,7 +214,7 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 
 \item Diseñar un método de mapeo para un área mediante señales RSSI (\textit{fingerprint}).
 \pause
-\item Comparar métodos de aprendizaje automático sobre mediciones RSSI para determinar cúal posee menor error y es más exacto.
+\item Comparar métodos de aprendizaje automático sobre mediciones RSSI para determinar cuál posee menor error y es más exacto.
 \pause
 \item Determinar que tanto afectan los métodos de reducción de dimensionalidad tanto en precisión, error y tiempo de procesamiento para los algoritmos de máquinas de aprendizaje estudiados.
 
@@ -264,7 +264,7 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 
 \item Costoso y no escalable.
 
-\item Poco alcance, sin embargo no necesita linea de visión directa.
+\item Poco alcance, sin embargo, no necesita línea de visión directa.
 \end{itemize}
 }
 
@@ -301,7 +301,7 @@ Es la potencia de salida o fuerza de la señal que el emisor produce durante el 
 
 \item Antenas o emisores de ondas de radio. Según la señal más fuerte detectada por el usuario, es donde se localiza en el sistema.
 
-\item Ampliamente usado en redes celulares, ya que permite determinar la posición de un dispositivo con una precisión de 50-200 m, sin embargo, no es buena en espacios reducidos. GSM, Infrarrojo, Cell-ID.
+\item Ampliamente usado en redes celulares, ya que permite determinar la posición de un dispositivo con una precisión de 50-200 metros, sin embargo, no es buena en espacios reducidos. GSM, Infrarrojo, Cell-ID.
 \end{itemize}
 
 
@@ -420,7 +420,7 @@ Precio                      & 60 USD                          & 59 USD          
 \frametitle{Estabilidad de la señal Bluetooth}
 
 \begin{itemize}
-\item Se realiza prueba para comprobar como afecta las interferencias a la señal Bluetooth.
+\item Se realiza prueba para comprobar cómo afecta las interferencias a la señal Bluetooth.
 
 \end{itemize}
 
@@ -509,7 +509,7 @@ Precio                      & 60 USD                          & 59 USD          
 
 \pause
 
-\item Con los datos registrados, se debe crear la base de datos que almacenara estos Fingerprints, ya que desde ahí es posible analizar los datos y mantener su persistencia. Posteriormente, con estos datos se crea el radiomap.
+\item Con los datos registrados, se debe crear la base de datos que almacenara estos Fingerprints, ya que desde ahí es posible analizar los datos y mantener su persistencia
 \end{itemize}
 
 
@@ -539,7 +539,7 @@ Precio                      & 60 USD                          & 59 USD          
 \item Existe correlación espacial lineal de las señales adyacentes. PCA ayuda a eliminar esta correlación.
 \pause
 
-\item Los métodos de extracción de características pueden ayudar a agilizar la fase de entrenamiento, ya que este proceso es lento. Además, al ser menos componentes, en la fase online, las técnicas tardaran mucho menos tiempo en determinar la posición en tiempo real.
+\item Los métodos de extracción de características pueden ayudar a agilizar la fase de entrenamiento, ya que este proceso es lento.
 
 \pause
 
@@ -556,13 +556,13 @@ Precio                      & 60 USD                          & 59 USD          
 
 \begin{itemize}
 
-\item Entrenar técnicas de máquinas de aprendizaje muy conocidos y que han presentado buenos resultados a lo largo de muchos problemas.
+\item Entrenar técnicas de máquinas de aprendizaje.
 
 \pause
-\item Posteriormente, se seleccionan los mejores algoritmos, es decir, que presenten el mejor desempeño y luego son implementados.
+\item Posteriormente, se seleccionan los mejores algoritmos y luego son implementados.
 \pause
 
-\item ¿Implementación en cliente o servidor?
+\item \textbf{¿Implementación en cliente o servidor?}
 
 \end{itemize}
 
@@ -579,9 +579,9 @@ Precio                      & 60 USD                          & 59 USD          
 
 \begin{enumerate}
 \pause
-\item Colectar un vector de señales RSSI en la posición actual del usuario, es decir, el vector de intensidad de la señal.
+\item Colectar un vector de señales RSSI en la posición actual del usuario.
 \pause
-\item Proveer este vector de entrada a los algoritmos de aprendizaje supervisado
+\item Proveer este vector de entrada a los algoritmos de aprendizaje supervisado ya entrenados.
 \end{enumerate}
 
 \pause
@@ -699,7 +699,7 @@ Estacionamiento subterráneo de la universidad Técnica Federico Santa María, C
 \onslide<2->{\item 8 beacons en un área reducida del estacionamiento y ubicar cada Beacon a una distancia de 16 metros a sus vecinos adyacentes. 16 x 44 metros ($704m^2$). }
 
 
-\onslide<3->{\item Grilla para los puntos de medición o referencia de 4 metros por 4 metros, 44 en total. }
+\onslide<3->{\item Grilla para los puntos de referencia de 4 metros por 4 metros, 44 en total. }
 \end{itemize}
 
 \column{.5\textwidth} % Right column and width
@@ -847,7 +847,7 @@ Adaboost                      & 26.03\%  & 150.8848      & 6.5333        & 151.0
 \frametitle{Entrenamiento utilizando PCA}
 
 \begin{itemize}
-\item Número de componentes principales que deben ser utilizadas para disminuir los tiempos de procesamiento y el número de componentes no ortogonales, es decir, reducir la información redundante total.
+\item Determinar número de componentes principales que deben ser utilizadas.
 \pause
 \item No existe un algoritmo que lo determine automáticamente.
 \pause
@@ -1043,9 +1043,9 @@ NN PCA       & 1.5578  & 1.7488  & 3.8045    & 2.6885     & 3.9341 \\ \hline
 \begin{frame}
 \frametitle{Cumulative distribution function Dinámico}
 
-\begin{equation}
+$$
 F_{X} (x) = P(X \le x)
-\end{equation}
+$$
 
 \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
@@ -1097,9 +1097,9 @@ NN           & 20.5677 & 16.1554 & 21.4525 \% \\ \hline
 \begin{frame}
 \frametitle{Cumulative distribution function Estático}
 
-\begin{equation}
+$$
 F_{X} (x) = P(X \le x)
-\end{equation}
+$$
 
 \begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
@@ -1179,15 +1179,16 @@ NN                    & 0.7610           & 0.5777           & 24.0867\%         
 \end{frame}
 
 %-------------------------------------------------
+\subsection{Análisis de resultados}
 \begin{frame}
 \frametitle{Análisis de resultados}
 
 \begin{itemize}
 
-\item Resultados estáticos son mucho mejores que los resultados dinámicos, sin embargo, el escenario de que el usuario este estático en un punto no es para nada realista.
+\item Resultados estáticos son mucho mejores que los resultados dinámicos, sin embargo, el escenario de que el usuario este estático en un punto es menos realista.
 \pause
 
-\item Primero, los mejores valores de error medio son obtenidos por KNN y NN, en ambos métodos (estático y dinámico).
+\item Los mejores valores de error medio son obtenidos por KNN y NN, en ambos métodos (estático y dinámico).
 \pause
 
 \item KNN es mucho menos disperso en ambos métodos y sus errores están más centrados en valores bajos, mientras NN presenta mucho mayor dispersión en el método dinámico, pero casi nada en el método estático, sobre todo al no utilizar PCA.
@@ -1204,695 +1205,55 @@ NN                    & 0.7610           & 0.5777           & 24.0867\%         
 %-------------------------------------------------
 \section{Conclusiones}
 %-------------------------------------------------
-\begin{frame}
-\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
-\column{.5\textwidth} % Left column and width
-
-$P_1$, $P_2$, $P_3$, $r_1$, $r_2$ y $r_3$ conocidos
-¿Cuál es la posición de $B$?
-
-\vspace*{.1\textwidth}
-
-\begin{equation*}
-x=\frac{r_1^2-r_2^2-d^2}{2d}
-\end{equation*}
-\begin{equation*}
-y=\frac{r_1^2-r_3^2-x^2+i^2+j^2}{2j}-\frac{i}{j}x
-\end{equation*}
-\begin{equation*}
-z=\pm\sqrt{r_1^2-x^2-y^2}
-\end{equation*}
-
-\column{.5\textwidth} % Right column and width
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/estado_del_arte/trilateration}
-\end{figure}
-
-\end{columns}
-
-\end{frame}
-
-%------------------------------------------------
-
-\subsection{Tecnologías que permiten la geolocalización}
-
-\begin{frame}
-\frametitle{Tecnologías que permiten la geolocalización}
-
-\begin{columns}[t]
-
-\column{.5\textwidth}
-\textbf{Posicionamiento \textit{outdoor}}
-
-\begin{itemize}
-\item Sistemas satelitales (GPS, GLONASS, Galileo, Beidou)
-\item Localización por antenas móviles (GSM)
-\end{itemize}
-
-
-\column{.5\textwidth}
-\textbf{Posicionamiento \textit{indoor} (IPS)}
-
-\begin{itemize}
-\item Wi-Fi
-\item Bluetooth
-\item RFID
-%\item Magnetismo
-\end{itemize}
-
-\end{columns}
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Posicionamiento \textit{outdoor}}
-
-\begin{columns}[t]
-
-\column{.5\textwidth}
-
-\textbf{GPS}
-
-\begin{itemize}
-\item Red de 24 satélites 
-\item Precisión del orden de centímetros a unos pocos metros
-\item Requiere línea de visión directa (\textit{Line of Sight})
-\end{itemize}
-
-\column{.55\textwidth}
-
-\textbf{GSM}
-
-\begin{itemize}
-\item Localización principalmente por Celdas de Origen y triangulación
-\item Precisión del orden de 50m a 4km
-\item Menor gasto energético
-\end{itemize}
-
-
-
-\end{columns}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Posicionamiento \textit{indoor} - WiFi}
-
-\begin{block}{Free-space path loss (FSPL)}
-FSPL es la pérdida de la intensidad de señal que ocurre cuando una onda electromagnética viaja desde un transmisor a un receptor a través de una línea de visión directa en un espacio libre.	
-\end{block}
-
-\begin{figure}
-\includegraphics[width=.65\textwidth]{../figures_chesta/estado_del_arte/fspl}
-\end{figure}
-
-\end{frame}
-
-%------------------------------------------------
-\begin{frame}
-\frametitle{Posicionamiento \textit{indoor} - WiFi}
-
-\begin{columns}
-
-\column{.60\textwidth}
-
-\begin{equation*}
-FSPL=\Bigg(\frac{4\pi df}{c}\Bigg)^2
-\end{equation*}
-
-\begin{equation*}
-FSPL(dB)=20 log(d)+20 log(f) + K
-\end{equation*}
-
-\begin{equation*}
-d=10^{\frac{1}{20}(K-20 log(f)+FSPL)}
-%d=10^{\frac{K-20 log(f)+FSPL}{20}}
-\end{equation*}
-
-\column{.5\textwidth}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/estado_del_arte/fspl}
-\end{figure}
-
-\end{columns}
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Posicionamiento \textit{indoor} - Bluetooth}
-
-\begin{itemize}
-\item Bluetooth 4.0 (\textit{Bluetooth Low Energy})
-\item Beacons
-\end{itemize}
-
-\begin{figure}
-\includegraphics[width=.5\textwidth]{../figures_chesta/estado_del_arte/beacons_estimote}
-\end{figure}
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Posicionamiento \textit{indoor} - Bluetooth}
-
-\begin{block}{Tx Power}
-Potencia constante transmitida por cada Beacon. A medida que la señal se aleja del beacon va decayendo su valor.
-\end{block}
-
-\begin{block}{RSSI}
-Escala de referencia para medir el nivel de potencia de las señales recibidas por un dispositivo.  
-\end{block}
-
-
-
-\begin{equation*}
-d = 0,899\Bigg(\frac{RSSI}{TxPower}\Bigg)^{7,771}+0,111
-\end{equation*}
-
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Posicionamiento \textit{indoor} - RFID}
-
-\begin{columns}[c]
-
-\column{.5\textwidth}
-
-\begin{itemize}
-
-\item Posee tres componentes
-\begin{enumerate}[1]
-\item Lector de etiquetas
-\item Ordenador central
-\item Transpondedor
-\end{enumerate}
-
-\visible<2->{
-\item Posicionamiento basado en celdas de origen}
-
-\end{itemize}
-
- 
-
-
-\column{.5\textwidth}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/estado_del_arte/how_rfid_works}
-\end{figure}
-
-\end{columns}
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{comment}
-
-\begin{frame}
-\frametitle{Posicionamiento \textit{indoor} - Magnetismo}
-
-\begin{itemize}
-\item Cada pieza de metal dentro de un edificio interfiere de manera única con el campo magnético de la Tierra
-\item No requiere la instalación de componentes físicos extras
-\item Es necesario mapear el edificio completo
-\end{itemize}
-
-
-\end{frame}
-
-\end{comment}
-
-%------------------------------------------------
-\section{Diseño del Estudio}
-%------------------------------------------------
-\subsection{Cualidades y costos de tecnologías}
-\begin{frame}
-\frametitle{Cualidades y costos de tecnologías - WiFi}
-
-\vspace*{-1cm}
-\begin{table}[H]
-\centering
-\label{tab:rango_wifi}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{|c|c|c|c|c|}
-\hline
-\begin{tabular}[c]{@{}c@{}}\textbf{Protocolo} \\ \textbf{802.11}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Frecuencia}\\ \textbf{{[}GHz{]}}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Banda ancha}\\ \textbf{{[}MHz{]}}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Rango indoor} \\ \textbf{aproximado {[}m{]}}\end{tabular} & \begin{tabular}[c]{@{}c@{}}\textbf{Rango outdoor}\\\textbf{ aproximado {[}m{]}}\end{tabular} \\ \hline \hline
-a                                                           & 3.7/ 5                                                         & 20                                                              & 35                                                                         & 120                                                                        \\ \hline
-b                                                           & 2.4                                                            & 20                                                              & 35                                                                         & 140                                                                        \\ \hline
-g                                                           & 2.4                                                            & 20                                                              & 50                                                                         & 140                                                                        \\ \hline
-n                                                           & 2.4/5                                                          & 20 - 40                                                         & 70                                                                         & 250                                                                        \\ \hline
-ac                                                          & 5                                                              & 20/40/80/160                                                    & 35                                                                         & -                                                                          \\ \hline
-\end{tabular}
-}
-\end{table}
-
-
-\begin{itemize}
-\pause
-\item Precio: CLP\$17.990 - CLP\$315.790
-\pause
-\item Consumo promedio mensual: 5,4[kWh]
-\begin{itemize}
-\pause
-\item Costo energético mensual: CLP\$607\only<4->{\footnote{Valor kWh: CLP\$112,36. Fuente: Enel}}
-\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Cualidades y costos de tecnologías - Bluetooth}
-
-\vspace*{-1cm}
-\begin{table}
-\centering
-\label{tab:rango_beacons}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{c||c|c|c|c|}
-\cline{2-5}
-                                                                                        & \includegraphics[scale=0.3]{../figures_chesta/diseno_del_exp/location_beacon.png}                                                                                                                  & \includegraphics[scale=0.3]{../figures_chesta/diseno_del_exp/proximity_beacon.png}                                                                                                                                                                                      & \includegraphics[scale=0.3]{../figures_chesta/diseno_del_exp/sticker_beacon.png}                                                                                                                                                                                                      & \includegraphics[scale=0.3]{../figures_chesta/diseno_del_exp/video_beacon.png}                                                                                                                                                                                                                \\
-                                                                                        & \textbf{Locación}                                                                                                          & \textbf{Proximidad}                                                           & \textbf{Sticker}                                                                             & \textbf{Video}                                                                                        \\ \hline \hline
-\multicolumn{1}{|c||}{\begin{tabular}[c]{@{}c@{}}\textbf{Vida útil}\\ \textbf{batería}\end{tabular}}       & Hasta 5 años                                                                                                            & Hasta 2 años                                                               & Hasta 1 año                                                                               & \begin{tabular}[c]{@{}c@{}}- \\ (conectado por USB)\end{tabular}                             \\ \hline
-\multicolumn{1}{|c||}{\textbf{Rango}}                                                             & Hasta 200 metros                                                                                                        & Hasta 70 metros                                                            & Hasta 7 metros                                                                            & Hasta 10 metros                                                                                    \\ \hline
-\multicolumn{1}{|c||}{\textbf{Grosor}}                                                            & 24 mm                                                                                                             & 17 mm                                                                & 6 mm                                                                                & 14 mm                                                                                        \\ \hline
-\multicolumn{1}{|c||}{\begin{tabular}[c]{@{}c@{}}\textbf{Dispositivos}\\ \textbf{en el kit}\end{tabular}}  & 3 beacons                                                                                                         & 3 beacons                                                            & 10 stickers                                                                         & 3 mirrors                                                                                    \\ \hline
-\multicolumn{1}{|c||}{\textbf{Precio}}                                                            & USD\$99                                                                                                           & USD\$59                                                              & USD\$99                                                                             & USD\$99                                                                                      \\ \hline
-\end{tabular}
-}
-\end{table}
-
-\begin{itemize}
-\pause
-\item \textit{Plug \& Play}
-\pause
-\item Baterías de litio 3[V] - 620[mAh]
-\begin{itemize}
-\pause
-\item Costo: CLP\$5.000 - CLP\$6.000
-\pause
-\item Costo energético mensual: CLP\$250
-\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Cualidades y costos de tecnologías - RFID}
-
-\vspace*{-.5cm}
-\begin{table}[H]
-\centering
-\label{tab:rfid}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{|c||c|c|c|}
-\hline
-\textbf{Tipo}                  & LF                                                                                          & HF                                                                                                & UHF                                                                                                        \\ \hline \hline
-\textbf{Frecuencia}            & 125 kHz                                                                                     & 13.5 MHz                                                                                          & 915 MHz                                                                                                    \\ \hline
-\textbf{Alcance}               & \textless 2.0 m                                                                             & \textless 1.0 m                                                                                   & \textgreater 3.0 m                                                                                         \\ \hline
-\textbf{Aplicaciones}          & \begin{tabular}[c]{@{}c@{}}Identificación \\ de animales, \\ control de acceso\end{tabular} & \begin{tabular}[c]{@{}c@{}}Monedero, \\ Pasaporte, Tarjeta BIP, \\ control de acceso\end{tabular} & \begin{tabular}[c]{@{}c@{}}Logística, Retail, \\ Caja, Pallet, \\ Identificación de vehículos\end{tabular} \\ \hline
-
-\end{tabular}
-}
-\end{table}
-
-\begin{itemize}
-\pause
-\item Precio: Desde USD\$568.50\only<2->{\footnote{https://www.atlasfridstore.com/}}
-\begin{itemize}
-\item Reader: Desde USD\$450
-\item Antena (9m): USD\$79
-\item Cable conexión: USD\$39 (2m) - USD\$114 (10m)
-\item Tag RFID Pasivo: USD\$0.50 - USD\$2
-
-\end{itemize}
-
-\pause
-\item Consumo promedio mensual: 9[kWh]
-\begin{itemize}
-\pause
-\item energético mensual: CLP\$1.011
-\end{itemize}
-\end{itemize}
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Cualidades y costos de tecnologías - Resumen}
-
-\begin{table}[H]
-\centering
-\resizebox{\textwidth}{!}{
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Tecnología} & \begin{tabular}[c]{@{}c@{}}\textbf{Rango por} \\ \textbf{dispositivo}\end{tabular}& \textbf{Costo unitario}     & \begin{tabular}[c]{@{}c@{}}\textbf{Costo mensual} \\ \textbf{unitario}\end{tabular}\\ \hline 
-\hline
-Wi-Fi      & \begin{tabular}[c]{@{}c@{}}50 metros (802.11g) a \\ 70 metros (802.11n)\end{tabular} & Desde CLP\$17.990  & CLP\$607               \\ 
-[3ex]\hline
-Bluetooth  & 70-200 metros         & Desde CLP\$13.223\footnotemark[5]  & CLP\$250               \\ [3ex]\hline
-RFID       & Desde 5 metros        & Desde CLP\$382.242\footnotemark[5] & CLP\$1.011             \\ [3ex]\hline
-\end{tabular}
-}
-\end{table}
-
-\footnotetext[5]{Dólar observado el 02/07/2017: CLP\$672,37. \\Fuente: Banco Central de Chile.}
-
-\end{frame}
-
-%------------------------------------------------
-\subsection{Lugar del estudio}
-
-\begin{frame}
-\frametitle{Lugar del estudio}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/diseno_del_exp/plano_est}
-\end{figure}
-
-Estacionamiento subterráneo del Campus San Joaquín - Universidad Técnica Federico Santa María
-
-\end{frame}
-
-%------------------------------------------------
-\begin{comment}
-\subsection{Diseño de la Aplicación}
-
-\begin{frame}
-\frametitle{Diseño de la Aplicación}
-
-\begin{itemize}
-
-\item Aplicación móvil en Android
-
-\item Requerimientos:
-\begin{enumerate}[1]
-\item Mostrar el plano de la ubicación
-\item Permitir al usuario colocar marcadores de dispositivos Beacon/Access Point
-\item Calcular la posición del usuario
-\item Permitir al usuario agregar un marcador de la ubicación real
-\item Calcular la distancia entre ubicación real y la calculada
-\item Registrar las distancias en un archivo persistente
-\end{enumerate}
-
-\end{itemize}
-
-\end{frame}
-\end{comment}
-
-%------------------------------------------------
-\section{Implementación}
-%------------------------------------------------
-
-\subsection{Requerimientos}
-\begin{frame}
-\frametitle{Requerimientos}
-
-\begin{enumerate}[1]
-\pause
-\item Mostrar el plano de la ubicación
-\pause
-\item Permitir al usuario colocar marcadores de dispositivos Beacon/Access Point
-\pause
-\item Calcular la posición del usuario
-\pause
-\item Permitir al usuario agregar un marcador de la ubicación real
-\pause
-\item Calcular la distancia entre ubicación real y la calculada
-\pause
-\item Registrar las distancias en un archivo persistente
-\end{enumerate}
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\subsection{Ejecución}
-\begin{frame}
-\frametitle{Ejecución}
-
-\begin{columns}
-
-\column{.7\textwidth}
-
-\begin{itemize}
-
-\item Áreas de medición: \\7,95$[m^2]$ - 25,09$[m^2]$ - 27,64$[m^2]$ - 84,52$[m^2]$ - 118,37$[m^2]$
-\visible<2->{
-\item 200 mediciones por área}
-\visible<3->{
-\item Usuario inmóvil}
-\visible<4->{
-\item Método de mitigación: \textit{ventana deslizante}}
-
-\end{itemize}
-
-
-\column{.3\textwidth}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/implementacion/triangle_area}
-\end{figure}
-
-\end{columns}
-
-\end{frame}
-
-
-%------------------------------------------------
-\section{Resultados}
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 7,95$[m^2]$}
-
-\textbf{Posiciones calculadas}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/posicion__7_95}
-\end{figure}
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 7,95$[m^2]$}
-
-\textbf{Errores entre posición real y calculada}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/area__7_95}
-\end{figure}
-
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 25,09$[m^2]$}
-
-\textbf{Posiciones calculadas}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/posicion__25_09}
-\end{figure}
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 25,09$[m^2]$}
-
-\textbf{Errores entre posición real y calculada}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/area__25_09}
-\end{figure}
-
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 27,64$[m^2]$}
-
-\textbf{Posiciones calculadas}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/posicion__27_64}
-\end{figure}
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 27,64$[m^2]$}
-
-\textbf{Errores entre posición real y calculada}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/area__27_64}
-\end{figure}
-
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 84,52$[m^2]$}
-
-\textbf{Posiciones calculadas}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/posicion__84_52}
-\end{figure}
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 84,52$[m^2]$}
-
-\textbf{Errores entre posición real y calculada}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/area__84_52}
-\end{figure}
-
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 118,37$[m^2]$}
-
-\textbf{Posiciones calculadas}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/posicion__118_37}
-\end{figure}
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Área 118,37$[m^2]$}
-
-\textbf{Errores entre posición real y calculada}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/area__118_37}
-\end{figure}
-
-
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Resumen resultados}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures_chesta/resultados/summary}
-\end{figure}
-
-
-%\begin{table}[H]
-%\centering
-%\label{tab:resumen_resultados}
-%\resizebox{53.5ex}{!}{
-%\begin{tabular}{ccccccc}
-%\hline
-%\textbf{Área {[}$m^2${]}}         & \multicolumn{2}{c}{7,95} & \multicolumn{2}{c}{25,09} & \multicolumn{2}{c}{27,64} \\ \hline
-%\textbf{Tecnología}               & Bluetooth     & WiFi      & Bluetooth      & WiFi      & Bluetooth      & WiFi\\ \hline
-%\textbf{Promedio [m]}      & 8,12          & 14,83     & 12,42          & 24,31     & 12,71          & 23,14     \\ \hline
-%\textbf{Desv. estándar [m]} & 7,20          & 8,86      & 8,39           & 17,57     & 9,73           & 12,83\\ \hline
-%\end{tabular}
-%}
-%\end{table}
-
-%\begin{table}[H]
-%\centering
-%\label{tab:resumen_resultados}
-%\resizebox{43ex}{!}{
-%\begin{tabular}{ccccc}
-%\hline
-%\textbf{Área {[}$m^2${]} }        & \multicolumn{2}{c}{84,52} & \multicolumn{2}{c}{118,37} \\  \hline
-%\textbf{Tecnología}               &  Bluetooth      & WiFi      & Bluetooth      & WiFi       \\ \hline
-%\textbf{Promedio [m]}     &  30,89          & 25,86     & 33,02          & 26,22      \\ \hline
-%\textbf{Desv. estándar [m]} &  23,21          & 15,45     & 22,90          & 17,77      \\ %\hline
-%\end{tabular}
-%}
-%\end{table}
-
-\end{frame}
-
-%------------------------------------------------
-\section{Conclusiones}
-%------------------------------------------------
-
+%-------------------------------------------------
 \begin{frame}
 \frametitle{Conclusiones}
 
 \begin{itemize}
-\item Para áreas reducidas, Bluetooth es más efectivo que WiFi
+
+\item Las señales Bluetooth se ven afectadas profundamente por cualquier objeto que se interponga, inclusive el cuerpo humano.
 \pause
-\item Para áreas mayores, WiFi presenta un error más estable
+
+\item Los datos recolectados presentan estructuras no lineales, y correlaciones lineales localmente. Mejores algoritmos son aquellos capaces de reconocer estas estructuras.
 \pause
-\item La precisión y exactitud del posicionamiento depende de la densidad de dispositivos
+
+\item Mejor algoritmo es Neural Network, considerando su error, tiempo de computo, a pesar de tener mayor dispersión en los datos.
+
 \pause
-\item Importancia en algoritmos de localización
+
+\item Se debe utilizar PCA adecuadamente.
+
 \pause
-%\item Numerosa presencia de señales inalámbricas
-%\pause
-\item El posicionamiento indoor aún es un campo abierto de estudio
+
+\item Técnicas de máquinas de aprendizaje, pueden reducir el error a unos pocos metros, lo cual es alto si se considera un posicionamiento en tiempo real. 
+
+\end{itemize}
+
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Conclusiones}
+
+\begin{itemize}
+
+\item Se requiere mayor en investigación en cuanto a determinar densidad de Beacons, tamaño de grilla, y otros factores asociados a la implementación.
+\pause
+
+\item Recolección de Fingerprints es un proceso lento, y debe ser mejorado. Se puede utilizar aprendizaje no supervisado.
+\pause
+
+\item Las máquinas de aprendizaje en conjunto con las señales Bluetooth Low Energy pueden ser un punto de partida para la fusión de sensores.
+
+\pause
+\item El mayor problema del posicionamiento en interiores es lograr un modelo estándar.
 
 \end{itemize}
 
 \end{frame}
 
 %------------------------------------------------
-
 \begin{frame}
 \Huge{\centerline{Gracias por su atención}}
 \end{frame}
@@ -1900,3 +1261,4 @@ Estacionamiento subterráneo del Campus San Joaquín - Universidad Técnica Fede
 %------------------------------------------------
 
 \end{document}
+
