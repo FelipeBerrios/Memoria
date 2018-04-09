@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  8 APR 2018 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  8 APR 2018 23:49
 entering extended mode
 **./Presentacion.tex
 (Presentacion.tex
@@ -100,10 +100,6 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@dimlist=\toks15
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-
-Class beamer Warning: ``mathserif'' is obsolete. Use font theme ``serif'' with 
-option ``onlymath'' on input line 336.
-
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo"
 File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
@@ -473,6 +469,12 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+("C:\Program Files\MiKTeX 2.9\tex\latex\sansmathaccent\sansmathaccent.sty"
+Package: sansmathaccent 2013/03/28
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\filehook\filehook.sty"
+Package: filehook 2011/10/12 v0.5d Hooks for input files
 )))
 ("C:\Program Files\MiKTeX 2.9\tex\latex\beamer\beamerbasetranslator.sty"
 ("C:\Program Files\MiKTeX 2.9\tex\latex\translator\translator.sty"
@@ -985,15 +987,19 @@ LaTeX Info: Redefining \nameref on input line 129.
 \@outlinefile=\write5
 \openout5 = `Presentacion.out'.
 
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 129.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 129.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/ptm/m/n on input line 129.
+(Font)                  OT1/cmss/m/n --> OT1/ptm/m/n on input line 129.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 129.
+(Font)                  OT1/cmr/bx/n --> OT1/phv/bx/n on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 129.
+(Font)                  OT1/cmr/bx/n --> OT1/phv/bx/n on input line 129.
 LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> OT1/phv/m/n on input line 129.
@@ -1001,26 +1007,26 @@ LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> OT1/phv/m/n on input line 129.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 129.
+(Font)                  OT1/cmr/m/it --> OT1/phv/m/it on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 129.
+(Font)                  OT1/cmr/bx/it --> OT1/phv/m/it on input line 129.
 LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> OT1/pcr/m/n on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/pcr/m/n on input line 129.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/ptm/m/n --> OT1/ptm/bx/n on input line 129.
+(Font)                  OT1/phv/m/n --> OT1/phv/bx/n on input line 129.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/ptm/m/it --> OT1/ptm/bx/it on input line 129.
+(Font)                  OT1/phv/m/it --> OT1/phv/bx/it on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 129.
+(Font)                  OT1/cmss/bx/n --> OT1/ptm/bx/n on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/ptm/bx/n --> OT1/ptm/bx/n on input line 129.
+(Font)                  OT1/phv/bx/n --> OT1/phv/bx/n on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/phv/m/n --> OT1/phv/bx/n on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/ptm/m/it --> OT1/ptm/bx/it on input line 129.
+(Font)                  OT1/phv/m/it --> OT1/phv/bx/it on input line 129.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/pcr/m/n --> OT1/pcr/bx/n on input line 129.
 
@@ -1079,824 +1085,306 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <10.95> not available
 
 ] [6
 
-] [7
+]
+(Presentacion.toc
+LaTeX Info: Redefining \. on input line 1.
+LaTeX Info: Redefining \% on input line 1.
+) [7
 
 ]
-[8
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <14.4> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 243.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 243.
+ [8
 
 ] [9
 
 ] [10
 
-] [11
-
-] (Presentacion.toc
-LaTeX Info: Redefining \. on input line 1.
-LaTeX Info: Redefining \% on input line 1.
-) [12
-
 ]
-<../figures/Murallas.png, id=236, 619.31375pt x 166.6225pt>
-File: ../figures/Murallas.png Graphic file (type png)
-<use ../figures/Murallas.png>
-Package pdftex.def Info: ../figures/Murallas.png  used on input line 292. on in
-put line 292.
-Package pdftex.def Info: Requested size: 307.28987pt x 82.67796pt on input line
- 292.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <14.4> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 292.
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 292.
- [13
-
- <../figures/Murallas.png>]
-[14
-
-]
-<../figures/abs.png, id=258, 692.5875pt x 498.86375pt>
-File: ../figures/abs.png Graphic file (type png)
-<use ../figures/abs.png>
-Package pdftex.def Info: ../figures/abs.png  used on input line 292. on input l
-ine 292.
-Package pdftex.def Info: Requested size: 245.83282pt x 177.07123pt on input lin
-e 292.
-
-Overfull \vbox (5.75447pt too high) detected at line 292
- []
-
-[15
-
- <../figures/abs.png>] [16
-
-] [17
-
-]
-<../figures/comparativa.png, id=288, 624.3325pt x 447.6725pt>
-File: ../figures/comparativa.png Graphic file (type png)
-<use ../figures/comparativa.png>
-Package pdftex.def Info: ../figures/comparativa.png  used on input line 292. on
- input line 292.
-Package pdftex.def Info: Requested size: 245.83282pt x 176.27197pt on input lin
-e 292.
-
-Overfull \vbox (4.95522pt too high) detected at line 292
- []
-
-[18
-
- <../figures/comparativa.png>] [19
-
-]
-<../figures/triangulacion.png, id=310, 609.27625pt x 340.27126pt>
+<../figures/triangulacion.png, id=220, 609.27625pt x 340.27126pt>
 File: ../figures/triangulacion.png Graphic file (type png)
 <use ../figures/triangulacion.png>
-Package pdftex.def Info: ../figures/triangulacion.png  used on input line 320. 
-on input line 320.
+Package pdftex.def Info: ../figures/triangulacion.png  used on input line 285. 
+on input line 285.
 Package pdftex.def Info: Requested size: 307.28987pt x 171.62015pt on input lin
-e 320.
- [20
+e 285.
+ [11
 
  <../figures/triangulacion.png>]
-<../figures/finger.png, id=321, 544.0325pt x 328.22626pt>
+<../figures/finger.png, id=231, 544.0325pt x 328.22626pt>
 File: ../figures/finger.png Graphic file (type png)
 <use ../figures/finger.png>
-Package pdftex.def Info: ../figures/finger.png  used on input line 331. on inpu
-t line 331.
+Package pdftex.def Info: ../figures/finger.png  used on input line 296. on inpu
+t line 296.
 Package pdftex.def Info: Requested size: 245.83282pt x 148.31647pt on input lin
-e 331.
+e 296.
 
-[21
+[12
 
  <../figures/finger.png>] (Presentacion.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [22
+) [13
 
-] [23
-
-] [24
-
-] [25
-
-] [26
+] [14
 
 ]
-<../figures/beacons_all.jpg, id=383, 963.6pt x 722.7pt>
+<../figures/beacons_all.jpg, id=268, 963.6pt x 722.7pt>
 File: ../figures/beacons_all.jpg Graphic file (type jpg)
 <use ../figures/beacons_all.jpg>
-Package pdftex.def Info: ../figures/beacons_all.jpg  used on input line 385. on
- input line 385.
+Package pdftex.def Info: ../figures/beacons_all.jpg  used on input line 350. on
+ input line 350.
 Package pdftex.def Info: Requested size: 153.64493pt x 115.22633pt on input lin
-e 385.
+e 350.
 
-Overfull \vbox (4.39017pt too high) detected at line 385
+Overfull \vbox (4.39017pt too high) detected at line 350
  []
 
-[27
+[15
 
- <../figures/beacons_all.jpg>]
-File: ../figures/beacons_all.jpg Graphic file (type jpg)
-<use ../figures/beacons_all.jpg>
-Package pdftex.def Info: ../figures/beacons_all.jpg  used on input line 385. on
- input line 385.
-Package pdftex.def Info: Requested size: 153.64493pt x 115.22633pt on input lin
-e 385.
-
-Overfull \vbox (4.39017pt too high) detected at line 385
- []
-
-[28
+ <../figures/beacons_all.jpg>] [16
 
 ]
-File: ../figures/beacons_all.jpg Graphic file (type jpg)
-<use ../figures/beacons_all.jpg>
-Package pdftex.def Info: ../figures/beacons_all.jpg  used on input line 385. on
- input line 385.
-Package pdftex.def Info: Requested size: 153.64493pt x 115.22633pt on input lin
-e 385.
-
-Overfull \vbox (4.39017pt too high) detected at line 385
- []
-
-[29
-
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 416.
- ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 416.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 416.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Try loading font information for OMS+phv on input line 416.
-
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsphv.fd"
-File: omsphv.fd 
-)
-LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 416.
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-33.def"
-File: uni-33.def 2013/05/13 UCS: Unicode data U+2100..U+21FF
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\ucs\uni-32.def"
-File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [30
-
-]
-<../figures/mediciones_beacon_interferencia.jpg, id=426, 482.55281pt x 383.1815
-6pt>
-File: ../figures/mediciones_beacon_interferencia.jpg Graphic file (type jpg)
-<use ../figures/mediciones_beacon_interferencia.jpg>
-Package pdftex.def Info: ../figures/mediciones_beacon_interferencia.jpg  used o
-n input line 432. on input line 432.
-Package pdftex.def Info: Requested size: 159.94939pt x 127.0116pt on input line
- 432.
- [31
-
- <../figures/mediciones_beacon_interferencia.jpg>]
-<../figures/knn.png, id=438, 553.1064pt x 484.9317pt>
-File: ../figures/knn.png Graphic file (type png)
-<use ../figures/knn.png>
-Package pdftex.def Info: ../figures/knn.png  used on input line 471. on input l
-ine 471.
-Package pdftex.def Info: Requested size: 101.40622pt x 88.90442pt on input line
- 471.
-<../figures/SVM-Planes.png, id=440, 331.2375pt x 283.81032pt>
-File: ../figures/SVM-Planes.png Graphic file (type png)
-<use ../figures/SVM-Planes.png>
-Package pdftex.def Info: ../figures/SVM-Planes.png  used on input line 471. on 
-input line 471.
-Package pdftex.def Info: Requested size: 101.40622pt x 86.88464pt on input line
- 471.
-<../figures/deep.png, id=441, 562.1pt x 280.04625pt>
-File: ../figures/deep.png Graphic file (type png)
-<use ../figures/deep.png>
-Package pdftex.def Info: ../figures/deep.png  used on input line 471. on input 
-line 471.
-Package pdftex.def Info: Requested size: 101.40622pt x 50.52151pt on input line
- 471.
- [32
-
- <../figures/knn.png> <../figures/SVM-Planes.png> <../figures/deep.png>]
-File: ../figures/knn.png Graphic file (type png)
-<use ../figures/knn.png>
-Package pdftex.def Info: ../figures/knn.png  used on input line 471. on input l
-ine 471.
-Package pdftex.def Info: Requested size: 101.40622pt x 88.90442pt on input line
- 471.
-File: ../figures/SVM-Planes.png Graphic file (type png)
-<use ../figures/SVM-Planes.png>
-Package pdftex.def Info: ../figures/SVM-Planes.png  used on input line 471. on 
-input line 471.
-Package pdftex.def Info: Requested size: 101.40622pt x 86.88464pt on input line
- 471.
-File: ../figures/deep.png Graphic file (type png)
-<use ../figures/deep.png>
-Package pdftex.def Info: ../figures/deep.png  used on input line 471. on input 
-line 471.
-Package pdftex.def Info: Requested size: 101.40622pt x 50.52151pt on input line
- 471.
- [33
-
-]
-File: ../figures/knn.png Graphic file (type png)
-<use ../figures/knn.png>
-Package pdftex.def Info: ../figures/knn.png  used on input line 471. on input l
-ine 471.
-Package pdftex.def Info: Requested size: 101.40622pt x 88.90442pt on input line
- 471.
-File: ../figures/SVM-Planes.png Graphic file (type png)
-<use ../figures/SVM-Planes.png>
-Package pdftex.def Info: ../figures/SVM-Planes.png  used on input line 471. on 
-input line 471.
-Package pdftex.def Info: Requested size: 101.40622pt x 86.88464pt on input line
- 471.
-File: ../figures/deep.png Graphic file (type png)
-<use ../figures/deep.png>
-Package pdftex.def Info: ../figures/deep.png  used on input line 471. on input 
-line 471.
-Package pdftex.def Info: Requested size: 101.40622pt x 50.52151pt on input line
- 471.
- [34
-
-] [35
-
-] [36
-
-] [37
-
-] [38
-
-] [39
-
-] [40
-
-]
-[41
-
-]
-<../figures/fingerprints.jpg, id=546, 512.66531pt x 322.20375pt>
+<../figures/fingerprints.jpg, id=290, 512.66531pt x 322.20375pt>
 File: ../figures/fingerprints.jpg Graphic file (type jpg)
 <use ../figures/fingerprints.jpg>
-Package pdftex.def Info: ../figures/fingerprints.jpg  used on input line 528. o
-n input line 528.
+Package pdftex.def Info: ../figures/fingerprints.jpg  used on input line 382. o
+n input line 382.
 Package pdftex.def Info: Requested size: 307.28987pt x 193.12708pt on input lin
-e 528.
+e 382.
 
-Overfull \vbox (5.77397pt too high) detected at line 528
+Overfull \vbox (5.77397pt too high) detected at line 382
  []
 
-[42
+[17
 
- <../figures/fingerprints.jpg>] [43
+ <../figures/fingerprints.jpg>] [18
 
-] [44
-
-] [45
-
-] [46
-
-] [47
-
-] [48
-
-] [49
-
-] [50
+] [19
 
 ]
-[51
-
-] [52
-
-] [53
-
-] [54
-
-]
-<../figures/propuesta_memoria.png, id=679, 438.8897pt x 382.42876pt>
+<../figures/propuesta_memoria.png, id=321, 438.8897pt x 382.42876pt>
 File: ../figures/propuesta_memoria.png Graphic file (type png)
 <use ../figures/propuesta_memoria.png>
-Package pdftex.def Info: ../figures/propuesta_memoria.png  used on input line 6
-10. on input line 610.
+Package pdftex.def Info: ../figures/propuesta_memoria.png  used on input line 4
+39. on input line 439.
 Package pdftex.def Info: Requested size: 215.10196pt x 187.43257pt on input lin
-e 610.
- [55
+e 439.
+ [20
 
  <../figures/propuesta_memoria.png>] (Presentacion.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-[56
+) [21
 
 ]
-<../figures/kontaktapp1.png, id=707, 1084.05pt x 1927.2pt>
+<../figures/kontaktapp1.png, id=349, 1084.05pt x 1927.2pt>
 File: ../figures/kontaktapp1.png Graphic file (type png)
 <use ../figures/kontaktapp1.png>
-Package pdftex.def Info: ../figures/kontaktapp1.png  used on input line 634. on
- input line 634.
+Package pdftex.def Info: ../figures/kontaktapp1.png  used on input line 463. on
+ input line 463.
 Package pdftex.def Info: Requested size: 92.18788pt x 163.88335pt on input line
- 634.
-<../figures/kontaktapp2.png, id=708, 1084.05pt x 1927.2pt>
+ 463.
+<../figures/kontaktapp2.png, id=350, 1084.05pt x 1927.2pt>
 File: ../figures/kontaktapp2.png Graphic file (type png)
 <use ../figures/kontaktapp2.png>
-Package pdftex.def Info: ../figures/kontaktapp2.png  used on input line 634. on
- input line 634.
+Package pdftex.def Info: ../figures/kontaktapp2.png  used on input line 463. on
+ input line 463.
 Package pdftex.def Info: Requested size: 92.18788pt x 163.88335pt on input line
- 634.
- [57
+ 463.
+ [22
 
  <../figures/kontaktapp1.png> <../figures/kontaktapp2.png>]
-<../figures/estSubterraneo.png, id=720, 997.47656pt x 252.945pt>
+<../figures/estSubterraneo.png, id=362, 997.47656pt x 252.945pt>
 File: ../figures/estSubterraneo.png Graphic file (type png)
 <use ../figures/estSubterraneo.png>
-Package pdftex.def Info: ../figures/estSubterraneo.png  used on input line 656.
- on input line 656.
+Package pdftex.def Info: ../figures/estSubterraneo.png  used on input line 485.
+ on input line 485.
 Package pdftex.def Info: Requested size: 153.64493pt x 38.95905pt on input line
- 656.
-<../figures/estReal.jpg, id=721, 4143.48pt x 3107.61pt>
+ 485.
+<../figures/estReal.jpg, id=363, 4143.48pt x 3107.61pt>
 File: ../figures/estReal.jpg Graphic file (type jpg)
 <use ../figures/estReal.jpg>
-Package pdftex.def Info: ../figures/estReal.jpg  used on input line 656. on inp
-ut line 656.
+Package pdftex.def Info: ../figures/estReal.jpg  used on input line 485. on inp
+ut line 485.
 Package pdftex.def Info: Requested size: 153.64493pt x 115.22633pt on input lin
-e 656.
- [58
+e 485.
+ [23
 
  <../figures/estSubterraneo.png> <../figures/estReal.jpg>]
-LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 686.
- [59
-
-] [60
-
-] [61
-
-] [62
-
-] [63
+[24
 
 ]
-[64
+LaTeX Font Info:    Try loading font information for U+msa on input line 533.
+ ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 533.
 
-] [65
-
-] [66
-
-]
-<../figures/deployBeacons.png, id=812, 1084.05pt x 1927.2pt>
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<../figures/deployBeacons.png, id=383, 1084.05pt x 1927.2pt>
 File: ../figures/deployBeacons.png Graphic file (type png)
 <use ../figures/deployBeacons.png>
-Package pdftex.def Info: ../figures/deployBeacons.png  used on input line 714. 
-on input line 714.
+Package pdftex.def Info: ../figures/deployBeacons.png  used on input line 533. 
+on input line 533.
 Package pdftex.def Info: Requested size: 99.86826pt x 177.52805pt on input line
- 714.
+ 533.
 
-Overfull \hbox (4.55153pt too wide) detected at line 714
+Overfull \hbox (4.55153pt too wide) detected at line 533
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 
-Overfull \vbox (3.77495pt too high) detected at line 714
+Overfull \vbox (3.77495pt too high) detected at line 533
  []
 
-[67
+[25
 
  <../figures/deployBeacons.png>]
-File: ../figures/deployBeacons.png Graphic file (type png)
-<use ../figures/deployBeacons.png>
-Package pdftex.def Info: ../figures/deployBeacons.png  used on input line 714. 
-on input line 714.
-Package pdftex.def Info: Requested size: 99.86826pt x 177.52805pt on input line
- 714.
-
-Overfull \hbox (4.55153pt too wide) detected at line 714
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-
-Overfull \vbox (3.77495pt too high) detected at line 714
- []
-
-[68
-
-]
-File: ../figures/deployBeacons.png Graphic file (type png)
-<use ../figures/deployBeacons.png>
-Package pdftex.def Info: ../figures/deployBeacons.png  used on input line 714. 
-on input line 714.
-Package pdftex.def Info: Requested size: 99.86826pt x 177.52805pt on input line
- 714.
-
-Overfull \hbox (4.55153pt too wide) detected at line 714
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-
-Overfull \vbox (3.77495pt too high) detected at line 714
- []
-
-[69
-
-]
-<../figures/ejemplo_csv.png, id=844, 610.53094pt x 325.215pt>
-File: ../figures/ejemplo_csv.png Graphic file (type png)
-<use ../figures/ejemplo_csv.png>
-Package pdftex.def Info: ../figures/ejemplo_csv.png  used on input line 744. on
- input line 744.
-Package pdftex.def Info: Requested size: 153.64493pt x 81.84444pt on input line
- 744.
-
-Overfull \hbox (4.55153pt too wide) detected at line 744
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-[70
-
- <../figures/ejemplo_csv.png>]
-File: ../figures/ejemplo_csv.png Graphic file (type png)
-<use ../figures/ejemplo_csv.png>
-Package pdftex.def Info: ../figures/ejemplo_csv.png  used on input line 744. on
- input line 744.
-Package pdftex.def Info: Requested size: 153.64493pt x 81.84444pt on input line
- 744.
-
-Overfull \hbox (4.55153pt too wide) detected at line 744
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-[71
-
-]
-File: ../figures/ejemplo_csv.png Graphic file (type png)
-<use ../figures/ejemplo_csv.png>
-Package pdftex.def Info: ../figures/ejemplo_csv.png  used on input line 744. on
- input line 744.
-Package pdftex.def Info: Requested size: 153.64493pt x 81.84444pt on input line
- 744.
-
-Overfull \hbox (4.55153pt too wide) detected at line 744
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-[72
-
-]
-File: ../figures/ejemplo_csv.png Graphic file (type png)
-<use ../figures/ejemplo_csv.png>
-Package pdftex.def Info: ../figures/ejemplo_csv.png  used on input line 744. on
- input line 744.
-Package pdftex.def Info: Requested size: 153.64493pt x 81.84444pt on input line
- 744.
-
-Overfull \hbox (4.55153pt too wide) detected at line 744
-[][][] [][][][][][][][][] [][][][][][][] 
- []
-
-[73
-
-]
-<../figures/NB.png, id=887, 397.485pt x 279.0425pt>
+<../figures/NB.png, id=395, 397.485pt x 279.0425pt>
 File: ../figures/NB.png Graphic file (type png)
 <use ../figures/NB.png>
-Package pdftex.def Info: ../figures/NB.png  used on input line 789. on input li
-ne 789.
+Package pdftex.def Info: ../figures/NB.png  used on input line 554. on input li
+ne 554.
 Package pdftex.def Info: Requested size: 153.64493pt x 107.86386pt on input lin
-e 789.
-<../figures/SVM-RBF.png, id=888, 397.485pt x 281.05pt>
+e 554.
+<../figures/SVM-RBF.png, id=396, 397.485pt x 281.05pt>
 File: ../figures/SVM-RBF.png Graphic file (type png)
 <use ../figures/SVM-RBF.png>
-Package pdftex.def Info: ../figures/SVM-RBF.png  used on input line 789. on inp
-ut line 789.
+Package pdftex.def Info: ../figures/SVM-RBF.png  used on input line 554. on inp
+ut line 554.
 Package pdftex.def Info: Requested size: 153.64493pt x 108.63985pt on input lin
-e 789.
- [74
+e 554.
+ [26
 
  <../figures/NB.png> <../figures/SVM-RBF.png>]
-<../figures/SVM-Lineal.png, id=901, 390.45876pt x 281.05pt>
-File: ../figures/SVM-Lineal.png Graphic file (type png)
-<use ../figures/SVM-Lineal.png>
-Package pdftex.def Info: ../figures/SVM-Lineal.png  used on input line 789. on 
-input line 789.
-Package pdftex.def Info: Requested size: 153.64493pt x 110.59111pt on input lin
-e 789.
-<../figures/knn-results.png, id=902, 390.45876pt x 281.05pt>
-File: ../figures/knn-results.png Graphic file (type png)
-<use ../figures/knn-results.png>
-Package pdftex.def Info: ../figures/knn-results.png  used on input line 789. on
- input line 789.
-Package pdftex.def Info: Requested size: 153.64493pt x 110.59111pt on input lin
-e 789.
- [75
-
- <../figures/SVM-Lineal.png> <../figures/knn-results.png>]
-<../figures/decision-tree.png, id=914, 390.45876pt x 279.0425pt>
-File: ../figures/decision-tree.png Graphic file (type png)
-<use ../figures/decision-tree.png>
-Package pdftex.def Info: ../figures/decision-tree.png  used on input line 789. 
-on input line 789.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 789.
-<../figures/random-forest.png, id=915, 438.63875pt x 279.0425pt>
-File: ../figures/random-forest.png Graphic file (type png)
-<use ../figures/random-forest.png>
-Package pdftex.def Info: ../figures/random-forest.png  used on input line 789. 
-on input line 789.
-Package pdftex.def Info: Requested size: 153.64493pt x 97.74297pt on input line
- 789.
- [76
-
- <../figures/decision-tree.png> <../figures/random-forest.png>]
-<../figures/adaboost.png, id=927, 390.45876pt x 279.0425pt>
-File: ../figures/adaboost.png Graphic file (type png)
-<use ../figures/adaboost.png>
-Package pdftex.def Info: ../figures/adaboost.png  used on input line 789. on in
-put line 789.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 789.
-<../figures/qda.png, id=928, 397.485pt x 279.0425pt>
-File: ../figures/qda.png Graphic file (type png)
-<use ../figures/qda.png>
-Package pdftex.def Info: ../figures/qda.png  used on input line 789. on input l
-ine 789.
-Package pdftex.def Info: Requested size: 153.64493pt x 107.86386pt on input lin
-e 789.
- [77
-
- <../figures/adaboost.png> <../figures/qda.png>]
-<../figures/nn_estructura.png, id=941, 599.99156pt x 410.2828pt>
+<../figures/nn_estructura.png, id=409, 599.99156pt x 410.2828pt>
 File: ../figures/nn_estructura.png Graphic file (type png)
 <use ../figures/nn_estructura.png>
-Package pdftex.def Info: ../figures/nn_estructura.png  used on input line 817. 
-on input line 817.
+Package pdftex.def Info: ../figures/nn_estructura.png  used on input line 582. 
+on input line 582.
 Package pdftex.def Info: Requested size: 153.64493pt x 105.06209pt on input lin
-e 817.
-<../figures/nn_plot.png, id=942, 719.68875pt x 342.5297pt>
+e 582.
+<../figures/nn_plot.png, id=410, 719.68875pt x 342.5297pt>
 File: ../figures/nn_plot.png Graphic file (type png)
 <use ../figures/nn_plot.png>
-Package pdftex.def Info: ../figures/nn_plot.png  used on input line 817. on inp
-ut line 817.
+Package pdftex.def Info: ../figures/nn_plot.png  used on input line 582. on inp
+ut line 582.
 Package pdftex.def Info: Requested size: 153.64493pt x 73.12502pt on input line
- 817.
+ 582.
 
-Overfull \vbox (4.30902pt too high) detected at line 817
+Overfull \vbox (4.30902pt too high) detected at line 582
  []
 
-[78
+[27
 
- <../figures/nn_estructura.png> <../figures/nn_plot.png>] [79
-
-] [80
-
-] [81
+ <../figures/nn_estructura.png> <../figures/nn_plot.png>] [28
 
 ]
-[82
-
-] [83
-
-] [84
-
-] [85
-
-]
-<../figures/eigenvalues.png, id=1028, 390.45876pt x 276.03125pt>
+<../figures/eigenvalues.png, id=435, 390.45876pt x 276.03125pt>
 File: ../figures/eigenvalues.png Graphic file (type png)
 <use ../figures/eigenvalues.png>
-Package pdftex.def Info: ../figures/eigenvalues.png  used on input line 894. on
- input line 894.
+Package pdftex.def Info: ../figures/eigenvalues.png  used on input line 633. on
+ input line 633.
 Package pdftex.def Info: Requested size: 153.64493pt x 108.61627pt on input lin
-e 894.
-<../figures/varianza_ratio.png, id=1029, 390.45876pt x 276.03125pt>
+e 633.
+<../figures/varianza_ratio.png, id=436, 390.45876pt x 276.03125pt>
 File: ../figures/varianza_ratio.png Graphic file (type png)
 <use ../figures/varianza_ratio.png>
-Package pdftex.def Info: ../figures/varianza_ratio.png  used on input line 894.
- on input line 894.
+Package pdftex.def Info: ../figures/varianza_ratio.png  used on input line 633.
+ on input line 633.
 Package pdftex.def Info: Requested size: 153.64493pt x 108.61627pt on input lin
-e 894.
- [86
+e 633.
+ [29
 
  <../figures/eigenvalues.png> <../figures/varianza_ratio.png>]
-<../figures/comparativa_clasificadores_pca.png, id=1042, 589.20125pt x 276.0312
-5pt>
+<../figures/comparativa_clasificadores_pca.png, id=449, 589.20125pt x 276.03125
+pt>
 File: ../figures/comparativa_clasificadores_pca.png Graphic file (type png)
 <use ../figures/comparativa_clasificadores_pca.png>
 Package pdftex.def Info: ../figures/comparativa_clasificadores_pca.png  used on
- input line 894. on input line 894.
+ input line 646. on input line 646.
 Package pdftex.def Info: Requested size: 307.28987pt x 143.96246pt on input lin
-e 894.
- [87
+e 646.
+ [30
 
- <../figures/comparativa_clasificadores_pca.png>] [88
+ <../figures/comparativa_clasificadores_pca.png>] [31
 
-] [89
-
-] [90
+] [32
 
 ]
-[91
-
-] [92
-
-]
-<../figures/fase_online1.png, id=1105, 542.025pt x 963.6pt>
+<../figures/fase_online1.png, id=482, 542.025pt x 963.6pt>
 File: ../figures/fase_online1.png Graphic file (type png)
 <use ../figures/fase_online1.png>
-Package pdftex.def Info: ../figures/fase_online1.png  used on input line 967. o
-n input line 967.
+Package pdftex.def Info: ../figures/fase_online1.png  used on input line 711. o
+n input line 711.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-967.
-<../figures/fase_online2.png, id=1106, 542.025pt x 963.6pt>
+711.
+<../figures/fase_online2.png, id=483, 542.025pt x 963.6pt>
 File: ../figures/fase_online2.png Graphic file (type png)
 <use ../figures/fase_online2.png>
-Package pdftex.def Info: ../figures/fase_online2.png  used on input line 967. o
-n input line 967.
+Package pdftex.def Info: ../figures/fase_online2.png  used on input line 711. o
+n input line 711.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-967.
-<../figures/fase_online3.png, id=1107, 542.025pt x 963.6pt>
+711.
+<../figures/fase_online3.png, id=484, 542.025pt x 963.6pt>
 File: ../figures/fase_online3.png Graphic file (type png)
 <use ../figures/fase_online3.png>
-Package pdftex.def Info: ../figures/fase_online3.png  used on input line 967. o
-n input line 967.
+Package pdftex.def Info: ../figures/fase_online3.png  used on input line 711. o
+n input line 711.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-967.
- [93
+711.
+ [33
 
  <../figures/fase_online1.png (PNG copy)> <../figures/fase_online2.png (PNG cop
 y)> <../figures/fase_online3.png (PNG copy)>] (Presentacion.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-)
-[94
+) [34
 
-] [95
+] [35
 
-] [96
-
-]
-<../figures/cdf-knn-dinamico.png, id=1155, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-knn-dinamico.png Graphic file (type png)
-<use ../figures/cdf-knn-dinamico.png>
-Package pdftex.def Info: ../figures/cdf-knn-dinamico.png  used on input line 10
-95. on input line 1095.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1095.
-<../figures/cdf-knnPCA-dinamico.png, id=1156, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-knnPCA-dinamico.png Graphic file (type png)
-<use ../figures/cdf-knnPCA-dinamico.png>
-Package pdftex.def Info: ../figures/cdf-knnPCA-dinamico.png  used on input line
- 1095. on input line 1095.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1095.
- [97
-
- <../figures/cdf-knn-dinamico.png> <../figures/cdf-knnPCA-dinamico.png>]
-<../figures/cdf-svm-dinamico.png, id=1170, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-svm-dinamico.png Graphic file (type png)
-<use ../figures/cdf-svm-dinamico.png>
-Package pdftex.def Info: ../figures/cdf-svm-dinamico.png  used on input line 10
-95. on input line 1095.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1095.
-<../figures/cdf-svmPCA-dinamico.png, id=1171, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-svmPCA-dinamico.png Graphic file (type png)
-<use ../figures/cdf-svmPCA-dinamico.png>
-Package pdftex.def Info: ../figures/cdf-svmPCA-dinamico.png  used on input line
- 1095. on input line 1095.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1095.
- [98
-
- <../figures/cdf-svm-dinamico.png> <../figures/cdf-svmPCA-dinamico.png>]
-<../figures/cdf-nn-dinamico.png, id=1184, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-nn-dinamico.png Graphic file (type png)
-<use ../figures/cdf-nn-dinamico.png>
-Package pdftex.def Info: ../figures/cdf-nn-dinamico.png  used on input line 109
-5. on input line 1095.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1095.
-<../figures/cdf-nnPCA-dinamico.png, id=1185, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-nnPCA-dinamico.png Graphic file (type png)
-<use ../figures/cdf-nnPCA-dinamico.png>
-Package pdftex.def Info: ../figures/cdf-nnPCA-dinamico.png  used on input line 
-1095. on input line 1095.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1095.
- [99
-
- <../figures/cdf-nn-dinamico.png> <../figures/cdf-nnPCA-dinamico.png>] [100
+] [36
 
 ]
-<../figures/cdf-knn-estatico.png, id=1208, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-knn-estatico.png Graphic file (type png)
-<use ../figures/cdf-knn-estatico.png>
-Package pdftex.def Info: ../figures/cdf-knn-estatico.png  used on input line 11
-49. on input line 1149.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1149.
-<../figures/cdf-knnPCA-estatico.png, id=1209, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-knnPCA-estatico.png Graphic file (type png)
-<use ../figures/cdf-knnPCA-estatico.png>
-Package pdftex.def Info: ../figures/cdf-knnPCA-estatico.png  used on input line
- 1149. on input line 1149.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1149.
- [101
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 808.
+LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 808.
+ [37
 
- <../figures/cdf-knn-estatico.png> <../figures/cdf-knnPCA-estatico.png>]
-<../figures/cdf-svm-estatico.png, id=1222, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-svm-estatico.png Graphic file (type png)
-<use ../figures/cdf-svm-estatico.png>
-Package pdftex.def Info: ../figures/cdf-svm-estatico.png  used on input line 11
-49. on input line 1149.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1149.
-<../figures/cdf-svmPCA-estatico.png, id=1223, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-svmPCA-estatico.png Graphic file (type png)
-<use ../figures/cdf-svmPCA-estatico.png>
-Package pdftex.def Info: ../figures/cdf-svmPCA-estatico.png  used on input line
- 1149. on input line 1149.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1149.
- [102
-
- <../figures/cdf-svm-estatico.png> <../figures/cdf-svmPCA-estatico.png>]
-<../figures/cdf-nn-estatico.png, id=1236, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-nn-estatico.png Graphic file (type png)
-<use ../figures/cdf-nn-estatico.png>
-Package pdftex.def Info: ../figures/cdf-nn-estatico.png  used on input line 114
-9. on input line 1149.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1149.
-<../figures/cdf-nnPCA-estatico.png, id=1237, 390.45876pt x 279.0425pt>
-File: ../figures/cdf-nnPCA-estatico.png Graphic file (type png)
-<use ../figures/cdf-nnPCA-estatico.png>
-Package pdftex.def Info: ../figures/cdf-nnPCA-estatico.png  used on input line 
-1149. on input line 1149.
-Package pdftex.def Info: Requested size: 153.64493pt x 109.80118pt on input lin
-e 1149.
- [103
-
- <../figures/cdf-nn-estatico.png> <../figures/cdf-nnPCA-estatico.png>] [104
+] [38
 
 ]
-<../figures/boxplot.png, id=1261, 425.59pt x 281.05pt>
+<../figures/boxplot.png, id=552, 425.59pt x 281.05pt>
 File: ../figures/boxplot.png Graphic file (type png)
 <use ../figures/boxplot.png>
-Package pdftex.def Info: ../figures/boxplot.png  used on input line 1159. on in
-put line 1159.
+Package pdftex.def Info: ../figures/boxplot.png  used on input line 841. on inp
+ut line 841.
 Package pdftex.def Info: Requested size: 307.28987pt x 202.93907pt on input lin
-e 1159.
+e 841.
 
-Overfull \vbox (15.58597pt too high) detected at line 1159
+Overfull \vbox (15.58597pt too high) detected at line 841
  []
 
-[105
+[39
 
- <../figures/boxplot.png>] [106
+ <../figures/boxplot.png>] [40
 
-] [107
-
-] [108
-
-] [109
-
-] [110
+] [41
 
 ] (Presentacion.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-) [111
+) [42
 
-] [112
+] [43
 
-] [113
-
-] [114
-
-] [115
-
-] [116
-
-] [117
-
-] [118
-
-] [119
-
-] [120
-
-] [121
+] [44
 
 ]
 \tf@nav=\write6
@@ -1908,16 +1396,15 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@snm=\write8
 \openout8 = `Presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1264.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1264.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 926.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 926.
 
 (Presentacion.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1264.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1264.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 926.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 926.
 
 
 Package rerunfilecheck Warning: File `Presentacion.out' has changed.
@@ -1925,52 +1412,65 @@ Package rerunfilecheck Warning: File `Presentacion.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `Presentacion.out':
-(rerunfilecheck)             Before: 8CB57DFF1596CE1A14EA5A1E7C5A869B;1045
-(rerunfilecheck)             After:  CEA0BB8F3F4C848FA535CCDB8753991E;1047.
+(rerunfilecheck)             Before: 4D0ABA1FA9275EFF511468FDF67DB731;1046
+(rerunfilecheck)             After:  DB0DBE2B103639CCDDA59B97AC534956;1045.
  ) 
 Here is how much of TeX's memory you used:
- 23414 strings out of 493312
- 453228 string characters out of 3138899
- 534296 words of memory out of 3000000
- 26104 multiletter control sequences out of 15000+200000
- 38415 words of font info for 68 fonts, out of 3000000 for 9000
+ 22724 strings out of 493312
+ 444089 string characters out of 3138899
+ 536234 words of memory out of 3000000
+ 25599 multiletter control sequences out of 15000+200000
+ 34093 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,15n,65p,781b,730s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Outline0.5.2.75} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.5.1.63} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.4.1.33} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.2.25} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.3.1.19} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.2.14} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{Outline0.2.1.8} has been referenced but does not ex
+ 56i,15n,65p,781b,730s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Navigation64} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Outline0.1.2.6} has been referenced but does not ex
+pdfTeX warning (dest): name{Navigation60} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation54} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation53} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Navigation71} has been referenced but does not exis
+t, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.5.2.60} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.5.1.54} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.4.1.38} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.2.24} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.1.23} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.2.2.15} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.2.1.13} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.1.2.9} has been referenced but does not ex
 ist, replaced by a fixed one
 
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/he
-lvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb><C:/Progr
-am Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2
-.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Presentacion.pdf (121 pages, 5916867 bytes).
+onts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
+elvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on Presentacion.pdf (44 pages, 4987487 bytes).
 PDF statistics:
- 1510 PDF objects out of 1728 (max. 8388607)
- 266 named destinations out of 1000 (max. 500000)
- 398 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 666 PDF objects out of 1000 (max. 8388607)
+ 117 named destinations out of 1000 (max. 500000)
+ 268 words of extra memory for PDF output out of 10000 (max. 10000000)
 

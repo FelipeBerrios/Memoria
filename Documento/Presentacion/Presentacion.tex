@@ -15,8 +15,8 @@
 %	PACKAGES AND THEMES
 %----------------------------------------------------------------------------------------
 
-\documentclass[mathserif]{beamer}
-%\documentclass[handout]{beamer}
+%\documentclass[mathserif]{beamer}
+\documentclass[handout]{beamer}
 
 \mode<presentation> {
 
@@ -193,7 +193,7 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 \item Cuando se usa tecnología GPS dentro de edificios o bajo tierra, existen muchos obstáculos e interferencia que imposibilitan su uso.
 
 \pause
-\item Sistemas de posicionamiento actuales (IPS) presentan problemas ya que confían en indicadores que son afectados por ruido como el indicador de fuerza de la señal (RSSI).
+\item Sistemas de posicionamiento actuales (IPS) presentan problemas ya que confían en indicadores de fuerza de la señal (RSSI).
 
 \end{itemize}
 
@@ -217,7 +217,7 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 \pause
 \item Comparar métodos de aprendizaje automático sobre mediciones RSSI para determinar cuál posee menor error y es más exacto.
 \pause
-\item Determinar que tanto afectan los métodos de reducción de dimensionalidad tanto en precisión, error y tiempo de procesamiento para los algoritmos de máquinas de aprendizaje estudiados.
+\item Determinar que tanto afectan los métodos de reducción de dimensionalidad al problema.
 
 \end{itemize}
 
@@ -232,44 +232,20 @@ Universidad Técnica Federico Santa María \\ % Your institution for the title p
 \frametitle{Tecnologías para posicionamiento \textit{indoor}}
 
  % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\only<1>{Basado en Visión
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures/Murallas.png}
-\end{figure}}
-
-\only<2>{Infrarrojo
-
+ 
 \begin{itemize}
-
-\item Transmisor infrarrojo con un identificador único.
-
-\item Receptores son colocados en lugares dentro del recinto, los cuales pueden detectar este identificador único y comunicar a un software especializado.
-
-\item No se afecta por interferencia electromagnética. Costoso y complejo.
+\item Basado en Visión
+\item Infrarrojo
+\item Tecnologías basadas en Sonido
+\item RFID
 \end{itemize}
-}
 
-\only<3>{Tecnologías basadas en Sonido
+\end{frame}
 
-\begin{figure}
-\includegraphics[width=0.8\textwidth]{../figures/abs.png}
-\end{figure}
-}
+%-------------------------------------------------------------
+\begin{frame}
 
-\only<4>{RFID
-
-\begin{itemize}
-\item La localización mediante RFID puede categorizarse en dos tipos, los cuales son localización del lector y localización de tags.
-
-\item Costoso y no escalable.
-
-\item Poco alcance, sin embargo, no necesita línea de visión directa.
-\end{itemize}
-}
-
-\only<5>{Tecnologías Inalámbricas
+\frametitle{Tecnologías Inalámbricas}
 
 \begin{block}{Received Signal Strength Indicator}
 RSSI es una escala de referencia para medir el nivel de potencia de la fuerza de la señal recibida por el receptor. Se mide en dBm donde 0 RSSI indica señal ideal y valores más negativos indican mayor perdida. 
@@ -278,17 +254,6 @@ RSSI es una escala de referencia para medir el nivel de potencia de la fuerza de
 \begin{block}{Tx Power}
 Es la potencia de salida o fuerza de la señal que el emisor produce durante el tiempo de transmisión. A mayor Tx Power, más estable es la señal, pero más energía se consume.
 \end{block}
-}
-
-\only<6> { Comparativa de tecnologías
-
-\begin{figure}
-\includegraphics[width=0.8\textwidth]{../figures/comparativa.png}
-\end{figure}
-
-}
-
-
 \end{frame}
 
 %------------------------------------------------
@@ -302,7 +267,7 @@ Es la potencia de salida o fuerza de la señal que el emisor produce durante el 
 
 \item Antenas o emisores de ondas de radio. Según la señal más fuerte detectada por el usuario, es donde se localiza en el sistema.
 
-\item Ampliamente usado en redes celulares, ya que permite determinar la posición de un dispositivo con una precisión de 50-200 metros, sin embargo, no es buena en espacios reducidos. GSM, Infrarrojo, Cell-ID.
+\item Ampliamente usado en redes celulares. GSM, Infrarrojo, Cell-ID.
 \end{itemize}
 
 
@@ -366,11 +331,11 @@ Es la potencia de salida o fuerza de la señal que el emisor produce durante el 
 \column{.5\textwidth} % Left column and width
 
 \begin{itemize}
-\item \onslide<1->{La transmisión corresponde a un ID único que está presente en cada Beacon y que no se repite, como una dirección MAC o un UUID.}
+\item La transmisión corresponde a un ID único que está presente en cada Beacon y que no se repite, como una dirección MAC o un UUID.
 
-\item \onslide<2->{Auge del Internet de las cosas.}
+\item Auge del Internet de las cosas.
 
-\item \onslide<3->{Habitualmente los Beacons soportan ambos protocolos existentes, es decir IBeacon y Eddystone.}
+\item Habitualmente los Beacons soportan ambos protocolos existentes, es decir IBeacon y Eddystone.
 
 \end{itemize}
 
@@ -378,92 +343,6 @@ Es la potencia de salida o fuerza de la señal que el emisor produce durante el 
 \begin{figure}
 \includegraphics[width=\textwidth]{../figures/beacons_all.jpg}
 
-\end{figure}
-
-\end{columns}
-
-\end{frame}
-
-%------------------------------------------------
-\begin{frame}
-\frametitle{Beacons - Valores esperados}
-
-\begin{table}[ht!]
-\centering
-\resizebox{\columnwidth}{!}{
-\begin{tabular}{|c|c|c|}
-Parámetro                   & Kontakt.io                      & Estimote                             \\ \hline
-Duración de la batería      & Hasta 4 años                    & Hasta 2 años                         \\ \hline
-Rango                       & 70m                             & 70m                                  \\ \hline
-Procesador                  & 32-bit ARM® Cortex™ M0 CPU core & ARM® Cortex®-M4 32-bit processor FPU \\ \hline
-Sensibilidad                & -93dBm                          & -96 dBm                              \\ \hline
-Velocidades                 & 250kBs, 1Mbs, y 2Mbs            & 1 Mbps (2 Mbps soportado)            \\ \hline
-Memoria                     & 256KB flash 16KB RAM            & 512 kB Flash memory 64 kB RAM memory \\ \hline
-Transmission power          & -30dBm a 4dBm                  & -20dBm a +4 dBm                        \\ \hline
-Batería                     & 2 x 1.000mAh CR2477             & 1 x CR2477 – 3.0V                    \\ \hline
-Bluetooth                   & Bluetooth® 4.2 LE standard      & Bluetooth® 4.2 LE standard           \\ \hline
-Espesor                     & 15mm                            & 17mm                                 \\ \hline
-Peso                        & 35 gr                           & 30 gr                                \\ \hline
-Paquete IBeacon y Eddystone & 1 a la vez                      & 1 a la vez                           \\ \hline
-Paquetes adicionales        & telemetría                      & telemetría                           \\ \hline
-Sensores adicionales        & Temperatura                     & movimiento, temperatura              \\ \hline
-Batería reemplazable        & Si                              & Si                                   \\ \hline
-Numero de Beacons           & 3                               & 3                                    \\ \hline
-Precio                      & 60 USD                          & 59 USD                               \\ \hline
-\end{tabular}
-}
-\end{table}
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Estabilidad de la señal Bluetooth}
-
-\begin{itemize}
-\item Se realiza prueba para comprobar cómo afecta las interferencias a la señal Bluetooth.
-
-\end{itemize}
-
-\begin{figure}
-\includegraphics[width=.7\textheight]{../figures/mediciones_beacon_interferencia.jpg}
-\end{figure}
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Algoritmos de \textit{Machine Learning}}
-
-\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.33\textwidth}
-
-\begin{center}k-NN\end{center}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures/knn.png}
-\end{figure}
-
-\pause
-
-\column{.33\textwidth}
-
-\begin{center}SVM\end{center}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures/SVM-Planes.png}
-\end{figure}
-
-\pause
-
-\column{.33\textwidth}
-
-\begin{center}Neural Networks\end{center}
-
-\begin{figure}
-\includegraphics[width=\textwidth]{../figures/deep.png}
 \end{figure}
 
 \end{columns}
@@ -485,32 +364,7 @@ Precio                      & 60 USD                          & 59 USD          
 
 \pause
 
-\item Utilizar dispositivos Bluetooth Low Energy, lo cuales realizan la función de access point(AP) y que serán los responsables de emitir la señal RSSI. Luego, el procedimiento se divide en las dos clásicas etapas de Fingerprint, es decir, fase \textit{offline} y fase \textit{online}.
-\end{itemize}
-
-
-\end{frame}
-
-%------------------------------------------------
-
-
-\begin{frame}
-\frametitle{Fase Offline}
-
-\begin{itemize}
-\item Crear un tipo de aplicación que sea capaz de recolectar los vectores RSSI.
-
-\pause
-
-\item El periodo y frecuencia de los datos se debe determinar experimentalmente. Para ello, cada medición a colectar representa un punto en el espacio $2-dimensional$.
-
-\pause
-
-\item Para generar la grilla, es necesario tener la posición exacta, que corresponde a la etiqueta de cada punto.
-
-\pause
-
-\item Con los datos registrados, se debe crear la base de datos que almacenara estos Fingerprints, ya que desde ahí es posible analizar los datos y mantener su persistencia
+\item Utilizar dispositivos Bluetooth Low Energy. Luego, el procedimiento se divide en las dos clásicas etapas de Fingerprint, es decir, fase \textit{offline} y fase \textit{online}.
 \end{itemize}
 
 
@@ -527,29 +381,6 @@ Precio                      & 60 USD                          & 59 USD          
 
 \end{frame}
 
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Reducción de dimensionalidad}
-
-\begin{itemize}
-
-\item Esto no ha sido mayormente explorado en la literatura
-
-\pause
-\item Existe correlación espacial lineal de las señales adyacentes. PCA ayuda a eliminar esta correlación.
-\pause
-
-\item Los métodos de extracción de características pueden ayudar a agilizar la fase de entrenamiento, ya que este proceso es lento.
-
-\pause
-
-\item Descubrir atributos en un espacio no correlacionado. Transformación lineal del vector RSSI.
-
-\end{itemize}
-
-\end{frame}
-
 %-------------------------------------------------
 
 \begin{frame}
@@ -561,6 +392,9 @@ Precio                      & 60 USD                          & 59 USD          
 
 \pause
 \item Posteriormente, se seleccionan los mejores algoritmos y luego son implementados.
+\pause
+
+\item Reducción de dimensionalidad
 \pause
 
 \item \textbf{¿Implementación en cliente o servidor?}
@@ -586,12 +420,7 @@ Precio                      & 60 USD                          & 59 USD          
 \end{enumerate}
 
 \pause
-\item Una vez que los algoritmos de clasificación proveen el resultado de la posición física, entonces la misma aplicación de la fase offline, es utilizada para mostrar en un mapa de tiempo real la localización actual de usuario.
-
-\pause
-
-\item Para realizar esta tarea se deben tener en cuenta las normalizaciones realizadas y aplicar correctamente la transformación PCA.
-
+\item La misma aplicación de la fase offline, es utilizada para mostrar en un mapa de tiempo real la localización actual de usuario.
 
 \end{itemize}
 \end{frame}
@@ -661,25 +490,15 @@ Estacionamiento subterráneo de la universidad Técnica Federico Santa María, C
 \frametitle{Software Utilizado}
 
 \begin{itemize}
-\item Aplicación Android:
-	\begin{enumerate}[1]
-\onslide<1->{\item Mostrar el plano del lugar de experimentación.}
+\item Aplicación Android
+	
+\pause
 
-\onslide<2->{\item Permitir la adición de nuevos dispositivos Beacons.}
+\item Scikit-learn
 
-\onslide<3->{\item Permitir la captura de datos, es decir, los nuevos Fingerprints. }
+\pause
 
-\onslide<4->{\item Modificar los valores de intervalo y el número de mediciones en cada punto, el cual puede también definirse en periodo de tiempo.}
-
-\onslide<5->{\item Tener una base de datos \textit{SQLite}.}
-
-\onslide<6->{\item Para la etapa online, debe permitir seleccionar el algoritmo a utilizar y mostrar en tiempo real la posición del usuario.}
-
-\end{enumerate}
-
-\onslide<7->{\item Scikit-learn}
-
-\onslide<8->{\item Tensorflow}
+\item Tensorflow
 
 \end{itemize}
 
@@ -695,49 +514,19 @@ Estacionamiento subterráneo de la universidad Técnica Federico Santa María, C
 \column{.7\textwidth} % Left column and width
 
 \begin{itemize}
-\onslide<1->{\item Samsung Galaxy J7 Prime,CPU Octa-core 1.6 GHz Cortex-A53, una GPU Mali-T830 MP1, 3GB de memoria ram interna y el tipo de Bluetooth corresponde a 4.1 LE}
+\item Samsung Galaxy J7 Prime,CPU Octa-core 1.6 GHz, 3GB de memoria ram interna y el tipo de Bluetooth corresponde a 4.1 LE
 
-\onslide<2->{\item 8 beacons en un área reducida del estacionamiento y ubicar cada Beacon a una distancia de 16 metros a sus vecinos adyacentes. 16 x 44 metros ($704m^2$). }
+\item 8 beacons en un área reducida del estacionamiento. 16 x 44 metros ($704m^2$).
 
+\item Grilla para los puntos de referencia de 4 metros por 4 metros, 44 en total.
 
-\onslide<3->{\item Grilla para los puntos de referencia de 4 metros por 4 metros, 44 en total. }
+\item Se obtiene una base de datos \textit{SQLite} con Figerprints, la cual presenta 6600 registros.
 \end{itemize}
 
 \column{.5\textwidth} % Right column and width
-\onslide<1->{\begin{figure}
+\begin{figure}
 \includegraphics[width=0.65\textwidth]{../figures/deployBeacons.png}
 \end{figure}
-}
-
-\end{columns}
-
-\end{frame}
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Recolección de Fingerprints}
-
-\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.7\textwidth} % Left column and width
-
-\begin{itemize}
-\onslide<1->{\item 3000 mediciones por posición. Se decide inspeccionar y recolectar datos a través de diferentes días.}
-
-\onslide<2->{\item Se seleccionan 150 mediciones por punto de la grilla, para tener menor información repetida y no sobre muestrear la base de datos.}
-
-
-\onslide<3->{\item Se obtiene una base de datos \textit{SQLite} con Figerprints, la cual presenta 6600 registros}
-
-\onslide<4->{\item Clases X e Y son las posiciones asociadas a cada coordenada.}
-\end{itemize}
-
-\column{.5\textwidth} % Right column and width
-\onslide<1->{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/ejemplo_csv.png}
-\end{figure}
-}
 
 \end{columns}
 
@@ -750,38 +539,14 @@ Estacionamiento subterráneo de la universidad Técnica Federico Santa María, C
 \begin{columns}[t] 
 \column{.5\textwidth} % Left column and width
 
-\only<1>{\begin{figure}
+\begin{figure}
 \includegraphics[width=\textwidth]{../figures/NB.png}
-\end{figure}}
-
-\only<2>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/SVM-Lineal.png}
-\end{figure}}
-
-\only<3>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/decision-tree.png}
-\end{figure}}
-
-\only<4>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/adaboost.png}
-\end{figure}}
+\end{figure}
 
 \column{.5\textwidth} % Right column and width
-\only<1>{\begin{figure}
+\begin{figure}
 \includegraphics[width=\textwidth]{../figures/SVM-RBF.png}
-\end{figure}}
-
-\only<2>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/knn-results.png}
-\end{figure}}
-
-\only<3>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/random-forest.png}
-\end{figure}}
-
-\only<4>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/qda.png}
-\end{figure}}
+\end{figure}
 
 \end{columns}
 
@@ -847,30 +612,9 @@ Adaboost                      & 26.03\%  & 150.8848      & 6.5333        & 151.0
 \begin{frame}
 \frametitle{Entrenamiento utilizando PCA}
 
-\begin{itemize}
-\item Determinar número de componentes principales que deben ser utilizadas.
-\pause
-\item No existe un algoritmo que lo determine automáticamente.
-\pause
-\item Se proponen tres métodos para encontrar las componentes principales:
+Determinar número de componentes principales que deben ser utilizadas.
 
-\begin{enumerate}[1]
-\pause
-	\item El primer método se basa en la información contextual presente en los valores propios.
-	\pause
-	\item Para el segundo método, es necesario establecer la suma acumulada porcentual de la varianza explicada.
-	\pause
-	\item Con respecto al tercer método, este se basa en seleccionar las primeras componentes principales según los resultados obtenidos en los clasificadores.
-\end{enumerate}
-\end{itemize}
-
-\end{frame}
-
-%-------------------------------------------------
-\begin{frame}
-\frametitle{Entrenamiento utilizando PCA}
-
-\only<1>{\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
+\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
 \column{.5\textwidth} % Left column and width
 
@@ -884,11 +628,19 @@ Adaboost                      & 26.03\%  & 150.8848      & 6.5333        & 151.0
 \end{figure}
  % Right column and widt
 
-\end{columns}}
+\end{columns}
 
-\only<2>{\begin{figure}
+\end{frame}
+
+%-------------------------------------------------
+\begin{frame}
+\frametitle{Entrenamiento utilizando PCA}
+
+Tres criterios: Valores propios, Varianza explicada y Clasificadores
+
+\begin{figure}
 \includegraphics[width=\textwidth]{../figures/comparativa_clasificadores_pca.png}
-\end{figure}}
+\end{figure}
 
 
 \end{frame}
@@ -929,15 +681,7 @@ Adaboost                      & 32.20\%  & 73.9345 & 9.3042       & 74.5176     
 
 \pause
 \item Lo que se propone para determinar los resultados son dos formas llamadas método estático y método dinámico.
-\begin{enumerate}[1]
-\pause
-\item En el método estático lo que se hace es permanecer quieto en un determinado punto durante un tiempo predefinido. El tiempo utilizado en este caso corresponde a 15 minutos.
-
-\pause
-\item Para el caso del método dinámico, lo que se busca es abarcar la mayor cantidad de puntos posibles. En este caso se decide hacer una caminata a través de todos los 44 puntos.
-\end{enumerate}
 \end{itemize}
-
 
 \end{frame}
 
@@ -1042,44 +786,13 @@ NN PCA       & 1.5578  & 1.7488  & 3.8045    & 2.6885     & 3.9341 \\ \hline
 \end{frame}
 %-------------------------------------------------
 \begin{frame}
-\frametitle{Cumulative distribution function Dinámico}
+\frametitle{Cumulative distribution function Dinámico 100\%}
 
 $$
 F_{X} (x) = P(X \le x)
 $$
 
-\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.5\textwidth} % Left column and width
-
-\only<1>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-knn-dinamico.png}
-\end{figure}}
-
-\only<2>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-svm-dinamico.png}
-\end{figure}}
-
-\only<3>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-nn-dinamico.png}
-\end{figure}}
-
-\column{.5\textwidth} % Right column and width
-\only<1>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-knnPCA-dinamico.png}
-\end{figure}}
-
-\only<2>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-svmPCA-dinamico.png}
-\end{figure}}
-
-\only<3>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-nnPCA-dinamico.png}
-\end{figure}}
-
-\end{columns}
-
-\only<4>{\begin{table}[!h]
+\begin{table}[!h]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|}
@@ -1090,50 +803,19 @@ SVM          & 20.8962 & 19.3874 & 7.2204 \%  \\ \hline
 NN           & 20.5677 & 16.1554 & 21.4525 \% \\ \hline
 \end{tabular}
 }
-\end{table}}
+\end{table}
 
 \end{frame}
 
 %-------------------------------------------------
 \begin{frame}
-\frametitle{Cumulative distribution function Estático}
+\frametitle{Cumulative distribution function Estático 100\%}
 
 $$
 F_{X} (x) = P(X \le x)
 $$
 
-\begin{columns}[t] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
-
-\column{.5\textwidth} % Left column and width
-
-\only<1>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-knn-estatico.png}
-\end{figure}}
-
-\only<2>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-svm-estatico.png}
-\end{figure}}
-
-\only<3>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-nn-estatico.png}
-\end{figure}}
-
-\column{.5\textwidth} % Right column and width
-\only<1>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-knnPCA-estatico.png}
-\end{figure}}
-
-\only<2>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-svmPCA-estatico.png}
-\end{figure}}
-
-\only<3>{\begin{figure}
-\includegraphics[width=\textwidth]{../figures/cdf-nnPCA-estatico.png}
-\end{figure}}
-
-\end{columns}
-
-\only<4>{\begin{table}[!h]
+\begin{table}[!h]
 \centering
 \resizebox{\textwidth}{!}{%
 \begin{tabular}{|c|c|c|c|}
@@ -1144,7 +826,7 @@ SVM          & 16.1554  & 15.1327 & 6.33 \%   \\ \hline
 NN           & 11.18033 & 16.1554 & -44.49 \% \\ \hline
 \end{tabular}
 }
-\end{table}}
+\end{table}
 
 \end{frame}
 
@@ -1186,7 +868,7 @@ NN                    & 0.7610           & 0.5777           & 24.0867\%         
 
 \begin{itemize}
 
-\item Resultados estáticos son mucho mejores que los resultados dinámicos, sin embargo, el escenario de que el usuario este estático en un punto es menos realista.
+\item Resultados estáticos son mucho mejores que los resultados dinámicos.
 \pause
 
 \item Los mejores valores de error medio son obtenidos por KNN y NN, en ambos métodos (estático y dinámico).
@@ -1198,8 +880,6 @@ NN                    & 0.7610           & 0.5777           & 24.0867\%         
 \item Mejor algoritmo es redes neuronales, a pesar de su distribución, mantiene valores bajos de error y tiempos de procesamiento.
 
 \end{itemize}
-
-
 
 \end{frame}
 
@@ -1213,10 +893,7 @@ NN                    & 0.7610           & 0.5777           & 24.0867\%         
 
 \begin{itemize}
 
-\item Las señales Bluetooth se ven afectadas profundamente por cualquier objeto que se interponga, inclusive el cuerpo humano.
-\pause
-
-\item Los datos recolectados presentan estructuras no lineales, y correlaciones lineales localmente. Mejores algoritmos son aquellos capaces de reconocer estas estructuras.
+\item Los datos recolectados presentan estructuras no lineales, y correlaciones lineales localmente.
 \pause
 
 \item Mejor algoritmo es Neural Network, considerando su error, tiempo de computo, a pesar de tener mayor dispersión en los datos.
@@ -1227,27 +904,12 @@ NN                    & 0.7610           & 0.5777           & 24.0867\%         
 
 \pause
 
-\item Técnicas de máquinas de aprendizaje, pueden reducir el error a unos pocos metros, lo cual es alto si se considera un posicionamiento en tiempo real. 
-
-\end{itemize}
-
-\end{frame}
-
-%-------------------------------------------------
-\begin{frame}
-\frametitle{Conclusiones}
-
-\begin{itemize}
+\item Técnicas de máquinas de aprendizaje pueden reducir el error a unos pocos metros, lo cual es alto para el problema de posicionamiento.
+\pause
 
 \item Se requiere mayor en investigación en cuanto a determinar densidad de Beacons, tamaño de grilla, y otros factores asociados a la implementación.
 \pause
 
-\item Recolección de Fingerprints es un proceso lento, y debe ser mejorado. Se puede utilizar aprendizaje no supervisado.
-\pause
-
-\item Las máquinas de aprendizaje en conjunto con las señales Bluetooth Low Energy pueden ser un punto de partida para la fusión de sensores.
-
-\pause
 \item El mayor problema del posicionamiento en interiores es lograr un modelo estándar.
 
 \end{itemize}
@@ -1256,7 +918,7 @@ NN                    & 0.7610           & 0.5777           & 24.0867\%         
 
 %------------------------------------------------
 \begin{frame}
-\Huge{\centerline{Gracias por su atención}}
+\Huge{\centerline{Gracias}}
 \end{frame}
 
 %------------------------------------------------

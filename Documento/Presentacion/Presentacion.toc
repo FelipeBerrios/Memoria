@@ -1,16 +1,16 @@
 \select@language {spanish}
 \beamer@sectionintoc {1}{Introducci\IeC {\'o}n}{3}{0}{1}
 \beamer@subsectionintoc {1}{1}{Definici\IeC {\'o}n del problema}{5}{0}{1}
-\beamer@subsectionintoc {1}{2}{Objetivos}{9}{0}{1}
-\beamer@sectionintoc {2}{Estado del Arte}{12}{0}{2}
-\beamer@subsectionintoc {2}{1}{Tecnolog\IeC {\'\i }as para posicionamiento \textit {indoor}}{13}{0}{2}
-\beamer@subsectionintoc {2}{2}{T\IeC {\'e}cnicas matem\IeC {\'a}ticas Wireless para localizaci\IeC {\'o}n indoor}{19}{0}{2}
-\beamer@sectionintoc {3}{Propuesta de soluci\IeC {\'o}n}{22}{0}{3}
-\beamer@subsectionintoc {3}{1}{Consideraciones Previas}{27}{0}{3}
-\beamer@subsectionintoc {3}{2}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{35}{0}{3}
-\beamer@sectionintoc {4}{Experimentaci\IeC {\'o}n}{56}{0}{4}
-\beamer@subsectionintoc {4}{1}{Implementaci\IeC {\'o}n}{57}{0}{4}
-\beamer@sectionintoc {5}{Resultados}{94}{0}{5}
-\beamer@subsectionintoc {5}{1}{M\IeC {\'e}tricas Obtenidas}{95}{0}{5}
-\beamer@subsectionintoc {5}{2}{An\IeC {\'a}lisis de resultados}{107}{0}{5}
-\beamer@sectionintoc {6}{Conclusiones}{111}{0}{6}
+\beamer@subsectionintoc {1}{2}{Objetivos}{6}{0}{1}
+\beamer@sectionintoc {2}{Estado del Arte}{7}{0}{2}
+\beamer@subsectionintoc {2}{1}{Tecnolog\IeC {\'\i }as para posicionamiento \textit {indoor}}{8}{0}{2}
+\beamer@subsectionintoc {2}{2}{T\IeC {\'e}cnicas matem\IeC {\'a}ticas Wireless para localizaci\IeC {\'o}n indoor}{10}{0}{2}
+\beamer@sectionintoc {3}{Propuesta de soluci\IeC {\'o}n}{13}{0}{3}
+\beamer@subsectionintoc {3}{1}{Consideraciones Previas}{15}{0}{3}
+\beamer@subsectionintoc {3}{2}{Descripci\IeC {\'o}n del \textit {framework} de posicionamiento}{16}{0}{3}
+\beamer@sectionintoc {4}{Experimentaci\IeC {\'o}n}{21}{0}{4}
+\beamer@subsectionintoc {4}{1}{Implementaci\IeC {\'o}n}{22}{0}{4}
+\beamer@sectionintoc {5}{Resultados}{34}{0}{5}
+\beamer@subsectionintoc {5}{1}{M\IeC {\'e}tricas Obtenidas}{35}{0}{5}
+\beamer@subsectionintoc {5}{2}{An\IeC {\'a}lisis de resultados}{41}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones}{42}{0}{6}
