@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  8 APR 2018 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.1.21)  9 APR 2018 23:46
 entering extended mode
 **./Presentacion.tex
 (Presentacion.tex
@@ -1106,20 +1106,20 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
 <../figures/triangulacion.png, id=220, 609.27625pt x 340.27126pt>
 File: ../figures/triangulacion.png Graphic file (type png)
 <use ../figures/triangulacion.png>
-Package pdftex.def Info: ../figures/triangulacion.png  used on input line 285. 
-on input line 285.
+Package pdftex.def Info: ../figures/triangulacion.png  used on input line 287. 
+on input line 287.
 Package pdftex.def Info: Requested size: 307.28987pt x 171.62015pt on input lin
-e 285.
+e 287.
  [11
 
  <../figures/triangulacion.png>]
 <../figures/finger.png, id=231, 544.0325pt x 328.22626pt>
 File: ../figures/finger.png Graphic file (type png)
 <use ../figures/finger.png>
-Package pdftex.def Info: ../figures/finger.png  used on input line 296. on inpu
-t line 296.
+Package pdftex.def Info: ../figures/finger.png  used on input line 298. on inpu
+t line 298.
 Package pdftex.def Info: Requested size: 245.83282pt x 148.31647pt on input lin
-e 296.
+e 298.
 
 [12
 
@@ -1134,12 +1134,12 @@ LaTeX Info: Redefining \% on input line 1.
 <../figures/beacons_all.jpg, id=268, 963.6pt x 722.7pt>
 File: ../figures/beacons_all.jpg Graphic file (type jpg)
 <use ../figures/beacons_all.jpg>
-Package pdftex.def Info: ../figures/beacons_all.jpg  used on input line 350. on
- input line 350.
+Package pdftex.def Info: ../figures/beacons_all.jpg  used on input line 352. on
+ input line 352.
 Package pdftex.def Info: Requested size: 153.64493pt x 115.22633pt on input lin
-e 350.
+e 352.
 
-Overfull \vbox (4.39017pt too high) detected at line 350
+Overfull \vbox (4.39017pt too high) detected at line 352
  []
 
 [15
@@ -1150,12 +1150,12 @@ Overfull \vbox (4.39017pt too high) detected at line 350
 <../figures/fingerprints.jpg, id=290, 512.66531pt x 322.20375pt>
 File: ../figures/fingerprints.jpg Graphic file (type jpg)
 <use ../figures/fingerprints.jpg>
-Package pdftex.def Info: ../figures/fingerprints.jpg  used on input line 382. o
-n input line 382.
+Package pdftex.def Info: ../figures/fingerprints.jpg  used on input line 384. o
+n input line 384.
 Package pdftex.def Info: Requested size: 307.28987pt x 193.12708pt on input lin
-e 382.
+e 384.
 
-Overfull \vbox (5.77397pt too high) detected at line 382
+Overfull \vbox (5.77397pt too high) detected at line 384
  []
 
 [17
@@ -1169,9 +1169,9 @@ Overfull \vbox (5.77397pt too high) detected at line 382
 File: ../figures/propuesta_memoria.png Graphic file (type png)
 <use ../figures/propuesta_memoria.png>
 Package pdftex.def Info: ../figures/propuesta_memoria.png  used on input line 4
-39. on input line 439.
+41. on input line 441.
 Package pdftex.def Info: Requested size: 215.10196pt x 187.43257pt on input lin
-e 439.
+e 441.
  [20
 
  <../figures/propuesta_memoria.png>] (Presentacion.toc
@@ -1183,45 +1183,45 @@ LaTeX Info: Redefining \% on input line 1.
 <../figures/kontaktapp1.png, id=349, 1084.05pt x 1927.2pt>
 File: ../figures/kontaktapp1.png Graphic file (type png)
 <use ../figures/kontaktapp1.png>
-Package pdftex.def Info: ../figures/kontaktapp1.png  used on input line 463. on
- input line 463.
+Package pdftex.def Info: ../figures/kontaktapp1.png  used on input line 465. on
+ input line 465.
 Package pdftex.def Info: Requested size: 92.18788pt x 163.88335pt on input line
- 463.
+ 465.
 <../figures/kontaktapp2.png, id=350, 1084.05pt x 1927.2pt>
 File: ../figures/kontaktapp2.png Graphic file (type png)
 <use ../figures/kontaktapp2.png>
-Package pdftex.def Info: ../figures/kontaktapp2.png  used on input line 463. on
- input line 463.
+Package pdftex.def Info: ../figures/kontaktapp2.png  used on input line 465. on
+ input line 465.
 Package pdftex.def Info: Requested size: 92.18788pt x 163.88335pt on input line
- 463.
+ 465.
  [22
 
  <../figures/kontaktapp1.png> <../figures/kontaktapp2.png>]
 <../figures/estSubterraneo.png, id=362, 997.47656pt x 252.945pt>
 File: ../figures/estSubterraneo.png Graphic file (type png)
 <use ../figures/estSubterraneo.png>
-Package pdftex.def Info: ../figures/estSubterraneo.png  used on input line 485.
- on input line 485.
+Package pdftex.def Info: ../figures/estSubterraneo.png  used on input line 487.
+ on input line 487.
 Package pdftex.def Info: Requested size: 153.64493pt x 38.95905pt on input line
- 485.
+ 487.
 <../figures/estReal.jpg, id=363, 4143.48pt x 3107.61pt>
 File: ../figures/estReal.jpg Graphic file (type jpg)
 <use ../figures/estReal.jpg>
-Package pdftex.def Info: ../figures/estReal.jpg  used on input line 485. on inp
-ut line 485.
+Package pdftex.def Info: ../figures/estReal.jpg  used on input line 487. on inp
+ut line 487.
 Package pdftex.def Info: Requested size: 153.64493pt x 115.22633pt on input lin
-e 485.
+e 487.
  [23
 
  <../figures/estSubterraneo.png> <../figures/estReal.jpg>]
 [24
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 533.
+LaTeX Font Info:    Try loading font information for U+msa on input line 535.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 533.
+LaTeX Font Info:    Try loading font information for U+msb on input line 535.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1229,17 +1229,17 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <../figures/deployBeacons.png, id=383, 1084.05pt x 1927.2pt>
 File: ../figures/deployBeacons.png Graphic file (type png)
 <use ../figures/deployBeacons.png>
-Package pdftex.def Info: ../figures/deployBeacons.png  used on input line 533. 
-on input line 533.
+Package pdftex.def Info: ../figures/deployBeacons.png  used on input line 535. 
+on input line 535.
 Package pdftex.def Info: Requested size: 99.86826pt x 177.52805pt on input line
- 533.
+ 535.
 
-Overfull \hbox (4.55153pt too wide) detected at line 533
+Overfull \hbox (4.55153pt too wide) detected at line 535
 [][][] [][][][][][][][][] [][][][][][][] 
  []
 
 
-Overfull \vbox (3.77495pt too high) detected at line 533
+Overfull \vbox (3.77495pt too high) detected at line 535
  []
 
 [25
@@ -1248,36 +1248,36 @@ Overfull \vbox (3.77495pt too high) detected at line 533
 <../figures/NB.png, id=395, 397.485pt x 279.0425pt>
 File: ../figures/NB.png Graphic file (type png)
 <use ../figures/NB.png>
-Package pdftex.def Info: ../figures/NB.png  used on input line 554. on input li
-ne 554.
+Package pdftex.def Info: ../figures/NB.png  used on input line 556. on input li
+ne 556.
 Package pdftex.def Info: Requested size: 153.64493pt x 107.86386pt on input lin
-e 554.
+e 556.
 <../figures/SVM-RBF.png, id=396, 397.485pt x 281.05pt>
 File: ../figures/SVM-RBF.png Graphic file (type png)
 <use ../figures/SVM-RBF.png>
-Package pdftex.def Info: ../figures/SVM-RBF.png  used on input line 554. on inp
-ut line 554.
+Package pdftex.def Info: ../figures/SVM-RBF.png  used on input line 556. on inp
+ut line 556.
 Package pdftex.def Info: Requested size: 153.64493pt x 108.63985pt on input lin
-e 554.
+e 556.
  [26
 
  <../figures/NB.png> <../figures/SVM-RBF.png>]
 <../figures/nn_estructura.png, id=409, 599.99156pt x 410.2828pt>
 File: ../figures/nn_estructura.png Graphic file (type png)
 <use ../figures/nn_estructura.png>
-Package pdftex.def Info: ../figures/nn_estructura.png  used on input line 582. 
-on input line 582.
+Package pdftex.def Info: ../figures/nn_estructura.png  used on input line 584. 
+on input line 584.
 Package pdftex.def Info: Requested size: 153.64493pt x 105.06209pt on input lin
-e 582.
+e 584.
 <../figures/nn_plot.png, id=410, 719.68875pt x 342.5297pt>
 File: ../figures/nn_plot.png Graphic file (type png)
 <use ../figures/nn_plot.png>
-Package pdftex.def Info: ../figures/nn_plot.png  used on input line 582. on inp
-ut line 582.
+Package pdftex.def Info: ../figures/nn_plot.png  used on input line 584. on inp
+ut line 584.
 Package pdftex.def Info: Requested size: 153.64493pt x 73.12502pt on input line
- 582.
+ 584.
 
-Overfull \vbox (4.30902pt too high) detected at line 582
+Overfull \vbox (4.30902pt too high) detected at line 584
  []
 
 [27
@@ -1288,17 +1288,17 @@ Overfull \vbox (4.30902pt too high) detected at line 582
 <../figures/eigenvalues.png, id=435, 390.45876pt x 276.03125pt>
 File: ../figures/eigenvalues.png Graphic file (type png)
 <use ../figures/eigenvalues.png>
-Package pdftex.def Info: ../figures/eigenvalues.png  used on input line 633. on
- input line 633.
+Package pdftex.def Info: ../figures/eigenvalues.png  used on input line 635. on
+ input line 635.
 Package pdftex.def Info: Requested size: 153.64493pt x 108.61627pt on input lin
-e 633.
+e 635.
 <../figures/varianza_ratio.png, id=436, 390.45876pt x 276.03125pt>
 File: ../figures/varianza_ratio.png Graphic file (type png)
 <use ../figures/varianza_ratio.png>
-Package pdftex.def Info: ../figures/varianza_ratio.png  used on input line 633.
- on input line 633.
+Package pdftex.def Info: ../figures/varianza_ratio.png  used on input line 635.
+ on input line 635.
 Package pdftex.def Info: Requested size: 153.64493pt x 108.61627pt on input lin
-e 633.
+e 635.
  [29
 
  <../figures/eigenvalues.png> <../figures/varianza_ratio.png>]
@@ -1307,9 +1307,9 @@ pt>
 File: ../figures/comparativa_clasificadores_pca.png Graphic file (type png)
 <use ../figures/comparativa_clasificadores_pca.png>
 Package pdftex.def Info: ../figures/comparativa_clasificadores_pca.png  used on
- input line 646. on input line 646.
+ input line 648. on input line 648.
 Package pdftex.def Info: Requested size: 307.28987pt x 143.96246pt on input lin
-e 646.
+e 648.
  [30
 
  <../figures/comparativa_clasificadores_pca.png>] [31
@@ -1320,24 +1320,24 @@ e 646.
 <../figures/fase_online1.png, id=482, 542.025pt x 963.6pt>
 File: ../figures/fase_online1.png Graphic file (type png)
 <use ../figures/fase_online1.png>
-Package pdftex.def Info: ../figures/fase_online1.png  used on input line 711. o
-n input line 711.
+Package pdftex.def Info: ../figures/fase_online1.png  used on input line 713. o
+n input line 713.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-711.
+713.
 <../figures/fase_online2.png, id=483, 542.025pt x 963.6pt>
 File: ../figures/fase_online2.png Graphic file (type png)
 <use ../figures/fase_online2.png>
-Package pdftex.def Info: ../figures/fase_online2.png  used on input line 711. o
-n input line 711.
+Package pdftex.def Info: ../figures/fase_online2.png  used on input line 713. o
+n input line 713.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-711.
+713.
 <../figures/fase_online3.png, id=484, 542.025pt x 963.6pt>
 File: ../figures/fase_online3.png Graphic file (type png)
 <use ../figures/fase_online3.png>
-Package pdftex.def Info: ../figures/fase_online3.png  used on input line 711. o
-n input line 711.
+Package pdftex.def Info: ../figures/fase_online3.png  used on input line 713. o
+n input line 713.
 Package pdftex.def Info: Requested size: 92.1879pt x 163.88335pt on input line 
-711.
+713.
  [33
 
  <../figures/fase_online1.png (PNG copy)> <../figures/fase_online2.png (PNG cop
@@ -1352,9 +1352,9 @@ LaTeX Info: Redefining \% on input line 1.
 
 ]
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <10> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 808.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 810.
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
-(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 808.
+(Font)              Font shape `OT1/phv/m/sl' tried instead on input line 810.
  [37
 
 ] [38
@@ -1363,12 +1363,12 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <7> not available
 <../figures/boxplot.png, id=552, 425.59pt x 281.05pt>
 File: ../figures/boxplot.png Graphic file (type png)
 <use ../figures/boxplot.png>
-Package pdftex.def Info: ../figures/boxplot.png  used on input line 841. on inp
-ut line 841.
+Package pdftex.def Info: ../figures/boxplot.png  used on input line 843. on inp
+ut line 843.
 Package pdftex.def Info: Requested size: 307.28987pt x 202.93907pt on input lin
-e 841.
+e 843.
 
-Overfull \vbox (15.58597pt too high) detected at line 841
+Overfull \vbox (15.58597pt too high) detected at line 843
  []
 
 [39
@@ -1396,15 +1396,15 @@ LaTeX Info: Redefining \% on input line 1.
 \tf@snm=\write8
 \openout8 = `Presentacion.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 926.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 926.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 928.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 928.
 
 (Presentacion.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 926.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 926.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 928.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 928.
 
 
 Package rerunfilecheck Warning: File `Presentacion.out' has changed.
@@ -1468,7 +1468,7 @@ onts/type1/public/amsfonts/cm/cmss10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/h
 elvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvr8a
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on Presentacion.pdf (44 pages, 4987487 bytes).
+Output written on Presentacion.pdf (44 pages, 4987628 bytes).
 PDF statistics:
  666 PDF objects out of 1000 (max. 8388607)
  117 named destinations out of 1000 (max. 500000)
